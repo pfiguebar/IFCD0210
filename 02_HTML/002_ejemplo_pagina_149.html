@@ -8,30 +8,25 @@
     <!-- copiado de https://github.com/fpalacioschaves -->
     
     <style>
-        table 
-        {
-          border-collapse: collapse;   /* border-collapse: borde sin separacion */
-        }
+        table { border-collapse: collapse;  }
+           
+        /* border-collapse: borde sin separacion */
         
-        thead 
-        {
-          background-color: black;   /* background-color: fondo negro */
-          color: white;   /* color: blanco */
-        }
+        thead  { background-color: black; color: white;  }
         
-        th, td 
-        {
-          border: 1px dashed blue;
-        }
+        /* background-color: black es fondo negro */
+        /* color: white es fuente color blanco */
+        
+        th, td  { border: 1px dashed blue; }
         
         /* td: celdilla
             td:nth-child(): indica la columna
+                                                   ESTO NO LO HA EXPLICADO 
         */
         
-        td:nth-child(3), td:nth-child(4) 
-        {
-           text-align: right;   /* text-align: alinea a la derecha */
-        }
+        td:nth-child(3), td:nth-child(4) { text-align: right; }
+        /* text-align: alinea a la derecha */
+        
     </style>
 </head>
 <body>
@@ -40,9 +35,6 @@
         <colgroup>
             <!-- col: columnas -->
             <col span="3">
-            <!-- col: columna
-                style: fondo de color cyan
-            -->
             <col span="1" style="background-color:cyan;">
         </colgroup>
         <thead>
