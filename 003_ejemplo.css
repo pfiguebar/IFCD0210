@@ -1,0 +1,36 @@
+<!-- ejemplo css inline -->
+<p style="color: red;">HOLA MUNDO</p>
+
+
+<!-- ejemplo css definido dentro html -->
+<p> HOLA MUNDO< /p>
+<style>
+p {color: red;"}
+</style>
+  
+  
+<!-- ejemplo css definido via archivo exterior -->
+ARCHIVO INDEX.HTML lleva este codigo
+  <link rel="stylesheet" href="estilos.css"> 
+ 
+ARCHIVO ESTILOS.CSS
+  .p {color: red;}
+  
+
+<!-- CLASES - Se definen en archivos estilos.css -->
+  
+  <p class="rojo">HOLA MUNDO </p>
+  .rojo {color: red;"}
+    
+    Las clases pueden hacerse en cascadas
+EJEMPLO1
+    <div class="cuadro">
+    <p>HOLA MUNDO</p>
+    </div>
+    
+    ESTILOS.CSS
+    .
+    
+  
+  
+  
