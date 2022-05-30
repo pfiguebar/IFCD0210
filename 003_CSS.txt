@@ -123,5 +123,49 @@ Las clases pueden hacerse en cascadas - pagina 197
     Podemos definirlos todos en 1 sola linea 
              T      R       B       L    
    margin {10px    5px     3px     0px}     <!-- se pueden poner las 4 seguidas -->
+   
+   ***************************************************************************
+   
+   <div class="capa1">CAPA 1</div>
+   <div class="capa1">CAPA 2</div>
+   
+  <style>
+   .capa1 {width: 20%;}
+  </style>
+  
+  En este caso pondria
+  CAPA 1
+  CAPA 2
+  
+  Aqui pone 2 div con un ancho 20% pantalla uno debajo del otro
+  
+  ***************************************************************************
+ <div class="capa1">CAPA 1</div>
+ <div class="capa1">CAPA 2</div>
+   
+  <style>
+   .capa1 {width: 20%; float: right;}
+  </style>
+  
+  En este caso pondria 
+  CAPA 1    CAPA 2
+  
+  Es decir, primera linea lee HTML es div con texto CAPA 1 ... y luego situa a su derecha div con texto CAPA 2
+  
+  ***************************************************************************
+  <div class="capa1">CAPA 1
+      <div class="capa1">CAPA 2</div>
+  </div>
+   
+  <style>
+   .capa1 {width: 20%; }
+  </style>
   
   
+  
+  ------------------------------------------------------------- 
+  |  CAPA 1                        ------------------------    |
+  |  ocupa 20% pantalla           |   CAPA 2              |    |
+  |                               | ocupa 20% de CAPA 1   |    |
+  |                               -------------------------    |
+  -------------------------------------------------------------
