@@ -1,6 +1,6 @@
 *************************************************************************************************************
 
-<!-- ejemplo css inline -->
+<!-- MEDIANTE ATRIBUTO style  -->
 ARCHIVO INDEX.HTML lleva este codigo
 
 <p style="color: red;">HOLA MUNDO</p>
@@ -8,7 +8,7 @@ ARCHIVO INDEX.HTML lleva este codigo
 *************************************************************************************************************
 *************************************************************************************************************
 
-<!-- ejemplo css definido dentro archivo html -->
+<!-- MEDIANTE ETIQUETA <STYLE>  -->
 ARCHIVO INDEX.HTML lleva este codigo
 Aqui le indicamos que a los elementos p le asigne color red  
 
@@ -22,7 +22,7 @@ p {color: red;"}
 *************************************************************************************************************
 *************************************************************************************************************
   
-<!-- ejemplo css definido via archivo exterior -->
+<!-- MEDIANTE UN ARCHIVO CSS EXTERNO -->
 
 ARCHIVO INDEX.HTML lleva este codigo
 <link rel="stylesheet" href="estilos.css"> <!-- esta linea es obligatoria -->
@@ -48,7 +48,7 @@ dentro archivo estilos.css se define ese valor
 *************************************************************************************************************
   
   
-Las clases pueden hacerse en cascadas
+Las clases pueden hacerse en cascadas - pagina 197
 
     EJEMPLO1
     ARCHIVO INDEX.HTML lleva este codigo
@@ -114,12 +114,13 @@ Las clases pueden hacerse en cascadas
     ***************************************************************************
     
     margin o padding
-    
+    Se pueden definir por separado 1 a 1
     T   margin-top: 10px
     R   margin-right: 5px
     B   margin-button: 3px
     L   margin-left: 0px
     
+    Podemos definirlos todos en 1 sola linea 
              T      R       B       L    
    margin {10px    5px     3px     0px}     <!-- se pueden poner las 4 seguidas -->
   
