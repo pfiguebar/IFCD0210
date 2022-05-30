@@ -1,31 +1,36 @@
 TEMA 2: EJERCICIOS DE REPASO Y AUTOEVALUACIÓN
 
-2._
-A)
+2._ ¿Cúal de los siguientes lenguajes de marcas es más antiguo?
+a) GML
 
 
-3._
-1 V
-2 F
-3 V
+3._ De las siguientes afirmaciones, diga cuál es verdadera o falsa
+1 V   El lenguaje SGML fue creado a partir de GML
+2 F   SGML almacena el diseño y la estructura lógica de los documentos
+3 V   El W3C tiene la misión de desarrollar lenguajes y estandares para WWW
 
 
-6._
-C)
+6._ El lenguaje que combina las posibilidades de HTML y la filosofia de XML es:
+c) XHTML
 
 
-9._
-Todo es el elemento
-<div>    </div>   Son las etiquetas
-Contenido lo que figura dentro etiquetas div
+9._ Identifique las etiquetas, el contenido y los elementos del siguiente codigo HTML
+
+<code>
+<div> Esto es un ejemplo </div>
+</code>
+
+<code> ...... </code>     ELEMENTO
+<div> .....   </div>      ETIQUETAS
+Esto es un ejemplo        CONTENIDO
 
 
-10._ 
-C)
+10._ El conjunto formado por un nombre y un valor que se localiza dentro de la etiqueta inicio de un elemento se denomina...
+c) ... atributo
 
 
-13._
-1 F
-2 F
-3 V
+13._ De las siguientes afirmaciones, diga cual es verdadera o falsa
+1 F    Para que un documento XML este bien formado, el valor de los atributos debe ir sin comillas 
+2 F    El los documentos XML bien formados, los nombres de los elementos pueden empezar con un numero
+3 V    En los documentos XML bien formados, los nombres de los elementos no pueden nombrarse con espacios
 
