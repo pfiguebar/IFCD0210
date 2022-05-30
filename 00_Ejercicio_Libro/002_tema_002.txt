@@ -1,0 +1,31 @@
+TEMA 2: EJERCICIOS DE REPASO Y AUTOEVALUACIÓN
+
+2._
+A)
+
+
+3._
+1 V
+2 F
+3 V
+
+
+6._
+C)
+
+
+9._
+Todo es el elemento
+<div>    </div>   Son las etiquetas
+Contenido lo que figura dentro etiquetas div
+
+
+10._ 
+C)
+
+
+13._
+1 F
+2 F
+3 V
+
