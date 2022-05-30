@@ -1,1 +1,37 @@
-Aqui ejercicios tema1
+ TEMA 1: EJERCICIOS DE REPASO Y AUTOEVALUACION
+ 
+ 
+ 2._ El diseño web se puede dividir en dos partes fundamentales. Estas son:
+ a) Funcionalidad y aspecto.
+ 
+ 
+ 6._ El diseño web orientado a la implementación consiste en centrar el diseño de la pagina en...
+ c) ... las posibilidades tecnológicas disponibles y que el desarrolador sea capaz de implementar.
+ 
+ 
+ 8._ Una vez definida la estructura y navegabilidad del sitio web, el desarrolador ya puede empezar a...
+ c) ... programarla
+ 
+ 
+ 9._ Enumere las distintas partes partes en las que se suele estructurar un documento web
+ * Cabecera (Header)
+ * Cuerpo (Body)
+ * Pie de pagina (Footer)
+ 
+ 
+ 11._ ¿Que contenido se suele incluir en el footer de una pagina web?
+ Por lo general, se suele encontar información de contacto, enlaces a secciones importantes, o enlaces a otras webs externas. 
+ En resumen información menos importante que la que se suele poner en cabecera, y que no suele variar con frecuencia.
+ 
+ 
+ 12._ Respecto al número de imágenes de una pagina web, es necesario...
+ c) ... que se mantenga un equilibrio.
+ 
+ 
+ 14._ Nombre algunos de los navegadores más usados en la actualidad
+* Google Chrome 
+* Mozilla Firefox
+* Safari (macOS)
+* Microsoft Edge
+* Avast Secure Browser
+* Opera 
