@@ -1,0 +1,29 @@
+<?xml version="1.0"?>
+
+<pedidos>
+
+	<pedido>
+		<numero>001</numero>
+		<nombre>Juan</nombre>
+		<fecha>24/05/2022</fecha>
+		<articulos>
+		<articulo tipo="deporte">bicicleta</articulo>
+		<articulo tipo="seguridad">casco</articulo>
+		</articulos>
+	</pedido>
+ 
+	<pedido>
+		<numero>002</numero>
+		<nombre>Antonio</nombre>
+		<fecha>24/05/2022</fecha>
+		<articulo>bicicleta</articulo>
+	</pedido>
+ 
+	<pedido>
+		<numero>003</numero>
+		<nombre>Fernando</nombre>
+		<fecha>24/05/2022</fecha>
+		<articulo>bicicleta</articulo>
+	</pedido>
+ 
+</pedidos>
