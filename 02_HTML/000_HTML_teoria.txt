@@ -23,3 +23,6 @@
 <p> para parágrafos
 
 <span> para estilos de una parte del texto
+
+
+**** Ampliar uso de etiquetas aqui: https://www.mclibre.org/consultar/htmlcss/html/html-etiquetas.html  ****
