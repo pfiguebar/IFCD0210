@@ -1,9 +1,11 @@
 
 <!-- ejemplo css inline -->
+ARCHIVO INDEX.HTML lleva este codigo
 <p style="color: red;">HOLA MUNDO</p>
 
 
 <!-- ejemplo css definido dentro archivo html -->
+ARCHIVO INDEX.HTML lleva este codigo
 <p> HOLA MUNDO< /p>
 
 <style>
@@ -20,10 +22,10 @@ ARCHIVO INDEX.HTML lleva este codigo
 
   
 ARCHIVO ESTILOS.CSS
-  .p {color: red;}
+.p {color: red;}
   
 
-<!-- CLASES - Se definen class="rojo" dentro INDEX.HTML ... y dentro archivo estilos.css -->
+<!-- CLASES => Se definen class="rojo" dentro INDEX.HTML ... y dentro archivo estilos.css se define ese valor -->
   ARCHIVO INDEX.HTML lleva este codigo
   <p class="rojo">HOLA MUNDO </p>
   
