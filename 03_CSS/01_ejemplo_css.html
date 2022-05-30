@@ -4,26 +4,59 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./css/estilos_003.css">
-    <title>Ejemplo 003</title>
+    
+    <!-- <link rel="stylesheet" href="./css/estilos_001.css">  Para simplificar vamos a escribir css dentro html. -->
+  
+    <style>
+    h1 {text-align: center; color: blue;}
+        
+    .pantalla { width: 90%; margin: 10px auto; }  
+        
+        /* margin cuando le añadimos auto centra ese elemento   
+        Fijarse que se pueden sumar clases    class="cabecera pantalla"
+        */
+        
+    .cabecera { height: 100px;  background-color: grey; }
+    .cuerpo { min-height: 50vh; }
+    .pie { height: 200px; }  
+    
+    .cabecera, .cuerpo, .pie {border-radius: 10px; font-size: 20px; border: 5px solid black;}  
+        
+         /* separo por comas elementos tienen misma caracteristica. en este caso tamaño fuente igual en todos y aplico igual borde en todos */
+
+    div .cabecera h1 {color: red;}
+        
+        /* aplicar color rojo a elementos que cumple condicion: 
+        1) estan dentro un h1
+        2) tienen una clase llamada cabecera
+        3) y a su vez dentro un div
+        
+        Caso no no se aplica color rojo al no cumplirse condicion esta dentro div
+        */
+        
+   
+    </style>
+    
+<title>Ejemplo 001</title>
+
 </head>
 <body>
  
-        <!-- esto es cabecera, dentro un elemento div (ejemplo solo para jugar aplicando css) -->
+        <!-- esto es cabecera, dentro un elemento div (ejemplo solo para jugar aplicando css =>   div .cabecera h1  )  -->
   <div>
-       <div class="cabecera"> <h1> CABECERA </h1>  </div>
+       <div class="cabecera pantalla"> <h1> CABECERA </h1>  </div>
   </div>
 
         <!-- esto es cabecera, sin div -->
-  <div class="cabecera"> <h1> CABECERA <h1> </div>
+  <div class="cabecera pantalla"> <h1> CABECERA <h1> </div>
         
  
         <!-- esto es cuerpo -->         
-  <div class="cuerpo"> <h1> CUERPO </h1>  </div>
+  <div class="cuerpo pantalla"> <h1> CUERPO </h1>  </div>
 
   
         <!-- esto es pie -->         
-  <div class="pie"> <h1> PIE </h1>   </div> 
+  <div class="pie pantalla"> <h1> PIE </h1>   </div> 
 
  </div>
 
