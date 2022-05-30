@@ -1,3 +1,11 @@
+
+METALENGUAJE XML
+
+XML NO EXISTEN ELEMENTOS PREDEFINIDOS, DESARROLLADOR ES QUIEN LOS CREA
+
+XML ES PARECIDO A JSON
+
+
 ***********************************************************************************
 
 <?xml version="1.0"?>
