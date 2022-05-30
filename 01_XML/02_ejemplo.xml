@@ -1,0 +1,51 @@
+<?xml version="1.0"?>
+
+<correos>
+
+<mensajes>
+
+	<remitente>
+		<nombre tipo="nombre_remitente"></nombre>
+		<email tipo="email_remite"></email>
+	</remitente>
+ 
+	<destinatarios>
+		<nombre tipo="nombre_destinatario"></nombre>
+		<email tipo="email_destinatario"></email>
+	</destinatarios>
+ 
+	<asunto>
+	</asunto>
+	
+	<texto>
+	<parrafo tipo="linea001"></parrafo>
+	<parrafo tipo="linea002"></parrafo>
+	<parrafo tipo="linea003"></parrafo>
+	</texto>
+ 
+</mensajes>
+
+<mensajes>
+
+	<remitente>
+		<nombre tipo="nombre_remitente"></nombre>
+		<email tipo="email_remite"></email>
+	</remitente>
+ 
+	<destinatarios>
+		<nombre tipo="nombre_destinatario"></nombre>
+		<email tipo="email_destinatario"></email>
+	</destinatarios>
+ 
+	<asunto>
+	</asunto>
+	
+	<texto>
+	<parrafo tipo="linea001"></parrafo>
+	<parrafo tipo="linea002"></parrafo>
+	<parrafo tipo="linea003"></parrafo>
+	</texto>
+ 
+</mensajes>
+
+</correos>
