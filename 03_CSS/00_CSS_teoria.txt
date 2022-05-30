@@ -1,1 +1,171 @@
+*************************************************************************************************************
 
+<!-- MEDIANTE ATRIBUTO style  -->
+ARCHIVO INDEX.HTML lleva este codigo
+
+<p style="color: red;">HOLA MUNDO</p>
+
+*************************************************************************************************************
+*************************************************************************************************************
+
+<!-- MEDIANTE ETIQUETA <STYLE>  -->
+ARCHIVO INDEX.HTML lleva este codigo
+Aqui le indicamos que a los elementos p le asigne color red  
+
+<p> HOLA MUNDO< /p>
+
+<style>
+p {color: red;"}
+</style>
+
+
+*************************************************************************************************************
+*************************************************************************************************************
+  
+<!-- MEDIANTE UN ARCHIVO CSS EXTERNO -->
+
+ARCHIVO INDEX.HTML lleva este codigo
+<link rel="stylesheet" href="estilos.css"> <!-- esta linea es obligatoria -->
+<p> HOLA MUNDO </div> 
+
+  
+ARCHIVO ESTILOS.CSS
+.p {color: red;}
+  
+*************************************************************************************************************
+*************************************************************************************************************
+  
+<!-- CLASES =>  ...  -->
+ARCHIVO INDEX.HTML lleva este codigo
+Se definen class="rojo" dentro INDEX.HTML
+<p class="rojo">HOLA MUNDO </p>
+  
+ARCHIVO ESTILOS.CSS
+dentro archivo estilos.css se define ese valor
+.rojo {color: red;"}
+
+*************************************************************************************************************
+*************************************************************************************************************
+  
+  
+Las clases pueden hacerse en cascadas - pagina 197
+
+    EJEMPLO1
+    ARCHIVO INDEX.HTML lleva este codigo
+    <div>
+    <p>HOLA MUNDO</p>
+    </div>
+    
+    <p>ADIOS MUNDO </p>
+    
+    
+    ARCHIVO ESTILOS.CSS
+    .div p {color:red;}
+    
+    Todos los elementos <p> que esten dentro un elemento <div> se le asigna color rojo
+    En este caso solo HOLA MUNDO se pone rojo por eso esta definido por div 
+    En este caso ADIOS MUNDO no se le asigna color rojo
+    
+  **********************************************************
+  
+    EJEMPLO2
+    ARCHIVO INDEX.HTML lleva este codigo
+    <p class="parrafo_naranja">HOLA MUNDO</p>
+    
+    <div>
+    <p class="parrafo_naranja">ADIOS MUNDO</p>
+    </div>
+    
+    ARCHIVO ESTILOS.CSS
+    div .parrafo_naranja {color: red;}
+    
+    Todos los elementos que tengan class="parrafo_naranja" que este dentro un div
+    En este caso, ADIOS MUNDO se pondria rojo por eso esta dentro un div
+    En este caso, HOLA MUNDO aun teniendo classe parrafo_naranja no se cambia color por no estar dentro div
+    
+    **********************************************************
+    
+    EJEMPLO03
+    div capa1 p a{}   cualquier elemento <a> que este dentro un <p> y que dentro existe una clase capa1 y a su vez este dentro un div
+    div.capa1 p a{}   cualquier elemento <a> que este dentro un <p> y que este dentro un div class="capa1"
+    
+    **********************************************************
+    
+    VALORES MAS COMUNES EN CSS
+    TAMAÑOS
+    
+    <div>
+    .div {width: 300px;}   el valor ABSOLUTO de 300px sea cual sea dispositivo
+    .div {width: 30%;}    el valor es % sobre contenedor esta
+    
+    ejemplo %
+    <div class="hola">
+    <div style="width:30%">ADIOS</div>
+    </div>
+    
+    ADIOS ocupara 30% div class="hola"
+    
+    ***************************************************************************
+    
+    <p>
+    p {font-size: 20px;}      la letra tiene 20 pixel
+    p {font-size: 1.5 em;}    la letra dentro etiqueta <p> tiene valor    x 1.5    valor tenga la letra "M" en tu navegador    
+    
+    ***************************************************************************
+    
+    margin o padding
+    Se pueden definir por separado 1 a 1
+    T   margin-top: 10px
+    R   margin-right: 5px
+    B   margin-button: 3px
+    L   margin-left: 0px
+    
+    Podemos definirlos todos en 1 sola linea 
+             T      R       B       L    
+   margin {10px    5px     3px     0px}     <!-- se pueden poner las 4 seguidas -->
+   
+   ***************************************************************************
+   
+   <div class="capa1">CAPA 1</div>
+   <div class="capa1">CAPA 2</div>
+   
+  <style>
+   .capa1 {width: 20%;}
+  </style>
+  
+  En este caso pondria
+  CAPA 1
+  CAPA 2
+  
+  Aqui pone 2 div con un ancho 20% pantalla uno debajo del otro
+  
+  ***************************************************************************
+ <div class="capa1">CAPA 1</div>
+ <div class="capa1">CAPA 2</div>
+   
+  <style>
+   .capa1 {width: 20%; float: right;}
+  </style>
+  
+  En este caso pondria 
+  CAPA 1    CAPA 2
+  
+  Es decir, primera linea lee HTML es div con texto CAPA 1 ... y luego situa a su derecha div con texto CAPA 2
+  
+  ***************************************************************************
+  <div class="capa1">CAPA 1
+      <div class="capa1">CAPA 2</div>
+  </div>
+   
+  <style>
+   .capa1 {width: 20%; }
+  </style>
+  
+  
+  
+  ------------------------------------------------------------- 
+  |  CAPA 1                        ------------------------    |
+  |  ocupa 20% pantalla           |   CAPA 2              |    |
+  |                               | ocupa 20% de CAPA 1   |    |
+  |                               -------------------------    |
+  -------------------------------------------------------------
