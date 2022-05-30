@@ -2,6 +2,7 @@
 
 <!-- MEDIANTE ATRIBUTO style  -->
 ARCHIVO INDEX.HTML lleva este codigo
+Aqui le indicamos que al elemento p le asigne color red  
 
 <p style="color: red;">HOLA MUNDO</p>
 
@@ -13,9 +14,10 @@ ARCHIVO INDEX.HTML lleva este codigo
 Aqui le indicamos que a los elementos p le asigne color red  
 
 <p> HOLA MUNDO< /p>
+<p> ADIOS MUNDO </p>
 
 <style>
-p {color: red;"}
+p {color: red;}
 </style>
 
 
@@ -24,25 +26,28 @@ p {color: red;"}
   
 <!-- MEDIANTE UN ARCHIVO CSS EXTERNO -->
 
-ARCHIVO INDEX.HTML lleva este codigo
+ARCHIVO INDEX.HTML lleva este código
 <link rel="stylesheet" href="estilos.css"> <!-- esta linea es obligatoria -->
+
 <p> HOLA MUNDO </div> 
 
   
-ARCHIVO ESTILOS.CSS
+ARCHIVO ESTILOS.CSS lleva este código
 .p {color: red;}
   
 *************************************************************************************************************
 *************************************************************************************************************
   
-<!-- CLASES =>  ...  -->
-ARCHIVO INDEX.HTML lleva este codigo
-Se definen class="rojo" dentro INDEX.HTML
+<!-- USOS CLASES (CLASS)  -->
+ARCHIVO INDEX.HTML lleva este código
+
+1._ Se definen class="rojo" dentro INDEX.HTML
+
 <p class="rojo">HOLA MUNDO </p>
   
-ARCHIVO ESTILOS.CSS
-dentro archivo estilos.css se define ese valor
-.rojo {color: red;"}
+ARCHIVO ESTILOS.CSS lleva este código
+2._ Dentro archivo estilos.css se define ese valor
+.rojo {color: red;}
 
 *************************************************************************************************************
 *************************************************************************************************************
