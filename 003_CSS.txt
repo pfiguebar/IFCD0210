@@ -111,6 +111,16 @@ Las clases pueden hacerse en cascadas
     p {font-size: 20px;}      la letra tiene 20 pixel
     p {font-size: 1.5 em;}    la letra dentro etiqueta <p> tiene valor    x 1.5    valor tenga la letra "M" en tu navegador    
     
+    ***************************************************************************
     
+    margin o padding
+    
+    T   margin-top: 10px
+    R   margin-right: 5px
+    B   margin-button: 3px
+    L   margin-left: 0px
+    
+             T      R       B       L    
+   margin {10px    5px     3px     0px}     <!-- se pueden poner las 4 seguidas -->
   
   
