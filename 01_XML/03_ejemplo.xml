@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<bosque>
+
+	<arboles>
+	
+		<arbol>
+			<nombre>
+				<cientifico> $nombre_cientifico_001 </cientifico>
+				<comun> $nombre_comun_001 </comun>
+			</nombre>
+			<vegetacion> $vegetacion_001 </vegetacion>
+			<altura> $altura_001 </altura>
+			<forma> $forma_001 </forma>
+			<estructura> $estructura_001 </estructura>
+			<color> $color_001 </color>
+			<resistencia> $resistencia_001 </resistencia>
+		</arbol>
+
+		<arbol>
+			<nombre_cientifico> $nombre_cientifico_002 </nombre_cientifico>
+			<nombre_comun> $nombre_comun_002 </nombre_comun>
+			<vegetacion> $vegetacion_002 </vegetacion>
+			<altura> $altura_002 </altura>
+			<forma> $forma_002 </forma>
+			<estructura> $estructura_002 </estructura>
+			<color> $color_002 </color>
+			<resistencia> $resistencia_002 </resistencia>
+		</arbol>
+		
+		<arbol>
+			<nombre tipo="cientifico"> $nombre_cientifico_002 </nombre>
+			<nombre tipo="comun"> $nombre_comun_002 </nombre>
+			<vegetacion> $vegetacion_002 </vegetacion>
+			<altura> $altura_002 </altura>
+			<forma> $forma_002 </forma>
+			<estructura> $estructura_002 </estructura>
+			<color> $color_002 </color>
+			<resistencia> $resistencia_002 </resistencia>
+		</arbol>
+		
+	</arboles>
+	
+	<animales>
+	</animales>
+
+</bosque>
