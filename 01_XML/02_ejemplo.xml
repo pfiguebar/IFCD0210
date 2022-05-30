@@ -2,7 +2,7 @@
 
 <correos>
 
-<mensajes>
+  <mensajes>
 
 	<remitente>
 		<nombre tipo="nombre_remitente"></nombre>
@@ -23,9 +23,9 @@
 	<parrafo tipo="linea003"></parrafo>
 	</texto>
  
-</mensajes>
+  </mensajes>
 
-<mensajes>
+  <mensajes>
 
 	<remitente>
 		<nombre tipo="nombre_remitente"></nombre>
@@ -46,6 +46,6 @@
 	<parrafo tipo="linea003"></parrafo>
 	</texto>
  
-</mensajes>
+  </mensajes>
 
 </correos>
