@@ -1,36 +1,74 @@
+
 <!-- ejemplo css inline -->
 <p style="color: red;">HOLA MUNDO</p>
 
 
-<!-- ejemplo css definido dentro html -->
+<!-- ejemplo css definido dentro archivo html -->
 <p> HOLA MUNDO< /p>
+
 <style>
 p {color: red;"}
 </style>
   
+Aqui le indicamos que a los elementos p le asigne color red  
+  
   
 <!-- ejemplo css definido via archivo exterior -->
 ARCHIVO INDEX.HTML lleva este codigo
-  <link rel="stylesheet" href="estilos.css"> 
- 
+<link rel="stylesheet" href="estilos.css"> 
+<p> HOLA MUNDO </div> 
+
+  
 ARCHIVO ESTILOS.CSS
   .p {color: red;}
   
 
-<!-- CLASES - Se definen en archivos estilos.css -->
-  
+<!-- CLASES - Se definen class="rojo" dentro INDEX.HTML ... y dentro archivo estilos.css -->
+  ARCHIVO INDEX.HTML lleva este codigo
   <p class="rojo">HOLA MUNDO </p>
+  
+  ARCHIVO ESTILOS.CSS
   .rojo {color: red;"}
+
+
+<!-- CSS AVANZADO -->     
     
-    Las clases pueden hacerse en cascadas
-EJEMPLO1
-    <div class="cuadro">
+Las clases pueden hacerse en cascadas
+
+    EJEMPLO1
+    ARCHIVO INDEX.HTML lleva este codigo
+    <div>
     <p>HOLA MUNDO</p>
     </div>
     
-    ESTILOS.CSS
-    .
+    <p>ADIOS MUNDO </p>
     
-  
+    
+    ARCHIVO ESTILOS.CSS
+    .div p {color:red;}
+    
+    Todos los elementos <p> que esten dentro un elemento <div> se le asigna color rojo
+    En este caso solo HOLA MUNDO se pone rojo por eso esta definido por div 
+    En este caso ADIOS MUNDO no se le asigna color rojo
+    
+    EJEMPLO2
+    ARCHIVO INDEX.HTML lleva este codigo
+    <p class="parrafo_naranja">HOLA MUNDO</p>
+    
+    <div>
+    <p class="parrafo_naranja">ADIOS MUNDO</p>
+    </div>
+    
+    ARCHIVO ESTILOS.CSS
+    div .parrafo_naranja {color: red;}
+    
+    Todos los elementos que tengan class="parrafo_naranja" que este dentro un div
+    En este caso, ADIOS MUNDO se pondria rojo por eso esta dentro un div
+    En este caso, HOLA MUNDO aun teniendo classe parrafo_naranja no se cambia color por no estar dentro div
+    
+    
+    
+    div capa1 p a{}   cualquier elemento <a> que este dentro un <p> y que dentro tenga una clase capa1 y este dentro un div
+    div.capa1 p a{}   cualquier elemento <a> que este dentro un <p> y que este dentro un div class="capa1"
   
   
