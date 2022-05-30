@@ -1,40 +1,53 @@
+*************************************************************************************************************
 
 <!-- ejemplo css inline -->
 ARCHIVO INDEX.HTML lleva este codigo
+
 <p style="color: red;">HOLA MUNDO</p>
 
+*************************************************************************************************************
+*************************************************************************************************************
 
 <!-- ejemplo css definido dentro archivo html -->
 ARCHIVO INDEX.HTML lleva este codigo
+Aqui le indicamos que a los elementos p le asigne color red  
+
 <p> HOLA MUNDO< /p>
 
 <style>
 p {color: red;"}
 </style>
-  
-Aqui le indicamos que a los elementos p le asigne color red  
-  
+
+
+*************************************************************************************************************
+*************************************************************************************************************
   
 <!-- ejemplo css definido via archivo exterior -->
+
 ARCHIVO INDEX.HTML lleva este codigo
-<link rel="stylesheet" href="estilos.css"> 
+<link rel="stylesheet" href="estilos.css"> <!-- esta linea es obligatoria -->
 <p> HOLA MUNDO </div> 
 
   
 ARCHIVO ESTILOS.CSS
 .p {color: red;}
   
-
-<!-- CLASES => Se definen class="rojo" dentro INDEX.HTML ... y dentro archivo estilos.css se define ese valor -->
-  ARCHIVO INDEX.HTML lleva este codigo
-  <p class="rojo">HOLA MUNDO </p>
+*************************************************************************************************************
+*************************************************************************************************************
   
-  ARCHIVO ESTILOS.CSS
-  .rojo {color: red;"}
+<!-- CLASES =>  ...  -->
+ARCHIVO INDEX.HTML lleva este codigo
+Se definen class="rojo" dentro INDEX.HTML
+<p class="rojo">HOLA MUNDO </p>
+  
+ARCHIVO ESTILOS.CSS
+dentro archivo estilos.css se define ese valor
+.rojo {color: red;"}
 
-
-<!-- CSS AVANZADO -->     
-    
+*************************************************************************************************************
+*************************************************************************************************************
+  
+  
 Las clases pueden hacerse en cascadas
 
     EJEMPLO1
@@ -53,6 +66,8 @@ Las clases pueden hacerse en cascadas
     En este caso solo HOLA MUNDO se pone rojo por eso esta definido por div 
     En este caso ADIOS MUNDO no se le asigna color rojo
     
+  **********************************************************
+  
     EJEMPLO2
     ARCHIVO INDEX.HTML lleva este codigo
     <p class="parrafo_naranja">HOLA MUNDO</p>
@@ -68,9 +83,34 @@ Las clases pueden hacerse en cascadas
     En este caso, ADIOS MUNDO se pondria rojo por eso esta dentro un div
     En este caso, HOLA MUNDO aun teniendo classe parrafo_naranja no se cambia color por no estar dentro div
     
+    **********************************************************
     
-    
-    div capa1 p a{}   cualquier elemento <a> que este dentro un <p> y que dentro tenga una clase capa1 y este dentro un div
+    EJEMPLO03
+    div capa1 p a{}   cualquier elemento <a> que este dentro un <p> y que dentro existe una clase capa1 y a su vez este dentro un div
     div.capa1 p a{}   cualquier elemento <a> que este dentro un <p> y que este dentro un div class="capa1"
+    
+    **********************************************************
+    
+    VALORES MAS COMUNES EN CSS
+    TAMAÑOS
+    
+    <div>
+    .div {width: 300px;}   el valor ABSOLUTO de 300px sea cual sea dispositivo
+    .div {width: 30%;}    el valor es % sobre contenedor esta
+    
+    ejemplo %
+    <div class="hola">
+    <div style="width:30%">ADIOS</div>
+    </div>
+    
+    ADIOS ocupara 30% div class="hola"
+    
+    ***************************************************************************
+    
+    <p>
+    p {font-size: 20px;}      la letra tiene 20 pixel
+    p {font-size: 1.5 em;}    la letra dentro etiqueta <p> tiene valor    x 1.5    valor tenga la letra "M" en tu navegador    
+    
+    
   
   
