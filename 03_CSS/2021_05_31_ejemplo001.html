@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 004</title>
+</head>
+
+<style>
+/*  asignamos css comunes */
+.azul, .rojo 
+{
+    font-size: 40px;
+    font-weight: bold; /* texto negrita */
+}
+
+
+/* asignamos css individual */
+.azul 
+{
+    color: blue;
+    text-align: center; /* texto centrado */
+    text-transform: capitalize; /* primera letra en mayuscula */
+}  
+
+.rojo 
+{
+    color: red;
+    text-align: left;
+    text-transform: uppercase; /* todo a mayuscula */
+} 
+
+a  
+/* es un elemnto en linea por tanto no sirve text-align center. 
+Para centrar deberiamos incluir display: block para que transforme elemento como un p */
+{
+  font-size: 40px;
+  text-decoration: none;  /* para quitar subrayado url */
+
+}
+
+a:hover /* dos puntos hover, es efecto texto al pasar cursor por encima elemento */
+{
+    font-size: 80px;
+    display: block;  /* cambiamos elementos de inline a block y asi poder centrar */
+    text-align: center;
+    color: green;
+}
+
+
+
+</style>
+<body>
+
+<p class="azul">soy azul</p>    
+<p class="rojo">soy rojo</p>  
+
+<a href="">enlace</a>
+    
+</body>
+</html>
