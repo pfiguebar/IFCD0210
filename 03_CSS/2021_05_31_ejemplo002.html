@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+ <!-- Cargar una fuente desde servidor Google Fonts. Incluimos este codigo -->   
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@1,300&display=swap" rel="stylesheet">
+<!-- fin codigo google fonts -->
+
+
+<!-- Cargar una fuente desde mi servidor. Para este caso necesitamos que fuente este alojada en nuestro proyecto -->
+<style>
+@font-face 
+{   font-family: "Mystery Quest";  /* nombre le asignamos a la fuente */
+    src: url("./ruta_servidor/mystery-quest.woff2") format="woff2"; /* ruta que esta fuente woff2 */
+    src: url("./ruta_servidor/mystery-quest.woff" format="woff"); /* ruta que esta fuente woff */
+    src: url("./ruta_servidor/mystery-quest.truetype" format="truetype"); /* ruta que esta fuente truetype*/
+}
+
+.fuentenueva 
+{
+    font-family: "Mystery Quest", cursive;
+    font-size: 150%;
+}
+</style>
+<!-- fin codigo fuente desde servidor -->
+
+<style>
+.imagen
+{
+float: left; 
+/* le decimos a la imagen flote a la izquierda siguiente elemento. 
+Resto espacio esa linea/bloque ...lo ocupa siguiente codigo, que en nuestro caso es texto */
+
+width: 400px;
+height: auto; /* si no escribimos esta linea, height auto es valor por defecto */
+margin: 0px 20px 20px 0px; /* dejamos imagen pegada arriba e izquierda, la separamos derecha y abajo */
+border-radius: 50px; 
+}
+
+.texto001
+{
+    text-transform:uppercase;
+    text-align: justify;
+    line-height: 150%; /* separacion entre lineas texto */
+    letter-spacing: 2px; /* separacion entre letras texto */
+    font-family: 'IBM Plex Mono', monospace; /* aplicar fuente google */
+}
+
+.texto002
+{
+    text-transform: capitalize;
+}
+
+.cuadro  
+{
+margin: 20px 20px 20px 20px;
+}
+
+
+.subrayado {text-decoration: underline;} /* texto subrayado */
+
+.tachado {text-decoration: line-through;} /* texto tachado */
+/* <strong></strong>
+Etiqueta strong se usa para poner texto en negrita. 
+tambien se puede usar etiqueta <b></b>  (bold) 
+tambien podriamos crear una clase que le indiquemos font-weight: bold; */
+
+/**** TEORIA SEUDOCLASES - Las mas usadas son: ****/
+/** 
+/**    :hover      (comportamiento elemnto cuando pongo cursor encima)
+/**
+/**    PARA ETIQUETA <a>
+/**    :active     (dejar un link como marcado, pero no visitado)
+/**    :link       (marca los link que aun no han sido visitado)
+/**    :visited    (marca link como "clickeado")
+/**
+/**    Ejemplo codigo:
+/**    a {color: blue;}
+/**    a:active {color: red;}:
+/**    a:link {color: green;}
+/**    a:visited {color: yellow;}
+**/
+
+.tachado:hover 
+{
+    text-decoration: none; /* quitamos text decoration */
+    cursor: pointer;       /* le decimos cursor sea una mano */
+    color: blue;
+}
+
+
+
+
+</style>
+
+</head>
+<body>
+   
+    <h1>LORE IPSUM</h1>
+    
+    <div class="cuadro"> 
+         <!-- aqui por ejemplo vamos hacer un cuadrado que contiene una imagen y una foto. 
+            Incluir 2 elementos dentro div por ejemplo sirve para poner color fondo y padding -->
+        <img class="imagen" src="https://i.picsum.photos/id/974/536/354.jpg?hmac=4tQDLBY_NSA2nc5uTeg4MlOH782RCF8Y5NGJs_vV08g" alt="ejemplo" title="ejemplo">
+        <p class="texto001">
+            <strong>Lorem Ipsum is simply</strong> dummy text of the printing and typesetting industry. <span class="subrayado">Lorem Ipsum</span> has been the industry's standard dummy text ever since the 1500s, when an 
+             <span class="tachado">unknown printer</span> took a of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum. Lorem Ipsum is simply dummy text of the printing and typesetting industry. <br><br>Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum. Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum. Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum. Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+    </div>
+
+        <p class="texto002">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+
+
+</body>
+</html>
