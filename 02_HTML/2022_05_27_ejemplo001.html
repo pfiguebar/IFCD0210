@@ -1,0 +1,310 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="estilos.css">
+    
+    <title>ejemplo tablas</title>
+  </head>
+
+  <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+    <a class="navbar-brand" href="">EJERCICIOS</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+  
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item"><a class="nav-link" href="#tabla">TABLA</a></li>
+        <li class="nav-item"><a class="nav-link " href="#formulario">FORMULARIO</a></li>
+      </ul>
+      
+    </div>
+  </nav>
+
+
+  <body>
+
+    <div id="tabla"></div>
+    <div class="container"  style="margin-top:150px;" ></div>
+    
+<div class="container-fluid">
+<div class="row p-2">
+
+<div class="col-12 col-xl-12 col-md-12 col-sm-12 bg-dark text-white">
+<h1 class="text-center p-2">SUPERMERCADO MANOLO</h1>
+</div>
+
+<div class="col-12 col-xl-12 col-md-12 col-sm-12 bg-light">
+<h2 class="text-left p-4">FACTURA n35</h2>  
+</div>
+
+<div class="container-fluid">
+
+<div class="d-none d-sm-none d-md-block">  
+<div class="row">
+  <div class="col-3 bg-success">ARTICULO</div>
+  <div class="col-3 bg-success">Nº UNIDADES</div>
+  <div class="col-3 bg-success">PRECIO</div>
+  <div class="col-3 bg-success">TOTAL</div>
+</div>
+<div class="row">
+  <div class="col-3"><span class="peq">PERAS</span></div>
+  <div class="col-3"><span class="peq">1 KG</span></div>
+  <div class="col-3"><span class="peq">10</span></div>
+  <div class="col-3"><span class="peq">10</span></div>
+</div>
+<div class="row">
+  <div class="col-3">MANZANAS</div>
+  <div class="col-3">5 KG</div>
+  <div class="col-3">15</div>
+  <div class="col-3">75</div>
+</div>
+<div class="row">
+  <div class="col-3">TOMATES</div>
+  <div class="col-3">3 KG</div>
+  <div class="col-3">5</div>
+  <div class="col-3">15</div>
+</div>
+<div class="row">
+  <div class="col-3">PATATAS</div>
+  <div class="col-3">10 KG</div>
+  <div class="col-3">3</div>
+  <div class="col-3">30</div>
+</div>
+<div class="row">
+  <div class="col-3">TOTAL</div>
+  <div class="col-3"></div>
+  <div class="col-3"></div>
+  <div class="col-3">130 EUROS</div>
+</div>
+
+</div>
+
+<div class="d-block d-sm-block d-md-none">
+  
+  <div class="container p-4"></div>
+
+  <div class="container-fluid">
+  <div class="row">
+    <div class="col-6 bg-success">ARTICULO</div>
+    <div class="col-6">PERAS</div>
+  </div>
+
+  <div class="row">
+    <div class="col-6 bg-success">Nº UNIDADES</div>
+    <div class="col-6">1 KG</div>
+  </div>
+
+  <div class="row">
+    <div class="col-6 bg-success">PRECIO</div>
+    <div class="col-6">10</div>
+  </div>
+
+  <div class="row">
+    <div class="col-6 bg-success">TOTAL</div>
+    <div class="col-6">10</div>
+  </div>
+  </div>
+
+  <div class="container p-4"></div>
+
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-6 bg-success">ARTICULO</div>
+      <div class="col-6">MANZANAS</div>
+    </div>
+  
+    <div class="row">
+      <div class="col-6 bg-success">Nº UNIDADES</div>
+      <div class="col-6">5 KG</div>
+    </div>
+  
+    <div class="row">
+      <div class="col-6 bg-success">PRECIO</div>
+      <div class="col-6">15</div>
+    </div>
+  
+    <div class="row">
+      <div class="col-6 bg-success">TOTAL</div>
+      <div class="col-6">75</div>
+    </div>
+    </div>
+
+</div>
+</div>
+</div>
+</div>
+
+<div id="formulario"></div>
+<div class="container"  style="margin-top:150px;"></div>
+
+<!-- aqui empieza formulario -->
+<!-- etiqueta name se usa para describir que contenido tiene input, por ejemplo describir esa casilla texto se escribe apellidos. este valor debe coincidir con laber for -->
+<!-- value es valor envia formulario al rellenar input -->
+<!-- id se usa para javascript -->
+
+<div class="container-fluid" >
+  <h1>FORMULARIO CONTACTO</h1>
+<div class="container-fluid p-2"></div>
+<form method="post" action="enviar.php">
+
+  <!-- fila1 formulario -->
+        <div class="container-fluid">
+        <div class="row">
+        <div class="col-12 col-xl-6 col-md-12 col-sm-12">
+  
+  <div class="form-group">
+    <label for="nombre001">Nombre</label>
+    <input class="form-control" type="text" name="nombre001" aria-describedby="nombre" placeholder="Escribe aqui su nombre">
+    <small class="form-text text-danger">No seas timido y escribe aqui tu nombre</small>
+  </div>
+          </div>
+          <div class="col-12 col-xl-6 col-md-12 col-sm-12">
+  
+  <div class="form-group">
+    <label for="edad001">Edad</label>
+    <input class="form-control" type="number" name="edad001" min="10" max="100" step="5" aria-describedby="edad" placeholder="Escribe aqui su edad">
+    <small class="form-text text-danger">No te quites años</small>
+  </div>
+
+          </div>
+          </div>
+          </div>
+
+          <!-- fila2 formulario -->
+          <div class="container p-2"></div>
+          <div class="container-fluid">
+  
+  <div class="form-group">
+    <label for="clave001">Contraseña</label>
+    <input class="form-control" type="password" name="clave001" placeholder="Escribe aqui su contraseña">
+    <small class="form-text text-danger">Escribir una contraseña segura, no ponga nombre su perro o fecha nacimiento</small>
+  </div>
+          </div>
+
+<div class="container p-2"></div>
+
+          <!-- fila3 formulario -->
+          <div class="container p-2"></div>
+          <div class="container-fluid">
+  
+  <div class="form-group">
+    <label for="sexo001">SELECCIONAR SU SEXO:</label>
+    <select class="form-control" name="sexo001">
+      <!-- select no tiene required, con lo que se le pone un value extraño, en este caso -1. despues por javascript se le indica si usuario ha elegido -1 indicar se le ha olvidado seleccionar casilla-->
+      <option value="-1">Seleccionar una opcion</option>
+      <option value="hombre">Soy hombre</option>
+      <option value="mujer">Soy Mujer</option>
+    </select>
+    <small class="form-text text-danger">Seleccionar una opción</small>
+  </div>
+
+          </div>
+
+          <!-- fila4 formulario -->
+          <div class="container p-2"></div>
+          <div class="container-fluid">
+          <div class="row">
+          <div class="col">
+          <h5>CHECKBOX</h5> 
+          <p><strong>puedo marcar todos</strong></p>
+          <!-- etiqueta checkbox name no son iguales -->
+
+  <div class="form-check">
+    <label for="chekbox001" class="form-check-label">
+    <input type="checkbox" class="form-check-input" name="checkbox001" value="valor001">Option 1
+    </label>
+  </div>
+
+  <div class="form-check">
+    <label for="checkbox002" class="form-check-label">
+    <input type="checkbox" class="form-check-input" name="checkbox002" value="valor002">Option 2
+    </label>
+  </div>
+  
+  <div class="form-check">
+    <label for="checkbox003" class="form-check-label">
+    <input type="checkbox" class="form-check-input" name="checkbox003" value="valor003">Option 3
+    </label>
+  </div>
+  
+            </div>
+
+            <div class="col">
+            <h5>RADIO</h5> 
+            <p><strong>solo puedo marcar 1 opcion</strong></p>
+            <!-- etiqueta radio names son todos iguales, en este caso radio001, lo que cambia es value se le asigna -->
+ 
+  <div class="form-check">
+    <label for="radio001" class="form-check-label">
+    <input type="radio" class="form-check-input" name="radio001" value="option001">Option 1
+   </label>
+  </div>
+  
+  <div class="form-check">
+    <label for="radio001" class="form-check-label">
+    <input type="radio" class="form-check-input" name="radio001" value="option002">Option 2
+  </label>
+            </div>
+  
+  <div class="form-check">
+    <label for="radio001" class="form-check-label">
+    <input type="radio" class="form-check-input" name="radio001" value="option003">Option 3
+  </label>
+             </div>
+
+                </div>
+                </div>
+                </div>
+
+                <!-- fila006 formulario -->
+                <div class="container p-2"></div>
+                <div class="container-fluid">
+  
+  <div class="form-group">
+    <label for="textarea001">ASUNTO</label>
+    <textarea class="form-control" name="textarea001" rows="3"></textarea>
+  </div>
+  
+  <div class="form-group">
+    <label for="enviar-archivo" class="form-label">Enviar archivo</label>
+    <input class="form-control" type="file" name="enviar-archivo" />
+  </div>
+  
+                </div>
+
+  <div class="container p-2"></div>
+  
+  <!-- este campo no se muestra en pantalla, sirve para por ejemplo indicar desde que url se ha enviado el archivo, para evitar spam -->
+  <input name="oculto" type="hidden" value="pagina-inicio">
+
+  <button type="submit" class="btn btn-success">Enviar</button>
+  <button type="reset" class="btn btn-danger">Borrar</button>
+
+</form>
+
+<div class="container" style="margin-top:150px;"></div>
+
+</div>
+
+
+
+</div>
+</div>
+</div>
+
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+  </body>
+</html>
