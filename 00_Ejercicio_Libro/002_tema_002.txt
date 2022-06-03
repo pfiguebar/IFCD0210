@@ -32,5 +32,5 @@ c) ... atributo
 13._ De las siguientes afirmaciones, diga cual es verdadera o falsa
 1 F    Para que un documento XML este bien formado, el valor de los atributos debe ir sin comillas 
 2 F    El los documentos XML bien formados, los nombres de los elementos pueden empezar con un numero
-3 V    En los documentos XML bien formados, los nombres de los elementos no pueden nombrarse con espacios
+3 V    En los documentos XML bien formados, los nombres de los elementos no pueden nombrarse con espacios 
 
