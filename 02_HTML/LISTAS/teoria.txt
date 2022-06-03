@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>LISTA</h1>
+     
+    <ol>   <!-- listas ordenadas = listas donde mostramos letras, numeros,...-->
+        <li value="1">APARTADO A</li>  <!-- le decimos ordene por numeros siendo primero valor 1 -->
+        <li>APARTADO B</li>
+
+        <li>APARTADO C
+            <ul type="disc"> 
+                <!-- listas desordenadas = listas donde no mostramos letras, numeros ...
+                seleccionamos tipo de iconos ul, en este caso disc = punto negro -->
+                <li>SUBAPARTADO A</li>
+                <li>SUBAPARTADO B</li>
+            </ul>
+        </li>
+        
+        <li>APARTADO D
+            <ol type="i"> <!-- le indicamos ordene por letras, siendo la primera i -->
+                <li>SUBAPARTADO A</li>
+                <li>SUBAPARTADO B</li>
+            </ol>
+        </li>
+    </ol>
+</body>
+</html>
