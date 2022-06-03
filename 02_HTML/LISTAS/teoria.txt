@@ -1,18 +1,29 @@
     <ol>   <!-- listas ordenadas = listas donde mostramos letras, numeros,...-->
-        <li value="1">APARTADO A</li>  <!-- le decimos ordene por numeros siendo primero valor 1 -->
+        <li value="1">APARTADO A</li>  
+        
+        <!-- le decimos ordene por numeros siendo primero valor 1 -->
+        <!-- otros valores: -->
+        
+        
+        
         <li>APARTADO B</li>
 
         <li>APARTADO C
             <ul type="disc"> 
-                <!-- listas desordenadas = listas donde no mostramos letras, numeros ...
-                seleccionamos tipo de iconos ul, en este caso disc = punto negro -->
+                <!-- listas desordenadas = listas donde no mostramos letras, numeros ... -->
+                <!-- seleccionamos tipo de iconos ul, en este caso disc = punto negro -->
+                <!-- otros valores: -->
+                
                 <li>SUBAPARTADO A</li>
                 <li>SUBAPARTADO B</li>
             </ul>
         </li>
         
         <li>APARTADO D
-            <ol type="i"> <!-- le indicamos ordene por letras, siendo la primera i -->
+            <ol type="i"> 
+            <!-- le indicamos ordene por letras, siendo la primera i -->
+            <!-- otros valores:  ->
+            
                 <li>SUBAPARTADO A</li>
                 <li>SUBAPARTADO B</li>
             </ol>
