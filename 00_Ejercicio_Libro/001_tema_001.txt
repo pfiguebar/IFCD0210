@@ -34,4 +34,4 @@
 * Safari (macOS)
 * Microsoft Edge
 * Avast Secure Browser
-* Opera 
+* Opera  
