@@ -1,6 +1,4 @@
-CAPÍTULO 3
-RESOLUCIÓN DE LOS EJERCICIOS
-Página 185
+TEMA 3: EJERCICIOS DE REPASO Y AUTOEVALUACION
 
 1.- El lenguaje HTML es un lenguaje...
 a)...interpretado. Página 61 primer párrafo
