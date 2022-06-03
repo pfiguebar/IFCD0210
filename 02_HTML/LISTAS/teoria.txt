@@ -1,8 +1,9 @@
     <ol>   <!-- listas ordenadas = listas donde mostramos letras, numeros,...-->
         <li value="1">APARTADO A</li>  
         
-        <!-- le decimos ordene por numeros siendo primero valor 1 -->
-        <!-- otros valores: -->
+        <!-- le decimos ordene por numeros, siendo primero valor de esta lista numero 1 -->
+        <!-- OTROS VALORES -->
+        <!-- start: 5  = le indicamo que la lista empieza por ese numero -->
         
         
         
@@ -13,6 +14,9 @@
                 <!-- listas desordenadas = listas donde no mostramos letras, numeros ... -->
                 <!-- seleccionamos tipo de iconos ul, en este caso disc = punto negro -->
                 <!-- otros valores: -->
+                <!-- https://www.w3schools.com/css/tryit.asp?filename=trycss_list-style-type_ex -->
+                
+                
                 
                 <li>SUBAPARTADO A</li>
                 <li>SUBAPARTADO B</li>
