@@ -1,7 +1,6 @@
-CAPITULO 4
-Ejercicios resueltos.
-Página 219
-.
+TEMA 4: EJERCICIOS DE REPASO Y AUTOEVALUACION
+
+
 2.- ¿Cómo se pueden insertar estilos CSS en un documento web?
 a) Mediante el atributo style
 b) Mediante la etiqueta <style>
