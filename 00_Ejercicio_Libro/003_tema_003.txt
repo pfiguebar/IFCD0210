@@ -5,38 +5,32 @@ a)...interpretado. Página 61 primer párrafo
 
 
 3.- De las siguientes afirmaciones, diga cuál es verdadera o falsa. 
-VERDADERO La directiva <head> debe incluirse en cualquier documento escrito en HTML.
-FALSO  Para definir el juego de caracteres a utilizar en la visualización de un documento web, es necesario utilizar la directiva <link>.
-VERDADERO <aside> es una directiva nueva en HTML5.
+1 V    La directiva <head> debe incluirse en cualquier documento escrito en HTML.
+2 F    Para definir el juego de caracteres a utilizar en la visualización de un documento web, es necesario utilizar la directiva <link>.
+3 V    <aside> es una directiva nueva en HTML5.
 
 
 4.- En HTML, los colores pueden expresarse...
-a) ...en RGB
-b) ...en CMYK.
-c) ...con su denominación en inglés.
-d) Las respuestas a y c son correctas.
+d) Las respuestas a y c son correctas. (RGB + CMYK + denominación en inglés) 
 
 
 7.- ¿Cuál de las siguientes etiquetas se utiliza para dar énfasis a los textos de los documentos web?
 d) <em>
 
 8.- ¿En que se diferencian fundamentalmente los enlaces absolutos y los relativos?
-Los enlaces absolutos tienen un dirección completa, incluyendo los nombres del servicio, dominio, ruta, etc.
-Los enlaces relativos no incluyen la dirección completa. Se parte del archivo en el que “estoy” para indicar como llegar al que necesito. Normalmente suelen apuntar al mismo servidor donde está
-la web.
+* Los enlaces absolutos tienen un dirección completa, incluyendo los nombres del servicio, dominio, ruta, etc.
+* Los enlaces relativos no incluyen la dirección completa. Se parte del archivo en el que “estoy” para indicar como llegar al que necesito. 
+Normalmente suelen apuntar al mismo servidor donde está la web.
 
 
 
 10.- Señale la etiqueta que es necesario utilizar cuando se implementan mapas de imágenes en HTML.
-a) <map>
-b) <area>
-c) <img>
-d) Todas las anteriores son correctas.
+d) Todas las anteriores son correctas. ( <map> +  <area>  + <img> )
 
 11.- De las siguientes afirmaciones, diga cuál es verdadera o falsa.
-FALSO HTML5 recomienda utilizar el atributo background para establecer imágenes de fondo en los documentos web.
-FALSO. Para crear listas ordenadas es necesario hacer uso de la directiva <ul>.
-FALSO Las listas no ordenadas no soportan anidamientos.
+1 V    HTML5 recomienda utilizar el atributo background para establecer imágenes de fondo en los documentos web.
+2 F    Para crear listas ordenadas es necesario hacer uso de la directiva <ul>.
+3 F    Las listas no ordenadas no soportan anidamientos.
 
 
 
