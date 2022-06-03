@@ -1,0 +1,30 @@
+CAPITULO 4
+Ejercicios resueltos.
+Página 219
+.
+2.- ¿Cómo se pueden insertar estilos CSS en un documento web?
+a) Mediante el atributo style
+b) Mediante la etiqueta <style>
+c) Mediante un archivo .css externo.
+d) Todas las respuestas anteriores son correctas.
+
+
+5.- Corrija los errores que detecte en el siguiente fragmento de código css
+.p
+{
+color: #abcabc;
+text-decoration:underline;
+}
+
+6.- Cuando se desean aplicar estilos CSS a ciertos elementos web que se encuentran ubicados dentro de otros, se utilizan selectores..
+b) ...descendentes.
+
+7.- Cuando se escribe un selector de clase, es necesario escribir, justo delante del selector el carácter...
+a) ..."."
+
+
+11.- Para establecer negrita en los textos de los documentos web se puede utilizar la propiedad...
+d) ...text-decoration
+
+15.- ¿Qué pseudo-clase se utiliza para definir estilos CSS en elementos cuando el cursor del ratón se posiciona sobre ellos?
+b) :hover
