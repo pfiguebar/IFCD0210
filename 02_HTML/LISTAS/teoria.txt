@@ -1,5 +1,20 @@
-   
-   <ol>   <!-- listas ordenadas = listas donde mostramos letras, numeros,...-->
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> LISTAS</title>
+</head>
+
+<body>
+
+
+  
+  
+  
+  
+  <ol>   <!-- listas ordenadas = listas donde mostramos letras, numeros,...-->
         <li value="1">APARTADO A</li>  
         
         <!-- le decimos ordene por numeros, siendo primero valor inicial de esta lista numero 1 -->
@@ -35,3 +50,7 @@
             </ol>
         </li>
     </ol>
+    
+    
+    </body>
+</html>
