@@ -89,25 +89,37 @@
             <!-- LEGEND sirve para nombrar o etiquetar un grupo creado con FIELDSET. Añade simplemente una nota aclaratoria sobre qué tipo de información se está agrupando en el recuadro -->
         
         
+                <!-- todos los input se le puede poner:
+                        id o name para Javascript. 
+                        placeholder para mostrar un texto ayuda dentro cuadrado, al usuario rellena 
+                        required para indicar esa celda es obligatoria rellenar sino no te deja enviar 
+                -->
+            
         
-            <label for="nombre">Nombre:</label>
-            <input type="text" id="nombre" name="nombre" placeholder="Escriba su nombre en este cuadro" required>
-                  
+                    <label for="nombre">Nombre:</label>   <!-- label for="variable">....</label> -->
+                    <input type="text" id="nombre" name="nombre" placeholder="Escriba su nombre en este cuadro" required>
+                         <!-- input type="text"   en este caso le estamos diciendo que lo que va escribir usuario es un texto -->
+                        
             
-            <label for="apellido">Apellido:</label>
-            <input type="text" id="apellido" name="apellido" placeholder="Escriba sus apellidos en este cuadro" required>
+                    <label for="edad">Edad:</label>
+                    <input type="number" id="edad" step="5" min="0" max="100" name="edad" placeholder="Escriba su edad en este cuadro" required>
+                         <!-- input type="number"  en este caso le estamos diciendo que lo que va escribir usuario es numero. letras no nos deja. -->
+                         <!-- Se le puede añadir:   
+                                step="5"    en este caso listado numero iria de 5 en 5
+                                min="0"     en este caso le dice solo permitir numero positivos, minimo cero 
+                                max="100"   en este caso le indica no pasar del numero 100
+                        -->
+        
+                    
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" placeholder="Escriba su email en este cuadro" required>
+                           <!-- input type="email"  le estamos diciendo va escribir un email tipo ...@...  ->
+ 
             
-            <label for="edad">Edad:</label>
-            <input type="number" id="edad" step="5" min="0" max="100" name="edad" placeholder="Escriba su edad en este cuadro" required>
-         
-            
-        </fieldset>
+        
     
-      <fieldset id="otros_datos">
-          
-            <legend>Otros Datos</legend>
-            <label for="email">Email:</label>
-            <input type="email" id="email" name="email" placeholder="Escriba su email en este cuadro" required>
+     
+            
             
             <label for="pass">Contraseña:</label>
             <input type="password" id="pass" name="pass" placeholder="Escriba su contraseña en este cuadro" required>
@@ -131,17 +143,9 @@
           <label for="archivo">Su archivo:</label>
           <input type="file" name="archivo"/>
             
-            <label for="terminos">Acepto los terminos y condiciones:</label>
-            <input type="checkbox" id="terminos" name="terminos" required>
-            
-          <input type="submit" value="Enviar" id="boton_enviar">
-          <input type="reset" value="Borrar" id="boton_borrar">
-
-        </fieldset>
-
            
-        
-        
+          
+    
        
       
         
@@ -161,6 +165,17 @@
         <input type="radio" id="javascript" name="fav_language" value="JavaScript">
         <label for="javascript">JavaScript</label>
        
+        </fieldset>
+
+        <fieldset id="enviar">
+          
+            <legend>ENVIAR</legend>
+
+          <input type="submit" value="Enviar" id="boton_enviar">
+          <input type="reset" value="Borrar" id="boton_borrar">
+
+        </fieldset>
+
        
 </form>  
     
