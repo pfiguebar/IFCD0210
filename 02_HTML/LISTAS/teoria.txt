@@ -1,5 +1,3 @@
-  
-   
    
    <ol>   <!-- listas ordenadas = listas donde mostramos letras, numeros,...-->
         <li value="1">APARTADO A</li>  
@@ -7,8 +5,7 @@
         <!-- le decimos ordene por numeros, siendo primero valor inicial de esta lista numero 1 -->
         <!-- OTROS VALORES -->
         <!-- start: 5  = le indicamo que la lista empieza por ese numero -->
-        
-        
+            
         
         <li>APARTADO B</li>
 
