@@ -6,24 +6,33 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ejercicio clase 1 junio - version profesor</title>
     <style>
-        body{
+        body
+        {
             font-size: 18px;
         }
-        label{
+        
+        label
+        {
             display: block;
             font-style: italic;
             margin:5px 0;
         }
-        legend{
+        
+        legend
+        {
             font-size: 20px;
             text-align: center;
             padding: 0 10px;
         }
-        fieldset{
+        
+        fieldset
+        {
             margin: 20px 0;
             border: 1px dotted #333;
         }
-        input, select{
+        
+        input, select
+        {
             border: 1px solid #000;
             font-size: 18px;
             width: 200px;
@@ -32,16 +41,24 @@
             text-align: center;
             background-color: #fffad4;
         }
-        input:focus{
+        
+        input:focus
+        {
             background-color: #fff;
         }
-        #apellido{
+        
+        #apellido
+        {
             width: 400px;
         }
-        #edad{
+        
+        #edad
+        {
             width: 70px;
         }
-        #boton_enviar{
+        
+        #boton_enviar
+        {
             background-color: #267fff;
             color: #fff;
             font-size: 18px;
@@ -55,87 +72,79 @@
 <body>
     
     
-    <form id="formulario1" name="formulario1" method="POST">
-        <fieldset id="grupo_datos">
-            <legend>Datos Personales</legend>
+<form id="formulario-pagina-contacto" name="formulario-corto-contacto" method="POST" action="form.php">  
+    
+    <!--  id se usa para identificar algo, en este caso formulario. Se usa luego para Javascript  -->
+    <!--  name="" es parecido a id. normalmente se le pone igual a id. Se usa luego para Javascript --> 
+    
+    <!--  IMPORTANTE AHORA -->
+    <!--  method="post", usar esto por defecto. Hay otro metodo que es "get" pero muestra valores en url navegador siendo poco seguro -->
+    <!--  action=""   que hara el formulario cuando le demos a boton enviar valores. En este caso envia datos a un archivo llamado form.php" -->
+    
+    <fieldset id="grupo_datos"> 
+        <!-- Simplemente creará un cuadrado que agrupará los elementos del formulario incluidos dentro del. Algo asi como un <div> -->
+        <!-- en este caso le asigna una id para identificar este grupo de datos luego en Javascript -->
+
+            <legend>Datos Personales</legend>  
+            <!-- LEGEND sirve para nombrar o etiquetar un grupo creado con FIELDSET. Añade simplemente una nota aclaratoria sobre qué tipo de información se está agrupando en el recuadro -->
+        
+        
+        
             <label for="nombre">Nombre:</label>
-            <input type="text" id="nombre" name="nombre" placeholder="Nombre" required>
-            <br>
+            <input type="text" id="nombre" name="nombre" placeholder="Escriba su nombre en este cuadro" required>
+                  
+            
             <label for="apellido">Apellido:</label>
-            <input type="text" id="apellido" name="apellido" placeholder="Apellido" required>
-            <br>
+            <input type="text" id="apellido" name="apellido" placeholder="Escriba sus apellidos en este cuadro" required>
+            
             <label for="edad">Edad:</label>
-            <input type="number" id="edad" name="edad" placeholder="Edad" required>
-            <br>
+            <input type="number" id="edad" step="5" min="0" max="100" name="edad" placeholder="Escriba su edad en este cuadro" required>
+         
+            
         </fieldset>
-        <fieldset id="otros_datos">
+    
+      <fieldset id="otros_datos">
+          
             <legend>Otros Datos</legend>
             <label for="email">Email:</label>
-            <input type="email" id="email" name="email" placeholder="Email" required>
-            <br>
+            <input type="email" id="email" name="email" placeholder="Escriba su email en este cuadro" required>
+            
             <label for="pass">Contraseña:</label>
-            <input type="password" id="pass" name="pass" placeholder="Contraseña" required>
-            <br>
+            <input type="password" id="pass" name="pass" placeholder="Escriba su contraseña en este cuadro" required>
+            
             <label for="pass2">Repetir Contraseña:</label>
             <input type="password" id="pass2" name="pass2" placeholder="Repetir Contraseña" required>
-            <br>
+            
+         
+          
+          
             <label for="sexo">Sexo:</label>
             <select id="sexo" name="sexo">
+                <option value="-1">Elija una opción</option>
                 <option value="hombre">Hombre</option>
                 <option value="mujer">Mujer</option>
             </select>
-            <br>
+          
+           <label for="desc_usuario">Descripción</label>
+           <textarea name="desc_usuario" rows="10" cols="50"></textarea>
+          
+          <label for="archivo">Su archivo:</label>
+          <input type="file" name="archivo"/>
+            
             <label for="terminos">Acepto los terminos y condiciones:</label>
             <input type="checkbox" id="terminos" name="terminos" required>
-            <br>
-            <input type="submit" value="Enviar" id="boton_enviar">
+            
+          <input type="submit" value="Enviar" id="boton_enviar">
+          <input type="reset" value="Borrar" id="boton_borrar">
 
         </fieldset>
 
-    </form>
-    
-    
-    <form id="registro" method="POST" action="form.php">
+           
         
-        <label for="nombre_usuario">Nombre de usuario</label>
-        <input type="text" name="nombre_usuario" required>
         
-        <label for="pass_usuario">Pass de usuario</label>
-        <input type="password" name="pass_usuario" required>
-        
-        <label for="sexo_usuario">Sexo</label>
-        <select name="sexo_usuario">
-            <option value="-1">Elija una opción</option>
-            <option value="hombre">Hombre</option>
-            <option value="mujer">Mujer</option>
-        </select>
-        
-        <label for="edad_usuario">Edad del usuario</label>
-        <input type="number" name="edad_usuario">
-        
-        <label for="desc_usuario">Descripción</label>
-        <textarea name="desc_usuario"></textarea>
-        
-        <label for="email_usuario">Email del usuario</label>
-        <input type="email" name="email_usuario" required>
-        
-        <input type="submit" value="Enviar">
        
-    </form>
-
-
-
-
-
-
-    <form method="POST">
-        <label for="nombre">Nombre*:</label><input type="text" name="nombre" placeholder="Escribe tu nombre" required/>
+      
         
-        <label for="edad">Edad:</label><input type="number" step="5" min="0" max="100" name="edad" required/>
-       
-        <label for="pass">Contraseña:</label><input type="password" name="pass"/>
-        
-        <label for="archivo">Su archivo:</label><input type="file" name="archivo"/>
        
         <input type="checkbox" id="vehicle1" name="vehicle1" value="Bike" checked/>
         <label for="vehicle1"> I have a bike</label>
@@ -152,94 +161,8 @@
         <input type="radio" id="javascript" name="fav_language" value="JavaScript">
         <label for="javascript">JavaScript</label>
        
-        <p>Seleccione su sexo</p>
-        <select name="sexo">
-            <option value="hombre">Soy un hombre</option>
-            <option value="mujer">Soy una mujer</option>
-            <option value="unicornio" selected>Soy un unicornio</option>
-        </select>
-        
-        <p>Deje su mensaje:</p>
-        <textarea name="mensaje" rows="10" cols="50"></textarea>
-        
-        <input type="reset" value="Borrar">
-        <input type="submit" value="Enviar">
-    </form>
-    
-    
-    
-    <form id="registro" method="POST" action="form.php">
-        <label for="nombre_usuario">Nombre de usuario</label><br>
-        <input type="text" name="nombre_usuario" required>
-        <br>
-        <label for="pass_usuario">Pass de usuario</label><br>
-        <input type="password" name="pass_usuario" required>
-        <br>
-        <label for="sexo_usuario">Sexo</label><br>
-        <select name="sexo_usuario">
-            <option value="-1">Elija una opción</option>
-            <option value="hombre">Hombre</option>
-            <option value="mujer">Mujer</option>
-        </select>
-        <br>
-        <label for="edad_usuario">Edad del usuario</label><br>
-        <input type="number" name="edad_usuario">
-        <br>
-        <label for="desc_usuario">Descripción</label><br>
-        <textarea name="desc_usuario"></textarea>
-        <br>
-        <label for="email_usuario">Email del usuario</label><br>
-        <input type="email" name="email_usuario" required>
-        <br>
-        <input type="submit" value="Enviar">
-        <br>
-    </form>
-
-
-
-
-
-
-    <form method="POST">
-        <label for="nombre">Nombre*:</label><input type="text" name="nombre" placeholder="Escribe tu nombre" required/>
-        <br><br>
-        <label for="edad">Edad:</label><input type="number" step="5" min="0" max="100" name="edad" required/>
-        <br><br>
-        <label for="pass">Contraseña:</label><input type="password" name="pass"/>
-        <br/><br>
-        <label for="archivo">Su archivo:</label><input type="file" name="archivo"/>
-        <br><br>
-
-
-        <input type="checkbox" id="vehicle1" name="vehicle1" value="Bike" checked/>
-        <label for="vehicle1"> I have a bike</label><br>
-        <input type="checkbox" id="vehicle2" name="vehicle2" value="Car"/>
-        <label for="vehicle2"> I have a car</label><br>
-        <input type="checkbox" id="vehicle3" name="vehicle3" value="Boat"/>
-        <label for="vehicle3"> I have a boat</label><br>
-        <hr>
-        
-        
-        <input type="radio" id="html" name="fav_language" value="HTML" checked>
-        <label for="html">HTML</label><br>
-        <input type="radio" id="css" name="fav_language" value="CSS">
-        <label for="css">CSS</label><br>
-        <input type="radio" id="javascript" name="fav_language" value="JavaScript">
-        <label for="javascript">JavaScript</label>
-        <hr>
-        <p>Seleccione su sexo</p>
-        <select name="sexo">
-            <option value="hombre">Soy un hombre</option>
-            <option value="mujer">Soy una mujer</option>
-            <option value="unicornio" selected>Soy un unicornio</option>
-        </select>
-        <hr>
-        <p>Deje su mensaje:</p>
-        <textarea name="mensaje" rows="10" cols="50"></textarea>
-        <hr>
-        <input type="reset" value="Borrar">
-        <input type="submit" value="Enviar">
-    </form>
+       
+</form>  
     
     
 </body>
