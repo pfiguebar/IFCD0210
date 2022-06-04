@@ -71,13 +71,11 @@
 </head>
 <body>
     
-    
-<form id="formulario-pagina-contacto" name="formulario-corto-contacto" method="POST" action="form.php">  
-    
     <!--  id se usa para identificar algo, en este caso formulario. Se usa luego para Javascript  -->
     <!--  name="" es parecido a id. normalmente se le pone igual a id. Se usa luego para Javascript --> 
     
-    <!--  IMPORTANTE AHORA -->
+<form id="formulario-pagina-contacto" name="formulario-corto-contacto" method="POST" action="form.php">  
+        
     <!--  method="post", usar esto por defecto. Hay otro metodo que es "get" pero muestra valores en url navegador siendo poco seguro -->
     <!--  action=""   que hara el formulario cuando le demos a boton enviar valores. En este caso envia datos a un archivo llamado form.php" -->
     
@@ -85,24 +83,23 @@
         <!-- Simplemente creará un cuadrado que agrupará los elementos del formulario incluidos dentro del. Algo asi como un <div> -->
         <!-- en este caso le asigna una id para identificar este grupo de datos luego en Javascript -->
 
-            <legend>Datos Personales</legend>  
+            <legend>ELEMENTOS INPUT</legend>  
             <!-- LEGEND sirve para nombrar o etiquetar un grupo creado con FIELDSET. Añade simplemente una nota aclaratoria sobre qué tipo de información se está agrupando en el recuadro -->
         
         
                 <!-- todos los input se le puede poner:
-                        id o name para Javascript. 
                         placeholder para mostrar un texto ayuda dentro cuadrado, al usuario rellena 
                         required para indicar esa celda es obligatoria rellenar sino no te deja enviar 
                 -->
             
         
-                    <label for="nombre">Nombre:</label>   <!-- label for="variable">....</label> -->
+                    <label for="nombre">Nombre:</label>   <!-- label for="variable">....</label>   variable se suele usar la misma en id y name -->
                     <input type="text" id="nombre" name="nombre" placeholder="Escriba su nombre en este cuadro" required>
                          <!-- input type="text"   en este caso le estamos diciendo que lo que va escribir usuario es un texto -->
                         
             
                     <label for="edad">Edad:</label>
-                    <input type="number" id="edad" step="5" min="0" max="100" name="edad" placeholder="Escriba su edad en este cuadro" required>
+                    <input type="number" id="edad" name="edad" step="5" min="0" max="100" placeholder="Escriba su edad en este cuadro" required>
                          <!-- input type="number"  en este caso le estamos diciendo que lo que va escribir usuario es numero. letras no nos deja. -->
                          <!-- Se le puede añadir:   
                                 step="5"    en este caso listado numero iria de 5 en 5
@@ -114,21 +111,20 @@
                     <label for="email">Email:</label>
                     <input type="email" id="email" name="email" placeholder="Escriba su email en este cuadro" required>
                            <!-- input type="email"  le estamos diciendo va escribir un email tipo ...@...  ->
- 
-            
+             
+                     
+                    <label for="pass">Contraseña:</label>
+                    <input type="password" id="pass" name="pass" placeholder="Escriba su contraseña en este cuadro" required>
+                            <!-- input type="password"   le estamos diciendo va escribir contraseña. esta etiqueta por defecto oculta los caracteres y pone * en su lugar  -->            
+               
         
-    
-     
-            
-            
-            <label for="pass">Contraseña:</label>
-            <input type="password" id="pass" name="pass" placeholder="Escriba su contraseña en este cuadro" required>
-            
-            <label for="pass2">Repetir Contraseña:</label>
-            <input type="password" id="pass2" name="pass2" placeholder="Repetir Contraseña" required>
-            
-         
+                    <label for="archivo">Su archivo:</label>
+                    <input type="file" name="archivo"/>
+                            <!-- input type="file"  le estamos diciendo usuario va subir archivo, al pulsar nos abre navegador predefinido para seleccionar archivo -->
           
+
+
+
           
             <label for="sexo">Sexo:</label>
             <select id="sexo" name="sexo">
@@ -137,16 +133,7 @@
                 <option value="mujer">Mujer</option>
             </select>
           
-           <label for="desc_usuario">Descripción</label>
-           <textarea name="desc_usuario" rows="10" cols="50"></textarea>
-          
-          <label for="archivo">Su archivo:</label>
-          <input type="file" name="archivo"/>
-            
-           
-          
-    
-       
+             
       
         
        
@@ -165,6 +152,13 @@
         <input type="radio" id="javascript" name="fav_language" value="JavaScript">
         <label for="javascript">JavaScript</label>
        
+                    <label for="desc_usuario">Descripción</label>
+                    <textarea name="desc_usuario" rows="10" cols="50"></textarea>
+                            <!--- textarea    se usa normalmente para escribir texto quieres recibir en correo. 
+                                    row y col es dimensiones quieres asignar a ese cuadro texto
+                            -->
+
+
         </fieldset>
 
         <fieldset id="enviar">
