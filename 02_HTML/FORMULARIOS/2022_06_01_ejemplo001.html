@@ -137,25 +137,36 @@
              Despues por javascript se le indica si usuario ha elegido -1 indicar se le ha olvidado seleccionar casilla -->
       
                      
-      <!-- etiqueta checkbox name no son iguales -->
-        
+        <!-- etiqueta checkbox name NO son iguales -->
+        <!-- opcion checked le indicamos opcion preseleccionada  -->
        
-        <input type="checkbox" id="vehicle1" name="vehicle1" value="Bike" checked/>
-        <label for="vehicle1"> I have a bike</label>
-        <input type="checkbox" id="vehicle2" name="vehicle2" value="Car"/>
-        <label for="vehicle2"> I have a car</label>
-        <input type="checkbox" id="vehicle3" name="vehicle3" value="Boat"/>
-        <label for="vehicle3"> I have a boat</label>
-                
+        <input type="checkbox" id="vehiculo001" name="vehiculo001" value="ford" checked/>
+        <label for="vehicle1"> FORD</label>
         
-        <input type="radio" id="html" name="fav_language" value="HTML" checked>
-        <label for="html">HTML</label><br>
-        <input type="radio" id="css" name="fav_language" value="CSS">
-        <label for="css">CSS</label>
-        <input type="radio" id="javascript" name="fav_language" value="JavaScript">
-        <label for="javascript">JavaScript</label>
+        <input type="checkbox" id="vehiculo002" name="vehiculo002" value="renault"/>
+        <label for="vehiculo002"> RENAULT</label>
+        
+        <input type="checkbox" id="vehiculo" name="vehiculo003" value="seat"/>
+        <label for="vehiculo"> SEAT</label>
+             
+        
+        
+        <!-- etiqueta radio names son TODOS iguales, en este caso radio001, lo que cambia es value se le asigna -->
+        <!-- en caso equivocarse y poner names distintos, envia la ultima opcion -->
+        
+        <input type="radio" id="vehiculo001" name="vehiculo" value="ford" checked>
+        <label for="html">FORD</label>
+        
+        <input type="radio" id="vehiculo002" name="vehiculo" value="renault">
+        <label for="css">RENAULT</label>
+        
+        <input type="radio" id="vehiculo003" name="vehiculo" value="seat">
+        <label for="javascript">SEAT</label>
        
-                    <label for="desc_usuario">Descripción</label>
+        
+        
+        
+        <label for="desc_usuario">Descripción</label>
                     <textarea name="desc_usuario" rows="10" cols="50"></textarea>
                             <!--- textarea    se usa normalmente para escribir texto quieres recibir en correo. 
                                     row y col es dimensiones quieres asignar a ese cuadro texto
