@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TEORIA Y PRACTICAS - TABLAS</title>
+</head>
+<body>
+   
+    
+    <style>
+        table 
+		{ 
+		border-collapse: collapse;   /* border-collapse: borde sin separacion */
+		border: 1px solid blue;  /* border perimetral tabla, solido */
+		width: 100%;
+		}   
+               
+        thead  
+		{ 
+		background-color: black; color: white;  
+		}
+		
+		tr 
+		{ 
+		align: center; 
+		}
+        
+               
+        th, td  
+		{ 
+		border: 1px dashed blue; /* border perimetral elementos th y td, puntitos */
+		}
+		
+		/* td: celdilla
+            td:nth-child(): indica la columna
+                                                   ESTO NO LO HA EXPLICADO 
+        */
+        
+        td:nth-child(3), td:nth-child(4) { text-align: right; }
+        /* text-align: alinea a la derecha */       
+        
+    
+        
+    </style>
+
+    <table cellpadding="10" cellspacing="0">
+	<!-- atributos inline html -->
+	<!-- cellpadding   espacio, en píxeles, entre la pared de la celda y su contenido interior  --> 
+    <!-- cellspacing   espacio, en pixeles, entre 2 celdas -->
+    
+        <colgroup>   <!-- colgroup: grupo de columnas.  colgroup debe estar por encima de etiqueta <thead> -->
+            
+            <col span="3"> <!-- col: columnas -->
+            <col span="1"> 
+        
+        </colgroup>
+		
+		
+        
+        <thead>   <!-- columna HEAD  arriba declaramos 3+1 = 4 etiquetas th -->
+            <tr>  
+                <th>Elemento</th>
+                <th>Modelo</th>
+                <th>Rendimiento (%)</th>
+                <th>Precio (€)</th>
+            </tr>
+        </thead>
+       
+        <tbody>  <!-- columna CUERPO -->
+            
+			<tr>
+                <td>Modelo A</td>
+                <td>AA123</td>
+                <td>50</td>
+                <td rowspan="2">600</td><!-- rowspan: filas combinadas. En el siguiente tr solo puede declarse 3 td -->
+            </tr>
+			
+            <tr>
+                <td>Modelo B</td>
+                <td>BB345</td>
+                <td>60</td>
+            </tr>
+			
+            <tr>
+                <td>Modelo C</td>
+                <td>CC678</td>
+                <td>90</td>
+                <td>
+					<!-- podemos crear otra tabla dentro --> 
+					<table>
+                      <tr>
+                        <td>a</td>
+                        <td>b</td>
+                      </tr>
+                      <tr>
+                        <td>c</td>
+                        <td>d</td>
+                      </tr>
+                    </table>
+					<!-- fin tabla interior -->
+				
+				</td>
+            </tr>
+        </tbody>
+        
+        <tfoot>  <!-- columna PIE -->
+            <tr>
+                <td>Total</td>
+                <td colspan="2"></td> <!-- colspan: columnas combinadas. Deberian existir 4 etiquetas td, pero solo se declaran 3 -->
+                <td>2000</td>
+            </tr>
+        </tfoot>
+    
+    </table>
+
+ 
+</body>
+</html>
