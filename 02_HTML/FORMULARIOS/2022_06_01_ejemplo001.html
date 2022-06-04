@@ -96,6 +96,79 @@
     
     
     <form id="registro" method="POST" action="form.php">
+        
+        <label for="nombre_usuario">Nombre de usuario</label>
+        <input type="text" name="nombre_usuario" required>
+        
+        <label for="pass_usuario">Pass de usuario</label>
+        <input type="password" name="pass_usuario" required>
+        
+        <label for="sexo_usuario">Sexo</label>
+        <select name="sexo_usuario">
+            <option value="-1">Elija una opción</option>
+            <option value="hombre">Hombre</option>
+            <option value="mujer">Mujer</option>
+        </select>
+        
+        <label for="edad_usuario">Edad del usuario</label>
+        <input type="number" name="edad_usuario">
+        
+        <label for="desc_usuario">Descripción</label>
+        <textarea name="desc_usuario"></textarea>
+        
+        <label for="email_usuario">Email del usuario</label>
+        <input type="email" name="email_usuario" required>
+        
+        <input type="submit" value="Enviar">
+       
+    </form>
+
+
+
+
+
+
+    <form method="POST">
+        <label for="nombre">Nombre*:</label><input type="text" name="nombre" placeholder="Escribe tu nombre" required/>
+        
+        <label for="edad">Edad:</label><input type="number" step="5" min="0" max="100" name="edad" required/>
+       
+        <label for="pass">Contraseña:</label><input type="password" name="pass"/>
+        
+        <label for="archivo">Su archivo:</label><input type="file" name="archivo"/>
+       
+        <input type="checkbox" id="vehicle1" name="vehicle1" value="Bike" checked/>
+        <label for="vehicle1"> I have a bike</label>
+        <input type="checkbox" id="vehicle2" name="vehicle2" value="Car"/>
+        <label for="vehicle2"> I have a car</label>
+        <input type="checkbox" id="vehicle3" name="vehicle3" value="Boat"/>
+        <label for="vehicle3"> I have a boat</label>
+                
+        
+        <input type="radio" id="html" name="fav_language" value="HTML" checked>
+        <label for="html">HTML</label><br>
+        <input type="radio" id="css" name="fav_language" value="CSS">
+        <label for="css">CSS</label>
+        <input type="radio" id="javascript" name="fav_language" value="JavaScript">
+        <label for="javascript">JavaScript</label>
+       
+        <p>Seleccione su sexo</p>
+        <select name="sexo">
+            <option value="hombre">Soy un hombre</option>
+            <option value="mujer">Soy una mujer</option>
+            <option value="unicornio" selected>Soy un unicornio</option>
+        </select>
+        
+        <p>Deje su mensaje:</p>
+        <textarea name="mensaje" rows="10" cols="50"></textarea>
+        
+        <input type="reset" value="Borrar">
+        <input type="submit" value="Enviar">
+    </form>
+    
+    
+    
+    <form id="registro" method="POST" action="form.php">
         <label for="nombre_usuario">Nombre de usuario</label><br>
         <input type="text" name="nombre_usuario" required>
         <br>
