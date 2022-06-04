@@ -136,8 +136,7 @@
         <!-- SELECT no tiene required, con lo que se le pone un value extraño, en este caso -1. 
              Despues por javascript se le indica si usuario ha elegido -1 indicar se le ha olvidado seleccionar casilla -->
       
-          
-             
+                     
       
         
        
@@ -168,9 +167,9 @@
         <fieldset id="enviar">
           
             <legend>ENVIAR</legend>
-
-          <input type="submit" value="Enviar" id="boton_enviar">
-          <input type="reset" value="Borrar" id="boton_borrar">
+            <input type="hidden" name="boton_oculto" id="boton_oculto" value="pagina-inicio">   <!-- este campo no se muestra en pantalla, sirve para por ejemplo indicar desde que url se ha enviado el archivo, para evitar spam -->
+            <input type="submit" name="boton_enviar" id="boton_enviar" value="Enviar" >
+            <input type="reset" name="boton_borrar" id="boton_borrar" value="Borrar" >
 
         </fieldset>
 
