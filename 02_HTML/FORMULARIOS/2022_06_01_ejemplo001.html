@@ -132,6 +132,8 @@
           
             <legend>  SELECT - CHECKBOX - RADIO </legend>
           
+         <fieldset id="select"> 
+         
             <label for="sexo">Sexo:</label>
             <select id="sexo" name="sexo">
                 <option value="-1">Elija una opción</option>
@@ -142,8 +144,10 @@
         <!-- <option value="variable">...</option> -->
         <!-- SELECT no tiene required, con lo que se le pone un value extraño, en este caso -1. 
              Despues por javascript se le indica si usuario ha elegido -1 indicar se le ha olvidado seleccionar casilla -->
-      
-                     
+      </fieldset>    
+         
+         
+        <fieldset id="checkbox">              
         <!-- etiqueta checkbox name NO son iguales -->
         <!-- opcion checked le indicamos opcion preseleccionada  -->
        
@@ -155,9 +159,11 @@
         
         <input type="checkbox" id="vehiculo" name="vehiculo003" value="seat"/>
         <label for="vehiculo"> SEAT</label>
-             
+        </fieldset>    
         
         
+         
+        <fieldset id="radio">  
         <!-- etiqueta radio names son TODOS iguales, en este caso radio001, lo que cambia es value se le asigna -->
         <!-- en caso equivocarse y poner names distintos, envia la ultima opcion -->
         
@@ -169,8 +175,9 @@
         
         <input type="radio" id="vehiculo003" name="vehiculo" value="seat">
         <label for="javascript">SEAT</label>
-       
-      </fieldset>  
+        </fieldset>    
+      
+  </fieldset>  
         
     
     
