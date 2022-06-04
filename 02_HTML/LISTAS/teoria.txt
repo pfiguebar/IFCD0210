@@ -1,45 +1,10 @@
-   <ul>
-        <li>Dispositivos electrónicos
-            <ol>
-                <li>Multiplexor</li>
-                <li>Decodificador</li>
-                <li>Sumador</li>
-            </ol>
-        </li>
-        <li>Máquinas eléctricas
-            <!-- ul: lista desordenada
-                type: ninguna viñeta
-            -->
-            <ul type="none">
-                <li>Estáticas
-                    <!-- ol: lista ordenada
-                        start: inicio
-                    -->
-                    <ol start="4">
-                        <!-- li: elemento de lista
-                            value: valor inicial
-                        -->
-                        <li value="8">Transformador</li>
-                        <li>Soporte</li>
-                    </ol>
-                </li>
-                <li>Rotativas
-                    <ol start="5">
-                        <li>Motor CC</li>
-                        <li>Motor CA</li>
-                    </ol>
-                </li>
-            </ul>
-        </li>
-    </ul>
-
-   
+  
    
    
    <ol>   <!-- listas ordenadas = listas donde mostramos letras, numeros,...-->
         <li value="1">APARTADO A</li>  
         
-        <!-- le decimos ordene por numeros, siendo primero valor de esta lista numero 1 -->
+        <!-- le decimos ordene por numeros, siendo primero valor inicial de esta lista numero 1 -->
         <!-- OTROS VALORES -->
         <!-- start: 5  = le indicamo que la lista empieza por ese numero -->
         
@@ -51,11 +16,12 @@
             <ul type="disc"> 
                 <!-- listas desordenadas = listas donde no mostramos letras, numeros ... -->
                 <!-- seleccionamos tipo de iconos ul, en este caso disc = punto negro -->
-                <!-- otros valores: -->
+                <!-- otros valores para type: 
+                type="none"    ninguna viñeta
+                -->
                 <!-- https://www.w3schools.com/css/tryit.asp?filename=trycss_list-style-type_ex -->
                 
-                
-                
+                               
                 <li>SUBAPARTADO A</li>
                 <li>SUBAPARTADO B</li>
             </ul>
