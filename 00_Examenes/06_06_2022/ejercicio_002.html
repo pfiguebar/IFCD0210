@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FORMULARIO DE PRUEBA HTML5</title>
+</head>
+<body>
+
+<!-- 
+    NOTA: 
+    Se añaden etiquetas fieldset para separar cada input de este formulario. 
+    Asi mismo se le añade etiqueta legend para poner titulo a ese fieldset
+    Se añade estilo css a la etiqueta input para que ocupe 100% contenedor
+-->
+
+    
+<style>
+input {width: 100%;}
+</style>
+
+    <form method="GET" action="">  
+        <!-- el metodo de envio debe ser GET y destino envio "" -->
+
+        <fieldset> 
+            <!-- NOMBRE, con un control de tipo texto obligatorio -->
+            <legend>NOMBRE</legend>
+                <label for="nombre">Nombre:</label>   
+                <input type="text" required>
+        </fieldset>
+
+
+        <fieldset> 
+            <!-- CORREO ELECTRONICO, con un control de tipo email obligatorio -->
+            <legend>CORREO ELECTRONICO</legend>
+                <label for="email">Email:</label>
+                <input type="email" required>
+        </fieldset>
+
+        <fieldset>
+            <!-- URL con un placeholder que diga "escriba la url de tu pagina web personal"-->
+            <legend>URL</legend>
+                <label for="url_web">URL WEB</label>
+                <input type="url" placeholder="Escribe la URL de tu pagina web personal">
+        </fieldset>
+
+        <fieldset>
+            <!-- FECHA, con un control de tipo date -->
+            <legend>FECHA</legend>
+                <label for="fecha">FECHA</label>
+                <input type="date">
+        </fieldset>
+
+        <fieldset>
+            <!-- EDAD, con limite entre 0 y 100 -->
+            <legend>EDAD</legend>
+                <label for="edad">EDAD</label>
+                <input type="number" min="0" max="100">
+        </fieldset>
+
+        <fieldset>
+            <!-- boton envio-->
+            <legend>BOTON ENVIO</legend>
+                <input type="submit" value="Enviar" >
+        </fieldset>
+ 
+</body>
+</html>
