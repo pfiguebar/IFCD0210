@@ -1,1 +1,1 @@
-Esta carpeta contine pruebas practicas realizadas en curso
+Esta carpeta contine EXAMENES pruebas practicas realizadas en curso
