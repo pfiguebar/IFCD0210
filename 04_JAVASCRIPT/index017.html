@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+
+<script>
+/** 
+Usuario = "user"
+Clave = "1234"
+Tenemos 3 oportunidades para meter el usuario y contraseña. 
+Si agotamos las 3 oportunidades que escriba un mensaje de error
+**/
+
+/** definimos un valor para contador controlar oportunidades. empezamos valor 0 **/
+var contador = 0;   
+
+
+/** haz este codigo al menos una vez
+ * preguntame nombre + usuario... y ponemos contador en +1 **/
+do{  
+    usuario = window.prompt("nombre usuario"); 
+    password = window.prompt("contraseña");
+    contador++;
+}
+
+/** si usuario y contraseña son correctos... y contador menor 3 **/
+while(( usuario != "user" || password != "1234") && contador <3) 
+    document.write ("Has accedido area privada");
+
+
+
+</script>
+
+
+</head>
+<body>
+    
+</body>
+</html>

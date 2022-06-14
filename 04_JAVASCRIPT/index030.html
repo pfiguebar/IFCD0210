@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+    <!-- funcion que sume items de un array 
+    /** creamos una funcion donde ponemos un valor suma = 0 **/
+    /** creamos un contador, que recorre desde valor 0 a valor lenght .. y que lo añade a valor inicial suma**/
+    -->
+
+<script>
+function sumarnumeros(lista){
+    suma = 0;
+    for(contador = 0; contador < lista.length; contador++){
+        suma = suma + lista[contador]; 
+                
+        }
+        
+        return suma;    /** guardamos variable  pero no se ha imprimido aun nada **/
+        
+    }
+</script> 
+
+<script>
+    /** llamamos a la funcion y la imprimimos **/
+    mi_lista = [1,2,3];
+    sumatotal = sumarnumeros(mi_lista);
+    document.write(suma);  /** aqui es cuando se le indica imprimir **/
+</script>
+
+
+
+<body>
+    
+</body>
+</html>

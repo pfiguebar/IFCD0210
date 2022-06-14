@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+  <!-- me facilitan una frase. 
+    crear una funcion que tome como parametros esa frase. 
+    la vamos a trocear por los espacios. una vez troceados crear un array. 
+    que todas las frases las escriba con un br -->  
+
+
+    <!-- a lo burro 
+    frase = la casa 
+    array = [la,casa]
+    
+    imprime:
+    array [0]
+    <br>
+    array [1]
+    -->
+
+    <script>
+              
+        /** creamos una funcion que se llama frase que tiene variables mi_frase que son cada palabra array  **/
+        
+        function frase(mi_frase){
+            /** creamos variable a partir de separar frase buscando los espacios **/
+            /** esto genera palabras separadas por coma **/
+            palabras = mi_frase.split(" ");
+
+            for(contador = 0; contador < palabras.length; contador++){
+                document.write(palabras[contador]);
+                document.write("<br>");
+            }
+
+        }
+
+    </script>
+
+    <script>
+        var frase_ejemplo = "la casa";
+        frase(frase_ejemplo);
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

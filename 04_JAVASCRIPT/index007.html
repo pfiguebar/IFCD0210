@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <script>
+    /** HACEMOS 1A PREGUNTA **/              
+    var opcion = window.prompt("DIA SEMANA: LUNES, MARTES, MIERCOLES, JUEVES, VIERNES, SABADO O DOMINGO. AFORO MAXIMO 100 PERSONAS");  
+        /** Declaro la variable opcion. Solicito via prompt a usuario escriba TEXTO DIA.  **/
+        
+        switch (opcion) {
+            case "LUNES":   /**  ojo, si usuario escribe RESPUESTA en minuscula no es igual a A  **/
+                precio = 5;
+                break;
+
+            case "MARTES":
+                precio = 7;
+                break;
+
+            case "MIERCOLES":
+                precio = 8;
+                break;
+
+            case "MIERCOLES":
+                precio = 9;
+                break;
+
+            case "JUEVES":
+                precio = 9;
+                break;
+
+            case "VIERNES":
+                precio = 14; 
+                break;
+
+            case "SABADO":
+                precio = 18; 
+                break;
+
+            case "DOMINGO":
+                precio = 17;
+                break;
+
+            
+            }
+
+    /** HACEMOS 2DA PREGUNTA **/    
+    var personas = parseInt(window.prompt("Cuantas personas van?"));  
+            /** Declaro la personas. Solicito via prompt a usuario dato. Ese dato es numero **/
+
+    
+    /** HACEMOS CALCULO segun los datos obtenidos  **/ 
+    var taquilla = personas * precio;
+
+
+    /** RESPUESTA SEGUN CALCULO. LIMITE MAX 100  **/ 
+    if ( personas > 100 ){
+        document.write ("NO hay plazas suficientes entradas");
+    }
+
+    else {
+    document.write("Hay plazas suficientes entradas. Su precio es " + taquilla + " euros");
+    }
+    
+    </script>
+
+
+</head>
+<body>
+    
+</body>
+</html>

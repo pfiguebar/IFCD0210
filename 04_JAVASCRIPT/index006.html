@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <!-- 
+        escribir un script que elija una opcion (A, B, C)
+        si opcion es A = le paso con administracion
+        si opcion es B = le paso con comercial
+        si opcion es C = le paso con recursos humanos
+        si no es ninguna opcion, que diga le paso con operadora
+    -->
+    <script>
+                   
+        var opcion = window.prompt("Seleccionar su respuesta A, B, C");  
+        /** Declaro la variable opcion. 
+         * Solicito via prompt a usuario escriba las letras A, B o C. 
+         * Sino escribe esas letras define otra respuesta  **/
+        
+        switch (opcion) {
+            case "A":   /**  ojo, si usuario escribe RESPUESTA en minuscula no es igual a A  **/
+                document.write("le paso admin");
+                break;
+
+            case "B":
+              document.write("le paso comercial");
+              break;
+
+            case "C":
+              document.write("le paso RRHH");
+              break;
+
+            default:
+              document.write("le paso con operadora");
+              break;
+
+        }
+      
+            
+    
+    
+    </script>
+
+
+
+</head>
+<body>
+    
+</body>
+</html>

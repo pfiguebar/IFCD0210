@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ejercicio004</title>
+</head>
+
+<!-- 
+    prompt por defecto opera con cadena texto, no con numero. 
+    Para decir que cadena texto recoja la transforme a numero se le escribe delante parseInt (...) 
+    Si no le ponemos parseInt por ejemplo 9 seria mas grande de 900 por eso ordena alfabeticamente antes
+-->
+
+
+<script>
+    var numero1;
+    var numero2;
+
+    numero1 = parseInt(window.prompt("Escribe aqui un numero"));
+    numero2 = parseInt(window.prompt("Escribe aqui un numero"));
+
+
+    if (numero1 > numero2) {
+        document.write("El numero mas grande es " + numero1);
+    }
+
+
+    else if (numero2 > numero1) {
+        document.write("El numero mas grande es " + numero2);
+    }
+
+
+    else {
+        document.write("Ambos son iguales");
+    }
+
+</script>
+
+<body>
+
+</body>
+
+</html>

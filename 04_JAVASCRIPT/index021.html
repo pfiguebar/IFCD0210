@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+<!-- funcion que segun valor a, te indica si eres mayor o menor de edad -->
+    
+    <script>
+        function comparar_edad(a){
+            if( a >= 18 ){
+                edad_persona = "Eres mayor de edad";
+            }
+
+            else if( a < 18 ){
+                edad_persona = "Eres menor de edad";
+            }
+
+            return edad_persona;
+        }
+    </script>
+
+
+    <script>
+        var resultado = comparar_edad(12);
+        alert(resultado);
+    </script>
+
+
+</head>
+<body>
+    
+</body>
+</html>

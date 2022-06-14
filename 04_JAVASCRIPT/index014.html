@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+<style>
+    table {width: 100%;}
+    table, td, tr {border: 1px solid black; text-align: center;}
+
+</style>
+
+<!-- crear una tabla via javascript con for -->
+<!-- en este caso <td> columnas y <tr> o filas se pide via prompt -->
+    <script>
+
+        var fila = parseInt(window.prompt("Numero Filas?")); /** pedimos variable fila **/
+
+        var columna = parseInt(window.prompt("Numero Columnas?")); /** pedimos variable columna **/
+
+        document.writeln("<table>"); /** creamos etiqueta <table> **/
+                    
+            for (contadortr = 1; contadortr <= fila; contadortr++){  /** creamos contador etiqueta <tr> **/
+                  document.writeln("<tr>"); 
+                    
+                    for (contadortd = 1; contadortd <= columna; contadortd++){ /** dentro creamos contador etiqueta <td> **/
+                        document.writeln("<td>texto</td>"); 
+                    }  
+                                   
+                  document.writeln("</tr>");
+                
+                }    
+                    
+       document.writeln("</table>"); /** creamos etiqueta </table> **/
+
+     </script>   
+</head>
+<body>
+    
+</body>
+</html>

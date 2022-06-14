@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+<!-- ARRAY JAVASCRIPT - teoria -->
+<script>
+    var mi_lista = new Array (1,2,3,4); /** podemos definirlo con new Array () **/
+    var mi_lista = [1,2,3,4];  /** podemos definir un Array sin new Array pero va con corchetes **/
+</script>
+
+
+<!-- le indicamos imprima valor 2 del array. recordar empieza por 0. 
+    ej: En este caso imprime Miercoles -->
+<script>
+    var dias = ["Lunes", "Martes", "Miercoles", "Jueves", "Viernes", "Sabado", "Domingo"];
+    document.write(dias[2]); 
+    document.write("<br>");
+</script>
+
+
+
+
+
+
+<!-- imprimir dias de la semana 
+Creamos un contador que recorre array, 
+desde valor 0 a ultimo valor que se calcula con length -->
+<script>
+var dias_semana = ["Lunes", "Martes", "Miercoles", "Jueves", "Viernes", "Sabado", "Domingo"];
+for(contador = 0; contador < dias_semana.length; contador++){
+       document.write(dias_semana[contador]);
+       document.write("<br>");
+       return dias_semana; /** guardamos variable **/
+}
+</script>
+
+
+
+
+
+<!-- cambiar un valor array por otro, en este caso valor posicion 3 lo cambio por Juebes -->
+<script>
+    var dias_semana = ["Lunes", "Martes", "Miercoles", "Jueves", "Viernes", "Sabado", "Domingo"];
+    dias_semana[3] = "JueBes"
+    
+    document.write(dias_semana[3]);
+    document.write("<br>");
+</script>
+
+
+
+
+
+<!-- añadir un valor array al final  -->
+<script>
+    var dias_semana = ["Lunes", "Martes", "Miercoles", "Jueves", "Viernes", "Sabado", "Domingo"];
+    dias_semana.push("Fiesta");
+        
+    document.write(dias_semana);
+    document.write("<br>");
+</script>
+
+
+<!-- eliminar un valor array al final  -->
+<script>
+    var dias_semana = ["Lunes", "Martes", "Miercoles", "Jueves", "Viernes", "Sabado", "Domingo"];
+    dias_semana.pop();
+        
+    document.write(dias_semana);
+    document.write("<br>");
+</script>
+
+
+
+
+<!-- invertir array con reverse -->
+<script>
+    var dias_semana = ["Lunes", "Martes", "Miercoles", "Jueves", "Viernes", "Sabado", "Domingo"];
+    dias_semana.reverse();
+        
+    document.write(dias_semana);
+    document.write("<br>");
+</script>
+
+
+
+<!-- ordenar un array con sort. con letras ordena alfabeticamente -->
+<script>
+    var dias_semana = ["Lunes", "Martes", "Miercoles", "Jueves", "Viernes", "Sabado", "Domingo"];
+    dias_semana.sort();
+        
+    document.write(dias_semana);
+    document.write("<br>");
+</script>
+
+
+
+<!-- concatenar funciones . ejemplo aplicar reverse y short-->
+<script>
+    var dias_semana = ["Lunes", "Martes", "Miercoles", "Jueves", "Viernes", "Sabado", "Domingo"];
+    dias_semana.reverse().sort();
+        
+    document.write(dias_semana);
+    document.write("<br>");
+</script>
+
+
+<!-- unir cada item de los array en 1 solo string cadena. 
+    por defecto los une con una coma. 
+    si se quiere añandir otro separador distinto se añade en parentesis-->
+<script>
+    var dias_semana = ["Lunes", "Martes", "Miercoles", "Jueves", "Viernes", "Sabado", "Domingo"];
+    dias_semana.join(" , ");
+        
+    document.write(dias_semana);
+    document.write("<br>");
+</script>
+
+
+
+
+</head>
+<body>
+    
+</body>
+</html>
