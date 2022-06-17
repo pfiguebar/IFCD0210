@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TEXT AREA</title>
+</head>
+<body>
+
+    <!-- TEXT AREA se trata igual que un INPUT en los formularios -->
+
+    <form id="formulario" action="" method="POST" >
+      <label>Descripción</label>
+      <textarea id="text_area" name="text_area" rows="10" cols="50"></textarea>
+    </form>
+
+<button id="enviar" name="enviar" onclick="enviar_formulario();">ENVIAR</button>  
+
+<!-- creamos un boton que al enviar formulario, le indica meta un texto predefinido -->
+<button id="enviar2" name="enviar2" onclick="enviar_formulario2();">ENVIAR TEXTO DENTRO TEXTAREA</button> 
+
+<!-- boton reset -->
+<button id="enviar3" name="enviar3" onclick="enviar_formulario3();">RESET</button> 
+
+
+<script>
+    function enviar_formulario(){
+       
+        var textarea = document.getElementById("text_area");
+        var textarea_valor = textarea.value;  
+
+        /** requisitos VARIABLE TEXTAREA **/
+        /** si nombre esta vacio escribir un texto **/
+        if(textarea_valor == ""){  alert ("el nombre esta vacio")        }
+
+        /** finalmente le decimos que si ha cumplido todos los requisitos envie **/
+        else(document.getElementById("formulario").submit())
+
+    }
+</script>   
+
+
+<script>
+    function enviar_formulario2(){
+       
+        var textarea = document.getElementById("text_area");
+        var textarea_valor = textarea.value = "HOLA";  
+
+        /** requisitos VARIABLE TEXTAREA **/
+        /** si nombre esta vacio escribir un texto **/
+        if(textarea_valor == ""){  alert ("el nombre esta vacio")        }
+
+        /** finalmente le decimos que si ha cumplido todos los requisitos envie **/
+        else(document.getElementById("formulario").submit())
+
+        
+
+    }
+</script>   
+
+<script>
+    function enviar_formulario3(){
+        var textarea = document.getElementById("text_area");
+        var textarea_valor = textarea.value;  
+               
+        document.getElementById("formulario").reset()
+        
+
+    }
+</script>
+
+
+
+</body>
+</html>
