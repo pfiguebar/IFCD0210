@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FORMULARIO FINAL</title>
+
+
+<style>
+    fieldset {border-color: transparent;}
+    input { border: 1px solid black; padding: 5px;}
+    span {display: block; margin: 10px; font-size: 14px;}
+    .error {color:red;}
+    input.error {border-color: red;}   
+    #mensaje_error_nombre, #mensaje_error_apellidos, #mensaje_error_email, #mensaje_error_email2{display: none;color: red; font-size: 18px;}
+    input.correcto {border-color: green;}
+    #mensaje_ok_nombre, #mensaje_ok_apellidos, #mensaje_ok_email, #mensaje_ok_email2{display: none;color: green; font-size: 18px;}
+   .mostrar{display: block; }
+</style> 
+
+
+</head>
+<body>
+        
+<form id="formulario" name="formulario" method="POST" action="" autocomplete="off">  
+
+
+<fieldset> 
+<label for="nombre">Nombre:</label>   
+<input id="nombre" name="nombre" type="text" placeholder="Escribe aqui su nombre">
+<span id="aviso_nombre">Escribir aqui su nombre</span>
+<span id="mensaje_error_nombre">Este campo no puede estar vacio</span>
+<span id="mensaje_ok_nombre">Casilla correcta</span>
+</fieldset>
+
+
+<fieldset> 
+<label for="apellidos">Apellidos:</label>   
+<input id="apellidos" name="apellidos" type="text" placeholder="Escribe aqui su apellidos">
+<span id="aviso_apellidos">Escribir aqui sus apellidos</span>
+<span id="mensaje_error_apellidos">Este campo no puede estar vacio</span>
+<span id="mensaje_ok_apellidos">Casilla correcta</span>
+</fieldset>
+
+<fieldset> 
+<label for="email">Email:</label>   
+<input id="email" name="email" type="text" placeholder="Escribe aqui su email">
+<span id="aviso_email">Escribir aqui sus email</span>
+<span id="mensaje_error_email">Este campo no puede estar vacio</span>
+<span id="mensaje_error_email2">Email debe tener formato @</span>
+<span id="mensaje_ok_email">Casilla correcta</span>
+</fieldset>
+</form>
+
+        
+<!-- este codigo limpiaria formulario sin preguntar nada a usuario. 
+    para evitar esto vamos hacerlo con javascript... quitamos type="submit"
+    <input id="reset" name="reset" type="submit" value="ESTO RESETEA">  -->
+<input type="button" id="limpiar" name="limpiar" value="TEXTO BOTON RESET"> 
+<script>
+    /** indicamos que cuando hacemos click en id limpiar se lanza funcion limpiarcasilla **/
+    document.getElementById("limpiar").addEventListener("click", limpiarcasilla);
+
+    function limpiarcasilla(){
+        /** le preguntamos usuario si esta seguro lo que va hacer **/    
+        var opcion = window.prompt("¿Esta usted seguro? SI (S) o No (N)");  
+        /** Declaro la variable opcion. Solicito via prompt a usuario escriba opcion.  **/
+        
+        switch (opcion) {
+            case "S":   /**  ojo, si usuario escribe RESPUESTA en minuscula no es igual, por tanto deberiamos crear 4 opciones pero por simplificar solo escribo 2  **/
+                /** aqui le decimos codigo ejecutar cuando pulsa opcion S ..que limpie formulario  **/
+                document.getElementById("formulario").reset();
+                
+                /** cargar nuevamente url en la que estas **/
+                location.reload()
+
+                /** aqui una vez ha recargado se situe sobre casilla nombre **/
+                document.getElementById("nombre").focus();
+                break;
+
+            case "N":
+              
+                break; 
+        }  
+
+        
+    }
+</script>
+
+
+<!-- javascrip para boton enviar. 
+    vamos a crear una funcion verificar, por ejemplo que verifique nombre no este vacio  -->
+<input type="button" id="enviar" name="enviar" value="TEXTO BOTON ENVIAR">
+<script>
+    /** indicamos que cuando hacemos click en id enviar se lanza funcion verificar **/
+    document.getElementById("enviar").addEventListener("click", verificar);
+
+function verificar(){
+    /** recogemos el valor del campo nombre **/
+    campo_nombre = document.getElementById("nombre");
+    /** lo guardamos en una variable, la llamamos nombre_valor **/
+    nombre_valor = campo_nombre.value;
+
+
+    /** creamos unas variables mismo nombre con ok a la que le damos valor inicial true y false **/
+    campo_nombre_ok = true;
+    campo_nombre_ok = false; 
+                        
+        /** TEST VARIABLE **/
+                    
+        /** si nombre_valor vacio le asigno falso **/
+        if(nombre_valor == "") { 
+               document.getElementById("aviso_nombre").style.display="none";
+               document.getElementById("nombre").className = "error";
+               document.getElementById("mensaje_error_nombre").style.display="block";
+               campo_nombre_ok = false;              
+            }
+                    
+        /** en caso contrario quitarle clase y mostramos un spam que indica casilla correcta **/
+                        
+        else {
+               document.getElementById("aviso_nombre").style.display="none";
+               document.getElementById("nombre").className = "correcto"; 
+               document.getElementById("mensaje_ok_nombre").style.display="block";                            
+               campo_nombre_ok = true;
+               console.log(campo_nombre_ok)
+            }
+
+
+            /** aqui va codigo para evaluar apellidos **/
+
+    /** recogemos el valor del campo nombre **/
+    campo_apellidos = document.getElementById("apellidos");
+    /** lo guardamos en una variable, la llamamos nombre_valor **/
+    apellidos_valor = campo_apellidos.value;
+
+
+    /** creamos unas variables mismo nombre con ok a la que le damos valor inicial true **/
+    campo_apellidos_ok = true;
+    campo_apellidos_ok = false;
+                        
+        /** TEST VARIABLE **/
+                        
+        /** si nombre_valor vacio le asigno falso **/
+        if(apellidos_valor == "") {  
+                document.getElementById("aviso_apellidos").style.display="none";
+                document.getElementById("apellidos").className = "error";
+                document.getElementById("mensaje_error_apellidos").style.display="block";
+                campo_apellidos_ok = false;             
+            }
+                    
+        /** en caso contrario quitarle clase y mostramos un spam que indica casilla correcta **/
+                        
+        else {
+               document.getElementById("aviso_apellidos").style.display="none";
+               document.getElementById("apellidos").className = "correcto"; 
+               document.getElementById("mensaje_ok_apellidos").style.display="block";                            
+               campo_apellidos_ok = true;
+               console.log(campo_apellidos_ok)
+            }
+
+
+            /** aqui va codigo para evaluar email **/
+
+            /** recogemos el valor del campo nombre **/
+    campo_email = document.getElementById("email");
+    /** lo guardamos en una variable, la llamamos email_valor **/
+    email_valor = campo_email.value;
+
+
+    /** creamos unas variables mismo nombre con ok a la que le damos valor inicial true **/
+    campo_email_ok = true;
+    campo_email_ok = false;
+                        
+        /** TEST VARIABLE **/
+                        
+        /** si email_valor vacio le asigno falso **/
+        if(email_valor == "") { 
+            document.getElementById("aviso_email").style.display="none";
+            document.getElementById("email").className = "error";
+            document.getElementById("mensaje_error_email").style.display="block";
+            campo_email_ok = false; }
+        
+        /** si email_valor no tiene cadena @ asigno falso **/
+        if(email_valor.indexOf("@") == -1) {  
+                document.getElementById("aviso_email").style.display="none";
+                document.getElementById("email").className = "error";
+                document.getElementById("mensaje_error_email2").style.display="block";  
+                campo_email_ok = false; 
+                console.log(campo_email_ok)    
+            }
+                    
+        /** en caso contrario quitarle clase y mostramos un spam que indica casilla correcta **/
+                        
+        else {
+               document.getElementById("aviso_email").style.display="none";
+               document.getElementById("email").className = "correcto"; 
+               document.getElementById("mensaje_ok_email").style.display="block";                            
+               campo_email_ok = true;
+            }
+
+          
+
+if(campo_nombre_ok && campo_apellidos_ok && campo_email_ok){
+            document.getElementById("formulario").submit();
+            
+            
+            }
+
+}
+
+
+
+</script>
+
+
+
+
+
+    
+</body>
+</html>
