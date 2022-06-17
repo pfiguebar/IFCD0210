@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CHECKBOX</title>
+
+
+</head>
+<body>
+
+ <!-- CHECKBOX NO LLEVA ID por eso html todos tienen mismo valor id . 
+Si seleccionamos getelementebyid..  seleccionaria la primera opcion siempre 
+Para este caso seleccionamos getelementbyname
+Recorremeos array para buscar cual esta checked
+-->   
+
+<form id="formulario" action="" method="POST" >
+AFICIONES
+<input type="checkbox" name="aficiones" value="leer">LEER</input>
+<input type="checkbox" name="aficiones" value="tv">TV</input>
+<input type="checkbox" name="aficiones" value="comer">COMER</input>
+<input type="checkbox" name="aficiones" value="dormir">DORMIR</input>
+</form>
+
+    <button id="enviar" name="enviar" onclick="mostrar_datos();">ENVIAR</button>  
+
+    <script>
+
+function mostrar_datos(){
+        /** recoger todos los que tienen el mismo name */
+        var aficiones = document.getElementsByName("aficiones"); 
+        
+        /** creamos 2 array nuevo array que recoje opciones checkbox **/
+        /** uno para el indice y otra para seleccion **/
+        var indice_aficiones_seleccionadas = new Array ();
+        var aficiones_seleccionadas = new Array ();
+
+        /** hacemos un bucle que recorre todo el array **/
+        for(indice = 0; indice < aficiones.length; indice++){
+
+                /** si encuentro opcion seleccionada o checked (por defecto checked=true) */
+                if(aficiones[indice].checked == true){
+                    indice_aficiones_seleccionadas.push(indice); /** cuando encuentro un checked guardo en array indice ese valor **/
+                    aficiones_seleccionadas.push(indice).value   /** cuando encuentro checke guardo en array opciones ese array **/
+                }
+
+                
+        }
+
+        
+        
+      console.log(indice_aficiones_seleccionadas)
+      console.log(aficiones_seleccionadas)
+
+}
+    </script>
+    
+</body>
+</html>

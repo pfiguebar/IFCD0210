@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0, user-scalable=yes">
+    <title>Document</title>
+
+
+    
+<style>
+    /** aqui clases javascript 
+    #div1{}
+    #div2{}
+    **/
+
+    /** aqui clases css **/
+    .div1{ background-color: green; }
+    .div2{ background-color: yellow; }
+    .cuadro { width: 400 px; height:200 px;}
+    
+    
+</style>
+
+</head>
+<body>
+
+    <div id="div1" class="cuadro div1"></div>
+
+    
+    <button id="dispara_cambiarclase">CAMBIA CLASE</button>
+    
+    <button id="dispara_resetclase">RESET CLASE</button>
+   
+
+  </body>
+    <script>
+
+        /** para evitar escribir una linea por cada linea css
+        document.getElementById("___").style.borderColor = "blue"; 
+        document.getElementById("___").style.Color = "black";
+        Usamos CLASSNAME
+
+        /** classname le indico nombre de la clase quiero. Funciona todos los navegadores **/
+        function cambiarclase(){
+            document.getElementById("div1").className = "cuadro div1";
+        }
+
+        function resetclase(){
+            document.getElementById("div1").className = "cuadro div2";
+        }
+        
+        /** codigo disparador **/
+        document.getElementById("dispara_cambiarclase").addEventListener("click", cambiarclase);
+        document.getElementById("dispara_resetclase").addEventListener("click", resetclase);
+    </script>
+    
+</body>
+</html>

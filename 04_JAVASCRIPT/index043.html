@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>INPUT</title>
+<style>
+    input {display: block; border: 1px solid black; width: 300px; padding: 5px;}
+    input.error {border-color: red;}
+    span {display: block; margin: 10px;}
+    span.error {color:red;}
+</style> 
+
+
+    <!-- FORMULARIOS -->
+    <!-- Para evitar crear millones de if ... vamos a usar mejor "flash"-->
+</head>
+<body>
+
+    <form id="formulario" action="" method="POST" >
+    
+    <label>NOMBRE:</label>
+    <input id="nombre" name="nombre" type="text" >
+    <span id="aviso_nombre" name="aviso_nombre">Su nombre</span>
+
+    <!--
+    <label>EDAD</label>
+    <input id="edad" name="edad" type="text" >
+    <span id="aviso_edad">Su edad</span>
+
+    <label>DNI</label>
+    <input id="dni" name="dni" type="text" >
+    <span id="aviso_dni">Su dni</span>
+      -->    
+    </form> 
+    <button id="enviar" name="enviar" onclick="mostrar_datos();">ENVIAR</button>  
+
+    <script>
+       
+        function mostrar_datos(){
+            /** creamos una variable para nombre **/
+            var nombre = document.getElementById("nombre"); 
+            var nombre_valor = nombre.value;                    
+            
+            /** se puede escribir esta linea tambien asi 
+             * var nombre = document.getElementById("nombre"); --> aqui recoje elemento
+             * var nombre_valor = nombre.value;                    --> aqui le asigna valor
+             
+              
+             **/ 
+            
+            /** creamos unas variables mismo nombre con ok a la que le damos valor inicial true **/
+            var nombre_ok = true;
+                        
+            /** TEST VARIABLE **/
+            
+        
+            /** si nombre vacio le asigno falso **/
+            if(nombre_valor == "") { nombre_ok = false; }
+
+            /** si nombre menos 5 caracteres le asigno falso **/
+            if(nombre_valor.length < 5) { nombre_ok = false; }
+
+            /** si he obtenido falso en procesos anteriores. le asigno clase error  **/
+            if(nombre_ok == false)
+                {            
+                    document.getElementById("nombre").className = "error";
+                    document.getElementById("aviso_nombre").className = "error";
+                    
+                }
+        
+            /** en caso contrario quitarle clase **/
+            
+            else {
+                    document.getElementById("nombre").className = "";
+                    document.getElementById("aviso_nombre").className = "";
+                }
+
+
+
+
+        /** AQUI SIGUIENTES CASILLAS 
+         * 
+        var edad = parseInt(document.getElementById("edad").value); 
+        var edad_ok = true;
+
+
+        var dni = document.getElementById("dni").value; 
+        var dni_ok = true;
+
+        /** FIN CASILLAS **/
+
+
+        if(nombre_ok) { document.getElementById("formulario").submit() }
+
+        console.log ("este valor es " + nombre_valor)
+
+
+        }
+        </script>
+
+</body>
+</html>

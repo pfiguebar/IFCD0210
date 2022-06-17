@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <ul>
+        <li><a href="url1"></a>etiqueta1</li>
+        <li><a href="url2"></a>etiqueta2</li>
+        <li><a href="url3"></a>etiqueta3</li>
+        <li><a href="url4"></a>etiqueta4</li>
+    </ul>
+    
+</body>
+
+<script>
+    /** creo una variable que recoje las url que estan dentro etiqueta <a> 
+     * todas esas url va meterla dentro un array hiperenlace = [url1, url2, url3, url4]
+     **/
+    var hiperenlaces = document.getElementsByTagName("a");
+
+    /** esto seria el primer enlace de nuestro array -->    hiperenlace[0].href .. en este caso responde url1 **/
+    /** esto seria la primera etiqueta de nuestro array -->    hiperenlace[0].innerHTML .. en este caso responde etiqueta1 **/
+    /** esto seria en numero total de enlaces de nuestro array --> hiperenlaces.lenght ... en este caso responde 4 **/
+
+
+</script>
+</html>

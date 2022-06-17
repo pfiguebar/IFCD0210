@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- crear 2 botones
+        * uno que cuando yo le de rellene con texto. 
+        * otro boton que cuando yo le de se borre -->
+
+    <button id="dispara_añadirtexto">AÑADIR TEXTO</button>
+    
+    <button id="dispara_resettexto">RESET TEXTO</button>
+   
+    <div id="sitiotexto"></div>
+
+  </body>
+    <script>
+
+        
+        function añadirtexto(){
+            document.getElementById("sitiotexto").innerHTML = "<p>LORE IPSUM</p>";
+        }
+
+        function resettexto(){
+            document.getElementById("sitiotexto").innerHTML = "<p></p>";
+        }
+        
+        /** codigo disparador **/
+        document.getElementById("dispara_añadirtexto").addEventListener("click", añadirtexto);
+        document.getElementById("dispara_resettexto").addEventListener("dblclick", resettexto);
+    </script>
+    
+
+
+
+</body>
+</html>
