@@ -25,18 +25,6 @@ document.getElementById("comentario").addEventListener("keyup", contar)
 function contar(){
 caracteres = document.getElementById("comentario").value.length;
 document.getElementById("help").innerHTML = caracteres;
-
-if( caracteres >= 10 ){ 
-    document.getElementById("help").innerHTML = "has superado";
-    document.getElementById("help").style.color = "red";
-
-}
-else(caracteres < 10 ){
-    document.getElementById("help").innerHTML = caracteres;
-    document.getElementById("help").style.color = "black";
-}
-
-
 }
 </script>
 
