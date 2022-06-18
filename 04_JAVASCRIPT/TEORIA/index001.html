@@ -72,3 +72,81 @@
         document.writeln("Me encanta la provincia" + provincia);
 
     </script>
+        
+        
+<!-- FUNCIONES CADENA --> 
+<!-- Recordar que las cadenas empiezan a contar en CERO, es decir 0, 1, 2, 3, 4, -->
+
+ 
+<!--  length - calcula longitud cadena incluido espacios -->
+<script>
+    var mi_cadena = "hola_mundo";
+    document.write(mi_cadena.length);   
+</script>
+
+
+
+<!-- substring - devuelve cadena texto desde la letra numero 0 hasta la letra numero 6 -->
+<script>
+    var mi_cadena = "hola_mundo";
+    document.write(mi_cadena.substring(0,6)); 
+</script>
+
+
+
+
+<!-- indexof - indica en que posicion esta ese la 1a vez aparece caracter -->
+<!-- por ejemplo si le pedimos que posicion esta letra u dentro cadena hola_mundo, 
+    nos devuelve un la primera vez esta letra u es posicion 6 -->
+
+<!-- utilidad, si no encuentra letra te devuelve valor -1 -->
+<!-- Ej: busca en la cedena si existe @ y si devulve -1 indica no es un correo electronico -->
+<script>
+    var mi_cadena = "hola_mundo";
+    document.write(mi_cadena.indexOf("u"));
+</script>
+
+
+
+
+<!-- replace - sirve para por ejemplo indicar usuario que ponga cadena forma tu quieres -- fecha, telefonos  -->
+<script>
+    var mi_cadena = "hola_mundo";
+    document.write(mi_cadena.replace("hola","adios"));
+</script>
+
+
+
+<!-- SPLIT - convertir una cadena en una lista por sitio le indicamos -->
+<!-- en este caso le indicamos que divida la frase en partes, separandola por la letra o que se la come -->
+<!-- ejemplo de uso - me dan una fecha 02/10/2022 - si le pido dividir por /  me da 3 trozos que son dia, mes, año -->
+<script>
+    var mi_cadena = "hola mundo estoy aqui";
+    document.write(mi_cadena.split("o"));
+</script>
+
+<br>
+<br>
+
+<!-- toUpperCase - convertir todo a mayuscula -->
+<script>
+    var mi_cadena = "hola mundo";
+    document.write(mi_cadena.toUpperCase());
+</script>
+
+<br>
+<br>
+
+<!-- toLowerCase - convertir todo a minuscula -->
+<script>
+    var mi_cadena = "HOLA MUNDO";
+    document.write(mi_cadena.toLowerCase());
+</script>
+
+
+<!-- ENCADENAR FUNCIONES -->
+<!-- por ejemplo: buscame subcadena desde 2 a 4 ... y aplicale minuscula-->
+<script>
+    var mi_cadena = "HOLA MUNDO";
+    document.write(mi_cadena.substring(1,6).toUpperCase());
+</script>
