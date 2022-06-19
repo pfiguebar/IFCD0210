@@ -46,6 +46,10 @@
      
 
 <!-- DOCUMENT WRITE -->
+<!-- document.write ejecuta  => innerHTML = "<body> </body>" .. y por tanto limpia pantalla. Evitar usar! -->
+<!--    equivale a este codigo  =>  document.getElementById("id_seleccion").innerHTML = "<body> </body>";   -->
+        
+        
     <script>
       document.writeln("Bienvenido&nbsp;" + nombre + "&nbsp;a mi web");
         /** para incluir una variable en una cadena texto **/
