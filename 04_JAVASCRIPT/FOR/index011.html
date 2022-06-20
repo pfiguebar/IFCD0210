@@ -7,14 +7,14 @@
     <title>TABLA VIA JAVASCRIPT</title>
 
     <style>
-        table { border: 1px solid black;  width: 100%; text-align: center; padding: 5px; }
-        td {border: 1px solid white;}
+       td {border: 1px solid black; text-align: center; }
+		
+		
     </style>
 
 <!-- crear una tabla via javascritp con for -->
-<!-- Ejemplo 10 <tr> o filas y 1 <td> o columna -->
 
-
+<!-- Ejemplo 10 <tr> o filas  -->
     <script>
     function tabla_TR_html(filas){         
 		var contador = 1;
@@ -30,7 +30,7 @@
             document.writeln("<tr>");
 			
 			// le indicamos escriba etiqueta <td> ... </td>
-            document.writeln("<td> Estoy en la fila " + contador + "</td>"); 
+            document.writeln("<td> FILA" + contador + "</td>"); 
 
 			// le indicamos escriba etiqueta </tr> 
             document.writeln("</tr>");   
@@ -44,33 +44,36 @@
 }
 </script>
 	
-	
+	 <script> 
+		tabla_TR_html(5);
+	</script>
 		
-	<hr>
+
 	
 <!-- Ejemplo 10 <td> o columnas -->	
 	<script>
+	function tabla_TD_html(columnas){ 
+	
+		var contador2 = 1;
 		
-	function tabla_TD_html(columnas){	
-	document.writeln("<table>"); 
-        for (contador = 1; contador <= filas; contador++){ 
-            document.writeln("<tr>");
-            document.writeln("<td> Estoy en la fila " + contador + "</td>");  
-            document.writeln("</tr>");   
-             }
-            document.writeln("</table>"); 
+	// le indicamos escriba etiqueta <table> 
+       document.writeln("<table>");
+	   
+	   // creamos un contador para la etiqueta <td> donde se le indica numero veces se repite 
+        for (contador2 = 1; contador2 <= columnas; contador2++){
+			
+			// le indicamos escriba etiqueta <tr>
+            document.writeln("<tr> COLUMNA " + contador2 + "</tr>");
+		                  
+        }
+        // fin contador 
+    document.writeln("</table>"); 
+	}
 	</script>
 	
 
-        <script> 
-		tabla_TR_html(10);
-	</script>
-	
-	
-	
-	
-	<script> 
-		tabla_TD_html(10);
+    <script> 
+		tabla_TD_html(5);
 	</script>
 		
  
@@ -80,4 +83,3 @@
     
 </body>
 </html>
-
