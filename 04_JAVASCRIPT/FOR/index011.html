@@ -16,7 +16,7 @@
 
 
     <script>
-    function tablahtml(filas){         
+    function tabla_TR_html(filas){         
 		var contador = 1;
 		
 		// le indicamos escriba etiqueta <table> 
@@ -43,10 +43,35 @@
         document.writeln("</table>"); 
 }
 </script>
+	
+	
+		
+	<hr>
+	
+<!-- Ejemplo 10 <td> o columnas -->	
+	<script>
+		
+	function tabla_TD_html(columnas){	
+	document.writeln("<table>"); 
+        for (contador = 1; contador <= filas; contador++){ 
+            document.writeln("<tr>");
+            document.writeln("<td> Estoy en la fila " + contador + "</td>");  
+            document.writeln("</tr>");   
+             }
+            document.writeln("</table>"); 
+	</script>
+	
 
         <script> 
-		tablahtml(10);
-		</script>
+		tabla_TR_html(10);
+	</script>
+	
+	
+	
+	
+	<script> 
+		tabla_TD_html(10);
+	</script>
 		
  
 </head>
