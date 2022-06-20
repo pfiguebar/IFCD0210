@@ -6,77 +6,50 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>TABLA VIA JAVASCRIPT</title>
 
-    <style>
-       td {border: 1px solid black; text-align: center; }
-		
-		
-    </style>
-
-<!-- crear una tabla via javascritp con for -->
-
-<!-- Ejemplo 10 <tr> o filas  -->
-    <script>
-    function tabla_TR_html(filas){         
-		var contador = 1;
-		
-		// le indicamos escriba etiqueta <table> 
-       document.writeln("<table>"); 
-
-
-        // creamos un contador para la etiqueta <tr> donde se le indica numero veces se repite 
-        for (contador = 1; contador <= filas; contador++){
-			
-			// le indicamos escriba etiqueta <tr>
-            document.writeln("<tr>");
-			
-			// le indicamos escriba etiqueta <td> ... </td>
-            document.writeln("<td> FILA" + contador + "</td>"); 
-
-			// le indicamos escriba etiqueta </tr> 
-            document.writeln("</tr>");   
-                 
-                    
-        }
-        // fin contador 
-		
-		// le indicamos escriba etiqueta </table> 
-        document.writeln("</table>"); 
-}
-</script>
+    	<style>
+    	table {width: 100%;}
+    	table, td, tr {border: 1px solid black; text-align: center;}
+	</style>
 	
-	 <script> 
-		tabla_TR_html(5);
-	</script>
-		
-
-	
-<!-- Ejemplo 10 <td> o columnas -->	
+<!-- crear una tabla via javascript con for -->
+<!-- en este caso <td> columnas y <tr> o filas se pide via prompt -->
+    
 	<script>
-	function tabla_TD_html(columnas){ 
 	
-		var contador2 = 1;
-		
-	// le indicamos escriba etiqueta <table> 
-       document.writeln("<table>");
-	   
-	   // creamos un contador para la etiqueta <td> donde se le indica numero veces se repite 
-        for (contador2 = 1; contador2 <= columnas; contador2++){
-			
-			// le indicamos escriba etiqueta <tr>
-            document.writeln("<tr> COLUMNA " + contador2 + "</tr>");
-		                  
-        }
-        // fin contador 
-    document.writeln("</table>"); 
+	function crear_tabla(fila,columna){    
+	    
+	// pedimos variable fila via prompt
+        var fila = parseInt(window.prompt("Numero Filas?")); 
+	    
+	// pedimos variable columna via prompt
+        var columna = parseInt(window.prompt("Numero Columnas?")); 
+
+	// creamos etiqueta <table> 
+        document.writeln("<table>"); 
+                  
+	    	// creamos contador etiqueta <tr> 
+            for (contadortr = 1; contadortr <= fila; contadortr++){  
+                  document.writeln("<tr>"); 
+               
+			// dentro creamos contador etiqueta <td>     
+            		for (contadortd = 1; contadortd <= columna; contadortd++){ 
+                  	document.writeln("<td>texto</td>"); 
+                    	}  
+                                   
+                  document.writeln("</tr>");
+                
+                }    
+       // creamos etiqueta </table>             
+       document.writeln("</table>"); 
 	}
+
+     </script>   
+	
+	<script>
+		crear_tabla(3,4);
 	</script>
 	
 
-    <script> 
-		tabla_TD_html(5);
-	</script>
-		
- 
 </head>
 <body> 
     
