@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>TABLA VIA JAVASCRIPT</title>
 
     <style>
         table { border: 1px solid black;  width: 100%; text-align: center; padding: 5px; }
@@ -13,24 +13,41 @@
 
 <!-- crear una tabla via javascritp con for -->
 <!-- Ejemplo 10 <tr> o filas y 1 <td> o columna -->
-    <script>
-             
-       document.writeln("<table>"); /** le indicamos escriba etiqueta <table> **/
 
-        /** creamos un contador para la etiqueta <tr> donde se le indica numero veces se repite **/
-        for (contador = 1; contador <=10; contador++){
-        
-            document.writeln("<tr>"); /** le indicamos escriba etiqueta <tr> **/
-            document.writeln("<td> Estoy en la fila " + contador + "</td>");  /** le indicamos escriba etiqueta <td> ... </td> **/
-            document.writeln("</tr>");   /** le indicamos escriba etiqueta </tr> **/ 
+
+    <script>
+    function tablahtml(filas){         
+		var contador = 1;
+		
+		// le indicamos escriba etiqueta <table> 
+       document.writeln("<table>"); 
+
+
+        // creamos un contador para la etiqueta <tr> donde se le indica numero veces se repite 
+        for (contador = 1; contador <= filas; contador++){
+			
+			// le indicamos escriba etiqueta <tr>
+            document.writeln("<tr>");
+			
+			// le indicamos escriba etiqueta <td> ... </td>
+            document.writeln("<td> Estoy en la fila " + contador + "</td>"); 
+
+			// le indicamos escriba etiqueta </tr> 
+            document.writeln("</tr>");   
                  
                     
         }
-        /** fin contador **/
+        // fin contador 
+		
+		// le indicamos escriba etiqueta </table> 
+        document.writeln("</table>"); 
+}
+</script>
 
-        document.writeln("</table>"); /** le indicamos escriba etiqueta </table> **/
-
-        </script> 
+        <script> 
+		tablahtml(10);
+		</script>
+		
  
 </head>
 <body> 
@@ -38,3 +55,4 @@
     
 </body>
 </html>
+
