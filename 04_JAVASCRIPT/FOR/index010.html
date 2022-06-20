@@ -4,15 +4,24 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>ESCRIBIR N VECES UNA CADENA TEXTO</title>
 
 <!-- script que escribe 6 veces palabra hola, aplicando tipo h1, h2, h3, h4, h5 y h6 ... via contador -->
 <script>
-for (contador = 1; contador <=6; contador++){
-
-    document.write("<h" + contador + ">hola</h" + contador + ">")
-}
+    
+    function repetir_cadena(cadenatexto){
+        var contador = 1;
+        		
+        for (contador = 1; contador <=6; contador++){
+            mi_cadena = document.write("<h" + contador + ">" + cadenatexto + "</h" + contador + ">")
+                }
+        return mi_cadena;
+    }
 </script> 
+    
+    <script>
+        repetir_cadena("hola");
+    </script>
 
 </head>
 <body>
