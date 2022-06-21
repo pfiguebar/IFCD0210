@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CHECKBOX</title>
+    <title>CHECKBOX - FORMULARIOS</title>
 
 
 </head>
@@ -29,30 +29,32 @@ AFICIONES
     <script>
 
 function mostrar_datos(){
-        /** recoger todos los que tienen el mismo name */
+        // recoger todos los que tienen el mismo name 
         var aficiones = document.getElementsByName("aficiones"); 
         
-        /** creamos 2 array nuevo array que recoje opciones checkbox **/
-        /** uno para el indice y otra para seleccion **/
+        // creamos 2 array nuevo array que recoje opciones checkbox
+        // uno para el indice y otra para seleccion 
         var indice_aficiones_seleccionadas = new Array ();
         var aficiones_seleccionadas = new Array ();
 
-        /** hacemos un bucle que recorre todo el array **/
+        // hacemos un bucle que recorre todo el array 
         for(indice = 0; indice < aficiones.length; indice++){
 
-                /** si encuentro opcion seleccionada o checked (por defecto checked=true) */
+                // si encuentro opcion seleccionada o checked (por defecto checked=true)
                 if(aficiones[indice].checked == true){
-                    indice_aficiones_seleccionadas.push(indice); /** cuando encuentro un checked guardo en array indice ese valor **/
-                    aficiones_seleccionadas.push(indice).value   /** cuando encuentro checke guardo en array opciones ese array **/
+                    
+                    // cuando encuentro un checked guardo en array indice ese valor 
+                    indice_aficiones_seleccionadas.push(indice); 
+                    
+                     // cuando encuentro checke guardo en array opciones ese array
+                    aficiones_seleccionadas.push(indice).value   
                 }
 
                 
         }
-
         
-        
-      console.log(indice_aficiones_seleccionadas)
-      console.log(aficiones_seleccionadas)
+      // console.log(indice_aficiones_seleccionadas)
+      // console.log(aficiones_seleccionadas)
 
 }
     </script>
