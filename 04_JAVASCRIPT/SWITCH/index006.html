@@ -1,5 +1,7 @@
 <!DOCTYPE html>
 <html lang="es">
+<!DOCTYPE html>
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -14,14 +16,17 @@
         si no es ninguna opcion, que diga le paso con operadora
     -->
     <script>
-                   
+
+        function llamada_telefono(){
+
+        // Solicito via prompt a usuario escriba las letras A, B o C. 
+        // Declaro la variable opcion.
         var opcion = window.prompt("Seleccionar su respuesta A, B, C");  
-        /** Declaro la variable opcion. 
-         * Solicito via prompt a usuario escriba las letras A, B o C. 
-         * Sino escribe esas letras define otra respuesta  **/
-        
+         
+               
         switch (opcion) {
-            case "A":   /**  ojo, si usuario escribe RESPUESTA en minuscula no es igual a A  **/
+                    //  ojo, si usuario escribe RESPUESTA en minuscula no es igual a A  **/
+            case "A":   
                 document.write("le paso admin");
                 break;
 
@@ -33,17 +38,21 @@
               document.write("le paso RRHH");
               break;
 
+
+            // Sino escribe esas letras define otra respuesta
             default:
               document.write("le paso con operadora");
               break;
 
         }
       
-            
-    
-    
+    } 
+ 
     </script>
 
+<script>
+    llamada_telefono();
+</script>
 
 
 </head>
