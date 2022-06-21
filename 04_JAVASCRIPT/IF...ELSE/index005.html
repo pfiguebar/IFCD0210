@@ -4,37 +4,48 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ejercicio 005</title>
+    <title>IF ... ELSE - Preguntar edad</title>
 
 
     
 <script>
-    var edad;  /** declaro la variable edad **/
+
+    function preguntar_edad(){
+    // declaro la variable edad
+    var edad;  
+    
+    // indico que variable la introduzca usuario via prompt
+    edad = parseInt(window.prompt("Cual es su edad"));  
     
 
-    edad = parseInt(window.prompt("Cual es su edad"));  /** indico que variable la introduzca usuario via prompt **/
+    // imprimo texto donde indico dato aportado
+    document.write("Su edad es " + edad + "<br>");  
     
-    document.write("Su edad es " + edad + "<br>");  /** imprimo texto donde indico dato aportado **/
     
-    /** para caso edad igual o mayor, le indico que escriba mayor **/
+    // para caso edad igual o mayor, le indico que escriba mayor
     if (edad >= 18) { 
         signo = "mayor";
         }
 
-    /** para cualquier otro caso, le indico que escriba menor **/
+    // para cualquier otro caso, le indico que escriba menor
     else {
         signo ="menor";
         }
 
-/** imprimo texto donde indico dato mayor o menor **/ 
-/** durante if ... else, solo calcula pero no imprime nada en pantalla **/      
-document.write("Usted es " + signo + " de edad");
+    // imprimo texto donde indico dato mayor o menor 
+    // durante if ... else, solo calcula pero no imprime nada en pantalla    
+    document.write("Usted es " + signo + " de edad");
+
+}
 
 </script>
-    
+
+<script> 
+preguntar_edad()
+</script>  
 
 </head>
-<body 
+<body>
     
 </body>
 </html>
