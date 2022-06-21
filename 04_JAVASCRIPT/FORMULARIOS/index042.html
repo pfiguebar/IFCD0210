@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>FORMULARIOS</title>
+    <title>INPUT TEXT- FORMULARIOS</title>
 <!-- FORMULARIOS -->
 <!-- https://uniwebsidad.com/libros/javascript/capitulo-7/validacion-->
 </head>
@@ -28,25 +28,23 @@
 <button id="enviar" name="enviar" onclick="enviar_formulario();">ENVIAR</button>  
 
 
-
-
 <script>
-    /** funcion mostar los datos nombre recoje formulario **/    
+    // funcion mostar los datos nombre recoje formulario   
     function enviar_formulario(){
 
 
-        /** .value es el valor del input. 
-         * por tanto lo guarda en variable he creado nombre **/
+        // .value es el valor del input. 
+        // por tanto lo guarda en variable he creado nombre 
         var nombre = document.getElementById("nombre").value;  
         
-        /** requisitos VARIABLE NOMBRE **/
+        // requisitos VARIABLE NOMBRE
 
-        /** si nombre esta vacio escribir un texto **/
+        // si nombre esta vacio escribir un texto
         if(nombre == ""){  
             alert ("el nombre esta vacio")   
         }
     
-        /** si longitud nombre es menor 5 caracter escribir un texto **/
+        // si longitud nombre es menor 5 caracter escribir un texto 
         else if(nombre.length < 5){  
             alert ("nombre menos 5 letras")  
         }
@@ -55,38 +53,30 @@
 
 
 
-        /** .value es el valor del input. 
-         * por tanto lo guarda en variable he creado edad **/
-        /** usamos parseInt para pasar valor texto a numero **/
+        // .value es el valor del input. 
+        // por tanto lo guarda en variable he creado edad 
+        // usamos parseInt para pasar valor texto a numero 
         var edad = parseInt(document.getElementById("edad").value); 
 
-        /** requisitos VARIABLE EDAD **/
+        // requisitos VARIABLE EDAD
 
-        /** si edad es menor 18 o mayor 78 mostrar mensaje **/
+        // si edad es menor 18 o mayor 78 mostrar mensaje 
         if( edad < 18 || edad > 78){ alert ("Edad menor 18 o mayor 78")   }
 
 
-
-
-
-
-        /** .value es el valor del input. 
-         * por tanto lo guarda en variable he creado dni **/
+        
+        // .value es el valor del input. 
+        // por tanto lo guarda en variable he creado dni 
         var dni = document.getElementById("dni").value; 
 
-        /** requisitos VARIABLE DNI **/
+        // requisitos VARIABLE DNI 
 
-        /** dni con 9 caracteres **/
+        // dni con 9 caracteres 
         if( dni.length != 9 ){ alert ("debe tener 9 caracteres")}
 
 
-
-
-
-
-
-
-        /** finalmente le decimos que si ha cumplido todos los requisitos envie **/
+        
+        // finalmente le decimos que si ha cumplido todos los requisitos envie
         else(document.getElementById("formulario").submit())
 
         
