@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ejercicio004</title>
+    <title>IF ... ELSE IF ... ELSE - Comparar numeros</title>
 </head>
 
 <!-- 
@@ -16,27 +16,34 @@
 
 
 <script>
-    var numero1;
-    var numero2;
 
+function operacion_cadena(){
+
+    // preguntamos a usuario 2 numeros via prompt. Guardamos esos valores en variables
     numero1 = parseInt(window.prompt("Escribe aqui un numero"));
     numero2 = parseInt(window.prompt("Escribe aqui un numero"));
 
-
+    // si numero1 mayor que numero2... escribir
     if (numero1 > numero2) {
         document.write("El numero mas grande es " + numero1);
     }
 
-
+    // en otro caso si numero2 mayor que numero1.. escribir
     else if (numero2 > numero1) {
         document.write("El numero mas grande es " + numero2);
     }
 
-
+    // en cualquier otro caso...
     else {
         document.write("Ambos son iguales");
     }
 
+}
+
+</script>
+
+<script>
+    operacion_cadena()
 </script>
 
 <body> 
