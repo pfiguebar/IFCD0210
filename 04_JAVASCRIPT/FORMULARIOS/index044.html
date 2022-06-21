@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>SELECT</title>
+    <title>SELECT - FORMULARIOS</title>
 
 
 </head>
@@ -23,30 +23,31 @@
     <script>
 
 function mostrar_datos(){
-        /** recoger el valor del select */
-        var sexo = document.getElementById("sexo"); /** aqui recoje elemento **/
-        var sexo_valor = sexo.value;                /** aqui le asigna valor */
+        // recoger el valor del select 
+    
+        var sexo = document.getElementById("sexo"); // aqui recoje elemento 
+        var sexo_valor = sexo.value;                // aqui le asigna valor 
                
 
-        /** un select tiene 2 opciones: 
-         * options (array donde se guarda todas las opciones)
-         * ej:  sexo.options[0].text    --> devuelve --> Hombre
-         *      sexo.options[1].text    --> devuelve --> Mujer
-         * 
-         * selectedIndex (indice de la opcion seleccionada)
-         * ej: imaginemos usuario ha seleccionado hombre
-         *     sexo.selectedIndex    --> devuelve -->  0 
-         * 
-         * si quiero sacar texto de la opcion seleccionada por ejemplo seria:
-         * sexo.options[sexo.selectedIndex].text
-         **/
+        // un select tiene 2 opciones: 
+        // options (array donde se guarda todas las opciones)
+        // ej:  sexo.options[0].text    --> devuelve --> Hombre
+        //      sexo.options[1].text    --> devuelve --> Mujer
+        // 
+        // selectedIndex (indice de la opcion seleccionada)
+        // ej: imaginemos usuario ha seleccionado hombre
+        //     sexo.selectedIndex    --> devuelve -->  0 
+        // 
+        // si quiero sacar texto de la opcion seleccionada por ejemplo seria:
+        // sexo.options[sexo.selectedIndex].text
+       
 
          indice_seleccionado = sexo.selectedIndex;
          etiqueta_seleccionada = sexo.options[indice_seleccionado].text
 
-         /** vemos resultados al darle boton enviar ... via log consola **/
-         /** en este caso muestra varible 
-        console.log(etiqueta_seleccionada) **/
+         // vemos resultados al darle boton enviar ... via log consola 
+         // en este caso muestra varible 
+         // console.log(etiqueta_seleccionada) **/
 
 }
     </script>
