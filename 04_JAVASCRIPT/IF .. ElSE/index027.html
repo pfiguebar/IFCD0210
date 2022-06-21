@@ -4,26 +4,26 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title> 
+    <title>IF .. ELSE - Buscar letra en cadena</title> 
 
     <!-- crear una funcion que le pida usuario una cadena. 
         Que luego me diga un mensaje que indique si esa cadena tiene ñ -->
 
 <script>
 function detector(){
-/** le preguntamos usuario via prompt. guardamos en variable cadena **/
+// le preguntamos usuario via prompt. guardamos en variable cadena 
 var cadena = window.prompt("Introducir cadena");
 
-/** le indicamos que comprube si variable guardada 
- * es igual a -1, da respuesta NO 
- * En caso contrario dar respuesta SI **/
+// le indicamos que comprube si variable guardada 
+// es igual a -1, da respuesta NO 
+// En caso contrario dar respuesta SI 
 if(cadena.indexOf("ñ") == -1){ alert("NO tiene ñ"); }
 else{ alert("SI tiene ñ"); }
 }
 </script>
 
 <script>
-/** llamamos a la funcion **/
+// llamamos a la funcion
 detector();  
 </script>
 
