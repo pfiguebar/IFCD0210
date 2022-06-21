@@ -4,20 +4,32 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>WHILE</title>
 
     <!-- un bucle while que me escriba el valor de un contador 
         mientras que ese contador valga menor que 10 -->
 
 <script>
-    var contador = 0;   /** definimos variable contador, dandole valor cero **/
+
+    function escribir_contador(){
+
+    // definimos variable contador, dandole valor cero **/
+        var contador = 0;   
     
-    while( contador < 10 ){   //** mientras variable contador sea inferior a 10, ejecutar siguiente codigo **/
+    
+        // mientras variable contador sea inferior a 10, ejecutar siguiente codigo
+        while( contador < 10 ){   
                      document.writeln("El valor del contador es " + contador + "<br>"); 
-                     contador++;  //** tenemos que sumarle 1 a contador para no hacer un bucle infinito **/
+                     
+                     // tenemos que sumarle 1 a contador para no hacer un bucle infinito
+                     contador++;  
                     
                     }
-                  
+                }
+</script>
+
+<script>
+   escribir_contador();
 </script>
 
 </head>
