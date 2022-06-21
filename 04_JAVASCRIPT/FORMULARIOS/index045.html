@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>RADIO</title>
+    <title>RADIO - FORMULARIO </title>
 
 
 </head>
@@ -28,14 +28,14 @@ Colores
     <script>
 
 function mostrar_datos(){
-        /** recoger el valor del select por name */
+        // recoger el valor del select por name 
         var colores = document.getElementsByName("colores"); 
         
-        /** hacemos un bucle que recorre todo el array **/
+        // hacemos un bucle que recorre todo el array 
         for(indice = 0; indice < colores.length; indice++){
 
-                /** si encuentro opcion seleccionada o checked (por defecto checked=true) */
-                /** guardo ese valor indice en una variable, en nuestro caso lo llamo indice_valido */
+                // si encuentro opcion seleccionada o checked (por defecto checked=true)
+                // guardo ese valor indice en una variable, en nuestro caso lo llamo indice_valido 
                 if(colores[indice].checked == true){
                     indice_valido = indice;
                 }
@@ -43,7 +43,7 @@ function mostrar_datos(){
 
         color_seleccionado = colores[indice_valido].value
         
-      console.log(color_seleccionado)
+      //  console.log(color_seleccionado)
 
 }
     </script>
