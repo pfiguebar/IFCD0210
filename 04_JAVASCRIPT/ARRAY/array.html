@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ARRAY</title>
+</head>
+<body>
+
+<!-- funcion que te pregunta 5 veces por un numero -->
+
+<script>
+    function pedir_numeros(){
+
+        //declaramos un array llamado "numeros" que va contener numero de intentos
+        numeros = [];
+
+        for(intentos = 0 ; intentos < 5 ; intentos++){ 
+            // le pido usuario un numero y lo guardo en una variable  
+            var resultado = parseInt(window.prompt("dame un numero")); 
+            
+            // le indico que resultado lo incluya en array inicial "numeros"
+            numeros.push(resultado)    
+        }
+            // guardamos resultado final array
+            return numeros;
+    }
+</script>
+
+<script>
+    resultado = pedir_numeros();
+    document.write(resultado);
+</script>
+
+    
+</body>
+</html>
