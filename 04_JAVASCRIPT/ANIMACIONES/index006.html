@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        .menu {position: absolute; z-index: 999;}
+        #cuadro{position:absolute; top:0px; left:0px; width: 200px; height: 100vh; background-color: red;}
+    </style>
+
+</head>
+<body>
+    <!-- animaciones sencillas en javascript -->
+
+    <!-- MOVER HACIA IZQUIERDA -->
+    <div class="menu"> 
+    <input type="button" value="bajar" onclick="bajar()">    <input type="button" value="subir" onclick="subir()">
+</div>
+    
+        <div id="cuadro"></div>
+    
+
+    <script>
+        function bajar(){
+            id = null;
+            const cuadro_rojo = document.getElementById('cuadro');
+            var contador = 0;
+            
+            id = setInterval(frame, 1)  //llamar cada centesima segundos
+            function frame(){
+                if(contador == 100){   // cuando llegues a posicion 100, parar 
+                    clearInterval(id);
+                }
+                else {
+                    contador++;
+                    cuadro_rojo.style.left = contador + 'px';
+                    
+                    
+                }
+            }
+
+        }
+    </script>
+
+    <script>
+        function subir(){
+            id = null;
+            const cuadro_rojo = document.getElementById('cuadro');
+            var contador = 0;
+            
+            id = setInterval(frame, 1)  //llamar cada centesima segundos
+            function frame(){
+                if(contador == 100){   // cuando llegues a posicion 100, parar 
+                    clearInterval(id);
+                }
+                else {
+                    contador++;
+                    cuadro_rojo.style.left = -contador + 'px';
+                    
+                    
+                }
+            }
+
+        }
+    </script>
+
+    
+  
+    
+
+
+    <!-- CAMBIAR OPACIDAD IMAGEN al pasar raton por encima, sin animacion 
+    <img id="arbolito" src="https://i.picsum.photos/id/454/536/354.jpg?hmac=gT_pI1trquvs2-MRvT2AU4M5mopDeyYQ8sHohhcwf94" onmouseover="cambiar()" onmouseout="descambiar()" >
+
+    <script>
+        function cambiar(){
+        imagen = document.getElementById("arbolito");
+        imagen.style.opacity = 0.5;
+        }
+
+        function descambiar(){
+            imagen = document.getElementById("arbolito");
+            imagen.style.opacity = 1;
+        }
+    </script>
+-->
+
+</body>
+</html>

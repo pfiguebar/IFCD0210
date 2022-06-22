@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+<!-- https://www.w3schools.com/jsref/met_win_settimeout.asp -->
+<p>Click "Stop" to prevent myGreeting() to execute. (You have 3 seconds)</p>
+
+<button onclick="myStopFunction1()">Stop!</button>
+
+
+<h2 id="demo1"></h2>
+
+<script>
+var  esperar_3_segundos = setTimeout(salir_3_segundos, 3000);
+function salir_3_segundos() {   document.getElementById("demo1").innerHTML = "Happy Birthday!" }
+function StopFunction1() {   clearTimeout(myTimeout); }
+</script>
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>
