@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>COMPROBAR DNI</title>
+</head>
+<body>
+
+
+    <!-- -->
+    <!-- funcion para comprobar si letra dni esta correcta -->
+    <!-- teoria --  hay que tomar el numero tu dni / 23   = resto  -->
+    <!-- resto es posicion letra array 
+    var letras = T , R , w 
+    -->
+
+<script>
+
+function comprobar_dni(){
+
+var letra_dni = ['T','R','W','A','G','M','Y','F','F','D','X','B','N','J','Z','S','Q','V','H','L','C','K','E','T'];
+
+
+numero_dni = parseInt(window.prompt("¿Escriba numero dni sin letras?"));
+
+// le indicamos transforme resultado a mayuscula dado que array son letras mayusculas
+letra_dni_usuario = window.prompt("¿Escriba su letras?").toUpperCase();
+
+// calcular resto de una operacion
+var calculo_letra = numero_dni % 23;
+
+// respuesta calculo anterior es un numero que es indice del array 
+letra_correcta = letra_dni[calculo_letra];
+
+
+// COMPROBAR SI LETRA HA ESCRITO USUARIO ES LA CORRECTA
+if(letra_dni_usuario == letra_correcta){
+    document.write("su letra es correcta")
+    
+}
+else{
+    document.write("su letra esta equivocada. Letra correcta es: " + letra_correcta);
+    }
+
+}
+</script>
+
+ 
+<script>
+    comprobar_dni();
+</script>
+
+</body>
+</html>
