@@ -1,0 +1,45 @@
+1. De las siguientes frases, indique cual es la verdadera y cual es la falsa
+a. V  Las paginas web de un sitio web estan interrelacionadas entre si
+b. F  Las paginas no contienen subelementos en ninguno de los casos
+c. F  El contenido de una pagina web es solamente texto
+
+
+
+3. Ordene los pasos para elaborar un esquema general
+1. La estructura depende del contenido
+2. Delimitacion del tema
+3. Recoleccion de información
+4. Agregacion y descripcion
+5. Diseño y estilo grafico
+6. Ensamble final
+7. Testeo
+
+
+
+4. De las siguientes oraciones, señale cual es la verdadera y cual es la falsa
+a. V  La comprobacion de una pagina web debe hacerse mientras se esta en la fase de desarrollo, en lugar de esperar este totalmente finalizada.
+b. F  Se ensamblan las distintas paginas antes de tener recolectada toda la información
+c. V  Cuando se dispone de la información que va a llevar el sitio, hay que clasificarla
+
+
+
+5. ¿Que dos tipos de nodos pueden encontrar en la arquitectura cliente/servidor?
+Los clientes (navegadores) y los servidores (alojamiento)
+
+
+
+6. Relaciona los siguientes elementos
+a. capa1  cliente aplicacion (interactua con usuario)
+b. capa2  cliente aplicaciones (genera la pagina)
+c. capa3  servidor base datos  (si necesita datos)
+
+
+
+10. ¿Como interactua el usuario con nuestro sitio web?
+c.   mediante menus y mediante enlaces
+
+
+15. De las siguienes oraciones, señale cual es la verdadera y cual es falsa
+a. V   Para elaborar un esquema general de un sitio web se puede un software especifico
+b. F   Tanto las imagenes como los videos y sonidos no tienen cabida en ninguna pagina nuestra web
+c. V   Usar un sistema de busquedas en nuestro sitio web no tiene por que ser indispensable
