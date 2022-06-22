@@ -1,39 +1,39 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>DO WHILE - ACERTAR NUMERO</title>
-   
-<!-- 
-    Script que pida un numero hasta que acierte usuario. 
-    si es distinto 6 lo imprime pantalla "se ha equivocado"
-    si es igual salgo bucle e imprimo "has acertado"
--->
-
-<!-- nota: 
+    <script>
+        /*
+        El script me pida un número mientras que ese número sea
+        distinto de 6
+        Si es distinto de 6 lo imprimirá en pantalla
+        Si es igual a 6, salgo del bucle
+        */
+        
+    /* nota: 
     * si se hace con for ... seria pide por ejemplo 3 intentos y luego se sale 
     * se se hace solo con while ... puede que nunca se ejecute condicion
     * si se hace con do+while ... al menos lo ejecuta 1 vez, aunque no se cumpla condicion
--->
-
-<script>
-
-// haz este codigo al menos una vez 
-do{    
-    var numero = parseInt(window.prompt("Numero?"));  
+    */
     
-}     
-
-
-while(numero != 6)
- document.write("has acertado");
-
     
-</script>
+       contador = 0;
+        do{
+            numero = parseInt(window.prompt("Dime un número:"));
+            contador++;
+        }
+        while(numero != 6)
+        document.write("has necesitado" + contador + "intentos");
+       
+        
 
-</head> 
+       
+   
+    </script>
+</head>
 <body>
     
 </body>
