@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        
+        input { border: 1px solid black; padding: 5px;}
+        
+    </style> 
+
+</head>
+<body>
+
+    <form autocomplete="off" onsubmit="return false">  <!-- desactivamos enviar con tecla enter -->
+       <input type="text" id="producto" autocomplete="off">   
+       <input type="button" id="anadir_producto" value="añadir">              
+    </form> 
+     
+    
+    <ul id="lista">     
+    </ul>
+
+   
+    <script>
+          
+        function sumar_producto(){
+            // creamos variable producto_usuario, que toma valores de la id productos 
+            var producto_usuario = document.getElementById("producto");  
+
+            // guardamos ese valor en una variable llamada producto valor
+            var producto_valor = producto_usuario.value; 
+
+            // le indicamos que añada producto valor a lista 
+            // condiiones para añadir son
+            // * producto_valor no puede estar vacio 
+            if (producto_valor == ""){ 
+                
+                 alert("no")                         
+             
+            
+            }
+            else {
+                // le indicamos añada linea nueva
+            document.getElementById("lista").innerHTML += "<li>" + producto_valor + "</li>";
+			
+            
+			// borramos campo input
+			var producto_usuario = document.getElementById("producto"); 
+            var producto_valor = producto_usuario.value ="";   
+            }
+            				
+			
+
+			
+        }
+
+            // creamos lanzador para evento click en boton add_producto
+           document.getElementById("anadir_producto").addEventListener("click", sumar_producto);
+
+          
+
+        </script>
+
+
+    
+    
+    
+
+</body>
+
+
+    
+</body>
+</html>
