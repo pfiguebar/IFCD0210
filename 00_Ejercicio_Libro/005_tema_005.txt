@@ -42,4 +42,4 @@ c.   mediante menus y mediante enlaces
 15. De las siguienes oraciones, señale cual es la verdadera y cual es falsa
 a. V   Para elaborar un esquema general de un sitio web se puede un software especifico
 b. F   Tanto las imagenes como los videos y sonidos no tienen cabida en ninguna pagina nuestra web
-c. V   Usar un sistema de busquedas en nuestro sitio web no tiene por que ser indispensable
+c. V   Usar un sistema de busquedas en nuestro sitio web no tiene por que ser indispensable 
