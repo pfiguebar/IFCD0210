@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- hacer una funcion que yo le introduzca una fecha futura 
+        y me indique cuantos dias faltan para que llegue esa fecha -->
+  
+<script>
+
+    function dias_faltan(){
+    // calcular milisegundos fecha actual    
+    var fecha1 = new Date();
+    var fecha1_milisegundos = fecha1.getTime();
+    
+    // calcula milisegundos fecha le indico via prompt
+    var anio_futuro = parseInt(window.prompt("Escribe aqui año en numero superior a " + fecha1 )); 
+    var mes_futuro = parseInt(window.prompt("Escribe aqui mes en numero superior a " + fecha1 ));
+    var mes_futuro_corregido = mes_futuro - 1;  // usuario introduciria junio como mes 6. Valor Cadena seria valor 5
+    var dia_futuro = parseInt(window.prompt("Escribe aqui dia en numero superior a " + fecha1 ));
+    
+    
+    var fecha2 = new Date(anio_futuro , mes_futuro_corregido , dia_futuro);
+    var fecha2_milisegundos = fecha2.getTime();
+    
+    var milisegundos_transcurridos = fecha2_milisegundos - fecha1_milisegundos;
+    
+    // calculos
+    
+    // pasamos milisegundos a segundos
+    var segundos = milisegundos_transcurridos / 1000;
+
+    // pasamos segundos a minutos  
+    var minutos = segundos / 60;
+
+    // pasamos minutos a horas
+    var horas = minutos / 60;
+
+    // pasamos horas a dias 
+    var dias = horas / 24;
+
+    // pasamos dias a años 
+    // var anios = dias / 365   
+    
+    var dias_navidad = dias;  // le indico que guarde resultado en variable nueva 
+    return dias_navidad;   // le indico esa variable la guarde para despues usar
+    
+        }
+    </script>
+
+
+
+<!-- llamada a la funcion -->
+<script>
+    dias_naviadad = dias_faltan();
+    document.write("Falta " + dias_navidad + " dias")
+</script>
+
+
+</body>
+</html>

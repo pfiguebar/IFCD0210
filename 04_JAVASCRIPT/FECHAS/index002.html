@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <!-- EJERCICIO -->
+<!-- calcular diferencia fecha con UTC -->
+<script>
+    // calcular milisegundos fecha actual    
+    var fecha1 = new Date();
+    var fecha1_milisegundos = fecha1.getTime();
+    
+    // calcula milisegundos fecha le indico, ejemplo: 2/5/1968
+    var fecha2 = new Date(1968 , 5 , 2);
+    var fecha2_milisegundos = fecha2.getTime();
+    
+    var milisegundos_transcurridos = fecha1_milisegundos - fecha2_milisegundos;
+    
+    // calculos
+    
+    // pasamos milisegundos a segundos
+    var segundos = milisegundos_transcurridos / 1000;
+
+    // pasamos segundos a minutos  
+    var minutos = segundos / 60;
+
+    // pasamos minutos a horas
+    var horas = minutos / 60;
+
+    // pasamos horas a dias 
+    var dias = horas / 24;
+
+    // pasamos dias a años 
+    var anios = dias / 365   
+    
+    
+    // imprimo en pantalla lo que quiero
+    document.write("han pasado " + dias + " dias")
+    </script>
+    
+</body>
+</html>

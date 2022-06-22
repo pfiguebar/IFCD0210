@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+<!-- TEORIA http://web2020.es/jss-date.html -->
+
+<script>
+// Devuelve la fecha actual, por ejemplo: "Mon May 16 13:52:40 UTC+0100 2011"
+var objFecha1 = new Date();
+document.write(objFecha1);
+document.write("<br>");
+
+// Devuelve "Sat May 14 00:00:00 UTC+0100 2011"
+var objFecha2 = new Date("May 14, 2011");
+document.write(objFecha2);
+document.write("<br>");
+
+
+// Devuelve "Sat May 14 20:21:22 UTC+0100 2011"
+var objFecha3 = new Date("May 14, 2011 20:21:22");
+document.write(objFecha3);
+document.write("<br>");
+
+
+// Devuelve "Sat May 14 00:00:00 UTC+0100 2011"
+var objFecha4 = new Date(2011, 4, 14);
+document.write(objFecha4);
+document.write("<br>");
+
+
+// Devuelve "Sat May 14 20:21:22 UTC+0100 2011"
+var objFecha5 = new Date(2011, 4, 14, 20, 21, 22);
+document.write(objFecha5);
+document.write("<br>");
+    
+    
+// Creamos una fecha no válida (febrero del 2011 tiene sólo 28 días):  undefined
+var objFecha = new Date(2011, 1, 29);
+document.write( dia + "/" + mes + "/" + anio );
+document.write("<br>");
+
+
+// devuelve dia mes
+var dia  = objFecha.getDate();  
+
+// devuelve mes
+var mes  = objFecha.getMonth();  
+
+// devuelve año
+var anio = objFecha.getFullYear();  
+    
+    
+var objFecha = new Date(2011, 4, 14, 20, 21, 22);
+// Devuelve: "14/4/2011"
+document.write( objFecha.getDate() + "/" + objFecha.getMonth() + "/" + objFecha.getFullYear() );
+document.write("<br>");
+
+
+// Devuelve: "20:21:22"
+document.write( objFecha.getHours()+ ":" + objFecha.getMinutes() + ":" + objFecha.getSeconds() );
+document.write("<br>");
+   
+
+//  SET TIME 
+//  Una forma de operar con fechas es con operaciones en milisegundos - Formato UTC 
+// Devuelve "Tue Jun 14 20:21:22 UTC+0100 2011"    
+var objFecha2 = new Date(1308079282000);
+document.write(objFecha2);
+</script>
+
+
+</body>
+</html>
