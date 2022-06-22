@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CADENAS MAYUSCULA Y MINUSCULA</title>
+</head>
+<body>
+
+<!-- funcion que nos diga si cadena solo tiene mayuscula o minuscula -->
+
+<script>
+function comparacion(){
+    cadena = window.prompt("¿Escribe tu frase?");
+
+    // transformo a mayuscula
+    cadena_may = cadena.toUpperCase();
+    
+    // transformo a minuscula
+    cadena_min = cadena.toLowerCase();
+
+    // comprobamos 
+    // si cadena_may = cadena --> significa ambas son mayuscula
+    if (cadena == cadena_may){
+        document.write("cadena es mayuscula")
+    }
+
+    // si cadena_min = cadena ---> significa ambas son minusculas
+    else if(cadena == cadena_min){
+        document.write("cadena es minuscula")
+    }
+
+    // si son distintas 
+    else {
+        document.write("era una mezcla entre mayuscula y minusculas")
+    }   
+}
+</script>
+
+<script>
+    comparacion();    
+</script>
+
+    
+</body>
+</html>
