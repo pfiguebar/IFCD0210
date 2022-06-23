@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+<!-- script que me haga la quiniela A-B 1x2 -->
+<!-- juego quiniela es del tipo: 
+
+partido1 = resultado_1
+partido2 = resultado_X
+partido3 = resultado_2
+
+...
+partidos totales = 14
+
+********************
+
+Para jugar con dados....
+tenemos dado con 3 resultados: 
+resultado_1     es dado 0
+resultado_X     es dado 1
+resultado_2     es dado 2
+
+y 14 tiradas  (ejecutar un for)
+-->
+
+
+<script>
+    function rellenar_quiniela(){
+        
+        // creamos las 14 jugadas
+        for (contador = 1; contador <= 14; contador++){
+            // darme un numero entre 0 y 3, no incluyendo 3 ... por tanto maximo es 2,99999
+                jugada = Math.floor(Math.random()*3);
+
+                // si tirada dado es un 0... le indico resultado partidos es 1
+                if(jugada == 0){
+                    document.write("Partido " + contador + " :1 <br>")
+                }
+
+                // si tirada dado es un 1... le indico resultado partidos es X
+                if(jugada == 1){
+                    document.write("Partido " + contador + " :X <br>")
+                }
+
+                // si tirada dado es un 2... le indico resultado partidos es 2
+                if(jugada == 2){
+                    document.write("Partido " + contador + " :2 <br>")
+                }
+                     
+        
+            }
+
+        
+
+        }
+</script>
+
+<script>
+    rellenar_quiniela();
+</script>
+
+</body>
+</html>

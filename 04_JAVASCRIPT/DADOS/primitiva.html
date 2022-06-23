@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=S, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+<!-- script que me haga la primitiva 6 numeros (1-49)-->
+<!-- juego quiniela es del tipo 
+tengo que seleccionar un numero aleatorio entre 1 y 49
+* numeros no se pueden repetir
+1) Miro si ha salido antes
+2) si ha salido, no lo apunto
+3) si no ha salido, lo apunto
+...
+asi proceso con 6 numeros
+
+-->
+
+<script>
+
+    function primitiva(){
+    // tenemos un array con 6 numeros. para empezar lo dejamos vacio porque no sabemos datos
+    arrayresultados = [];
+
+    // creamos primero las 6 tiradas
+    for (contador = 1; contador <= 6; contador++){
+
+        // con un dado darme un numero entre 1 y 49
+        // jugada = Math.floor(Math.random()*(49-1) + 1;  // ( maximo - minimo ) + 1 
+
+        //  necesitamos comprobar si resultado jugada es repetido dentro array resultados
+        
+        // este comando le indica buscame resultado dentro array 
+        // arrayresultados.indexOf(jugada) == -1   si me da -1 es que existe
+        // arrayresultados.indexOf(jugada) !== -1  es que existe
+        
+        // este comando le indica meta jugada dentro array 
+        //  arrayresultados.push(jugada)
+
+        do(
+            jugada = Math.floor(Math.random()*48) + 1
+        )
+        
+        while(arrayresultados.indexOf(jugada) !== -1)
+        arrayresultados.push(jugada)
+        }
+    }
+       
+
+</script>
+
+<script>
+    primitiva();
+    document.write(arrayresultados)
+</script>
+    
+</body>
+</html>
