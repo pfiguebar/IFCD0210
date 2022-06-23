@@ -47,7 +47,7 @@
 
 
     <script>
-        /** oye estate pendiente cuando yo seleccione idquieractivelister ... 
+        /** oye estate pendiente cuando yo seleccione idquieractivelister (mi_div2) ... 
          * se ejecute onmouseover con funcion dentro 
          * se ejecute onmouseout con funcion fuera **/
 
@@ -57,13 +57,11 @@
         document.getElementById("mi_div1").addEventListener("mouseout", fuera);
 
         function dentro(){
-            mi_elemento = document.getElementById("mi_div2");
-            mi_elemento.style.backgroundColor = "green";
+            document.getElementById("mi_div2").style.backgroundColor = "green";
         } 
 
         function fuera(){
-            mi_elemento = document.getElementById("mi_div2");
-            mi_elemento.style.backgroundColor = "blue";
+            document.getElementById("mi_div2").style.backgroundColor = "blue";
         }
     
     </script>
