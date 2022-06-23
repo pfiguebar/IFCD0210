@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,35 +7,23 @@
     <title>Document</title>
 </head>
 <body>
-<!-- MIRAR LUEGO GITHUB PROFE -->
-    <!-- igual caso anterior, pero pide numeros hasta que le meto cadena vacia -->
-
-    <script>
-        function pedir_numeros(){
-            // creo variable intentos, definida por usuario
-            intentos = parseInt(window.prompt("numero intentos"));
-          
-            // creo un array
-            arraynumeros = [];
     
-            // hacer codigo
-            do { 
-            numero = parseInt(window.prompt("dame un numero")); 
-            numeros.push(numero);
-            } 
-            // mientras 
-            while (numero != "");
-
-            // guardar resultado
-            return numeros;
-        }
-    </script>
-    
-    <script>
-        resultado = pedir_numeros();
-        document.write(resultado);
-    </script>
-
-
 </body>
-</html> 
+<script>
+    // pide números hasta que le meto una cadena
+    // vacia
+
+    function pedir_numeros(){
+        numeros = [];
+        do{
+            numero = window.prompt("Dame un numero o nada para parar")
+            numeros.push(parseInt(numero))
+        }while(numero != "")
+        
+        return numeros
+    }
+
+    document.write(pedir_numeros())
+
+</script>
+</html>
