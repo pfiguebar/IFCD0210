@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- crear un boton al pasar por encima desaparecen
+    boton
+    input
+    <p></p>
+
+    pulse aqui para que todo aparezca
+   -->
+<br><br><br>
+   <button id="elemento1">BOTON</button>
+<br><br><br>
+   <input id="elemento2">
+<br><br><br>
+   <p id="elemento3">ESTO ES UN TEXTO</p>
+<br><br><br>
+   <p id="elemento4">BOTON MAGIA</p>
+<br><br><br>
+
+   <script>
+    // funcion para elemento1
+    document.getElementById("elemento1").addEventListener("mouseover", desaparece1);
+        function desaparece1(){
+            document.getElementById("elemento1").style.display = "none";
+        }
+           
+            
+    // funcion para elemento2
+    document.getElementById("elemento2").addEventListener("mouseover", desaparece2);
+        function desaparece2(){
+            document.getElementById("elemento2").style.display = "none";
+        }
+               
+            
+    // funcion para elemento3
+    document.getElementById("elemento3").addEventListener("mouseover", desaparece3);
+        function desaparece3(){
+            document.getElementById("elemento3").style.display = "none";
+        }
+           
+              
+    // funcion para elemento4
+    document.getElementById("elemento4").addEventListener("click", aparece);
+        function aparece(){
+            document.getElementById("elemento1").style.display = "block";
+            document.getElementById("elemento2").style.display = "block";
+            document.getElementById("elemento3").style.display = "block";                            
+        }
+    </script>
+
+
+
+
+</body>
+
+
+
+</html>
