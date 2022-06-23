@@ -19,36 +19,46 @@
         veces_5 = 0;
         veces_6 = 0;
 
+        
+        //   valores de array son las caras del dado ... en nuestro caso hay 6 caras 
         veces = [0,0,0,0,0,0];
+        
+        
         for(contador=0; contador < dados; contador++){
             dado = Math.floor(Math.random() * (6) ) + 1;
             
-            // Si sale resultado 1, incrementar valor veces_1++
+            // Si sale cara 1, incrementar variable veces_1++
             if(dado == 1){
                 veces_1++
             }
             
+            // Si sale cara 2, incrementar variable veces_2++
             if(dado == 2){
                 veces_2++
             }
             
+            // Si sale cara 3, incrementar variable veces_3++
             if(dado == 3){
                 veces_3++
             }
+            
+            // Si sale cara 4, incrementar variable veces_4++
             if(dado == 4){
                 veces_4++
             }
             
+            // Si sale cara 5, incrementar variable veces_5++
             if(dado == 5){
                 veces_5++
             }
             
+            // Si sale cara 6, incrementar variable veces_6++
             if(dado == 6){
                 veces_6++
             }
             
             
-    
+            // Si sale por ejemplo cara tiene 5 puntos... su posicion en array es 4 (siempre una menor)    
             veces[dado-1]++;
           
         }
