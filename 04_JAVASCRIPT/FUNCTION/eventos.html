@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .cuadrado{width: 200px; height: 200px; background-color: gray ; color:white;}
+        .cuadro1{border: 1px solid black; width: 200px; height: 200px; padding: 10px;}
+        .cuadro2{border: 1px solid black; width: 50px; height: 20px; background-color: white;}
+        .cuadro3{border: 1px solid black; width: 50px; height: 20px;  background-color: white; }
+    </style>
+</head>
+<body>
+
+<div id="marco" class="cuadro1">
+    <p> El numero que vamos a operar es: 8 </p>
+
+    <div> SUMAR 2  
+        <div class="cuadro2" id="operacion1"> </div>
+    </div>
+
+    <br>
+
+    <div> MULTIPLICAR X 2  
+        <div class="cuadro2" id="operacion2"> </div>
+    </div>
+</div>
+
+<h5> HAZ CLICK EN LOS SIGUIENTES BOTONES</h5>
+
+<input type="button" id="prueba2" value="boton mousedown">
+<input type="button" id="prueba1" value="boton mouseup">
+
+<br>
+<br>
+<div id="cuadrado" class="cuadrado">1</div>
+
+
+<script>
+    document.getElementById("operacion1").addEventListener("click", sumar2);
+    document.getElementById("operacion2").addEventListener("dblclick", multiplicar2);
+    
+    document.getElementById("prueba1").addEventListener("mouseup", color_amarillo);
+    document.getElementById("prueba2").addEventListener("mousedown", color_rojo);
+    
+    // otra forma de hacer un listener
+    cuadrado = document.getElementById("cuadrado")
+    cuadrado.addEventListener("mousemove", incrementar);
+    
+                    
+    valorinicial = 8; 
+            
+    function sumar2(){
+        valormasdos = valorinicial + 2
+        document.getElementById("operacion1").innerHTML = valormasdos
+                
+    }
+    function multiplicar2(){
+        valorpordos = valorinicial * 2
+        document.getElementById("operacion2").innerHTML = valorpordos
+            }
+        
+    function color_amarillo(){
+        document.getElementById("marco").style.backgroundColor = "yellow"
+        
+    }
+
+    function color_rojo(){
+        document.getElementById("marco").style.backgroundColor = "red"
+     }
+
+
+     // otra forma de escribir codigo (ver ejemplo listener)
+     function incrementar(){
+        numero = parseInt(cuadrado.innerHTML);
+        numero++
+        cuadrado.innerHTML = numero;
+     }
+</script>
+
+
+</body>
+</html>
