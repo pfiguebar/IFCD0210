@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+<style>
+    .normal {border: 1px solid black;}
+        
+        
+        
+    .negrita 
+    {
+        border: 3px solid black;
+        font-weight: bold; 
+    }
+</style>
+    
+    
+<input  type="text" id="nombre">
+
+<input type="button" value="enviar" id="input2">
+
+<script>
+    document.getElementById("nombre").addEventListener("mouseover", negrita);
+    document.getElementById("nombre").addEventListener("mouseout", normal);
+    document.getElementById("input2").addEventListener("click", enviar_formulario);
+    
+    function negrita(){ 
+        document.getElementById("nombre").className = "negrita"  
+    }
+
+    function normal(){ 
+        document.getElementById("nombre").className = "normal"    
+    }
+    
+    function enviar_formulario(){
+        nombre = document.getElementById("nombre")
+        nombrecasilla = nombre.value;
+            document.write(  alert (nombrecasilla) );  
+    } 
+       
+</script>
+
+</body>
+</html>

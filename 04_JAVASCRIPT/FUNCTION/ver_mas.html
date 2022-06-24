@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .cuadro {min-height: 100px; }
+        #elemento1 {display: block; position: absolute; top: 0px; left: 0px;}
+        #elemento2 {display: none; position: absolute; top: 0px; left: 0px;}
+    </style>
+</head>
+<body>
+    <!-- crear un boton al hacer click muestra texto largo   -->
+   
+<div class="cuadro">
+    <p id="elemento1">
+        
+            <script>
+                function texto_corto(){
+                    mi_cadena_larga = "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.";
+                    mi_cadena_corta = mi_cadena_larga.substring(0,18);
+                    document.write(mi_cadena_corta);
+                         }
+                         
+                texto_corto();
+            </script>
+        
+    </p>
+
+    <p id="elemento2">
+        
+            <script>
+                function texto_largo(){
+                    document.write(mi_cadena_larga);
+                        }
+                texto_largo();
+            </script>
+        
+    </p>
+</div>    
+
+<p id="elemento3">Ver mas</p>
+
+
+    <script>
+        
+        document.getElementById("elemento3").addEventListener("click", aparece);
+            function aparece(){
+                document.getElementById("elemento1").style.display = "none";
+                document.getElementById("elemento2").style.display = "block";
+                
+                                          
+            }
+    </script>
+
+
+    
+</body>
+</html>
