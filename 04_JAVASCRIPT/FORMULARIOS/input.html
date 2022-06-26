@@ -7,11 +7,16 @@
     <title>INPUT TEXT- FORMULARIOS</title>
     
     <style>
-    input {display: block; border: 1px solid black; width: 300px; padding: 5px;}
-    input.error {border-color: red;}
-    span {display: block; margin: 10px;}
-    span.error {color:red;}
-</style> 
+        fieldset {border-color: transparent;}
+        input { border: 1px solid black; padding: 5px;}
+        span {display: block; margin: 10px; font-size: 14px;}
+        .error {color:red;}
+        input.error {border-color: red;}   
+        #mensaje_error_nombre, #mensaje_error_edad, #mensaje_error_dni{display: none;color: red; font-size: 18px;}
+        input.correcto {border-color: green;}
+        #mensaje_ok_nombre, #mensaje_ok_edad, #mensaje_ok_dni{display: none;color: green; font-size: 18px;}
+       .mostrar{display: block; }
+    </style> 
 
 </head>
 
@@ -19,14 +24,26 @@
    
 <form id="formulario" action="" method="POST" >
     
+    
     <input id="nombre" name="nombre" type="text">
-    <span id="aviso_nombre" name="aviso_nombre">Su nombre</span>   
+    <span id="aviso_nombre">Escribir aqui su nombre</span>
+    <span id="mensaje_error_nombre">Este campo no puede estar vacio</span>
+    <span id="mensaje_ok_nombre">Casilla correcta</span>
+    
     
     <input id="edad" name="edad" type="text">
-    <span id="aviso_edad" name="aviso_edad">Su edad</span>
+    <span id="aviso_edad">Escribir aqui su edad</span>
+    <span id="mensaje_error_edad">Este campo no puede estar vacio</span>
+    <span id="mensaje_ok_edad">Casilla correcta</span>
     
+
     <input id="dni" name="dni" type="text">
-    <span id="aviso_dni" name="aviso_dni">Su dni</span>
+    <span id="aviso_dni">Escribir aqui su dni</span>
+    <span id="mensaje_error_dni">Este campo no puede estar vacio</span>
+    <span id="mensaje_ok_dni">Casilla correcta</span>
+
+
+    <span></span>
     
     <input type="button" value="enviar" id="enviar_formulario">
 
@@ -57,25 +74,31 @@
 
         // si nombre esta vacio escribir un texto alerta y asignamos valor falso a valor_nombre_ok
         if(valor_nombre == ""){ 
-            document.write(alert("campo vacio"))
+            // document.write(alert("campo vacio"))
             valor_nombre_ok = false 
+
+            document.getElementById("aviso_nombre").style.display="none";
             document.getElementById("nombre").className = "error";
-            document.getElementById("aviso_nombre").className = "error";
+            document.getElementById("mensaje_error_nombre").style.display="block";
         }
     
         // si longitud nombre es menor 5 caracter escribir un texto alerta y asignamos valor falso a valor_nombre_ok
         else if(valor_nombre.length < 5){  
-            document.write(alert("campo menor 5"))
+            // document.write(alert("campo menor 5"))
             valor_nombre_ok = false 
-            document.getElementById("edad").className = "error";
-            document.getElementById("aviso_edad").className = "error";
+            
+            document.getElementById("aviso_nombre").style.display="none";
+            document.getElementById("nombre").className = "error";
+            document.getElementById("mensaje_error_nombre").style.display="block";
         }
 
         // en otro caso, asignar valor true
         else{  
             valor_nombre_ok = true  
-            document.getElementById("nombre").className = "";
-            document.getElementById("aviso_nombre").className = "";
+            
+            document.getElementById("aviso_nombre").style.display="none";
+            document.getElementById("nombre").className = "correcto"; 
+            document.getElementById("mensaje_ok_nombre").style.display="block";   
         }
         
         
@@ -98,17 +121,22 @@
 
         // si edad es menor 18 o mayor 78  
         if( campo_edad < 18 || campo_edad > 78){ 
-            document.write(alert("edad incorrecta"));
+            // document.write(alert("edad incorrecta"));
             valor_edad_ok = false 
-            document.getElementById("dni").className = "error";
-            document.getElementById("aviso_dni").className = "error";
+            
+            document.getElementById("aviso_edad").style.display="none";
+            document.getElementById("edad").className = "error";
+            document.getElementById("mensaje_error_edad").style.display="block";
         }
 
         // en otro caso, asignar valor true
         else{
             valor_edad_ok = true
-            document.getElementById("edad").className = "";
-            document.getElementById("aviso_edad").className = "";
+            
+            document.getElementById("aviso_edad").style.display="none";
+            document.getElementById("edad").className = "correcto"; 
+            document.getElementById("mensaje_ok_edad").style.display="block";   
+            
         }
 
         
@@ -131,13 +159,20 @@
 
         // dni distinto 9 caracteres 
         if(longitud_dni != 9){
-           document.write( alert("dni erroneo") )
-            valor_dni_ok = false }
+           // document.write( alert("dni erroneo") )
+           valor_dni_ok = false 
+        
+           document.getElementById("aviso_dni").style.display="none";
+           document.getElementById("dni").className = "error";
+           document.getElementById("mensaje_error_dni").style.display="block";
+        }
 
          else{
             valor_dni_ok = true
-             document.getElementById("dni").className = "";
-             document.getElementById("aviso_dni").className = "";
+            
+            document.getElementById("aviso_dni").style.display="none";
+            document.getElementById("dni").className = "correcto"; 
+            document.getElementById("mensaje_ok_dni").style.display="block";   
          }  
         
            
@@ -152,7 +187,7 @@ if(valor_nombre_ok == true && valor_edad_ok == true && valor_dni_ok == true){
 
 }
    
-    </script>
+</script>
 
 
 </body>
