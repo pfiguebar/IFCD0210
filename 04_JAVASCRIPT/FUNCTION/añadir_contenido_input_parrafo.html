@@ -27,15 +27,7 @@
         
 <form id="formulario" name="formulario" method="POST" action="" autocomplete="off">  
 
-
-<fieldset> 
-<label for="nombre">Nombre:</label>   
 <input id="nombre" name="nombre" type="text" placeholder="Escribe aqui su nombre">
-<span id="aviso_nombre">Escribir aqui su nombre</span>
-<span id="mensaje_error_nombre">Este campo no puede estar vacio</span>
-<span id="mensaje_ok_nombre">Casilla correcta</span>
-</fieldset>
-
 
 </form>
         
@@ -47,35 +39,26 @@
 
 <script>
     // indicamos que cuando hacemos click en id enviar se lanza funcion verificar **/
-    document.getElementById("enviar").addEventListener("click", verificar);
+    document.getElementById("enviar").addEventListener("click", verificarenviar);
 
-function verificar(){
+function verificarenviar(){
     // recogemos el valor del campo nombre 
     campo_nombre = document.getElementById("nombre");
     // lo guardamos en una variable, la llamamos nombre_valor
     nombre_valor = campo_nombre.value;
 
 
-    // creamos unas variables mismo nombre con ok a la que le damos valor inicial true y false 
-    // campo_nombre_ok = true;
-    // campo_nombre_ok = false; 
+    
                         
         /** TEST VARIABLE **/
                     
         /** si nombre_valor vacio le asigno falso **/
-        if(nombre_valor == "") { 
-               document.getElementById("aviso_nombre").style.display="none";
-               document.getElementById("nombre").className = "error";
-               document.getElementById("mensaje_error_nombre").style.display="block";
-               campo_nombre_ok = false;              
-            }
+        if(nombre_valor == "") {  campo_nombre_ok = false;    }
                     
         /** en caso contrario quitarle clase y mostramos un spam que indica casilla correcta **/
                         
         else {
-               document.getElementById("aviso_nombre").style.display="none";
-               document.getElementById("nombre").className = "correcto"; 
-               document.getElementById("mensaje_ok_nombre").style.display="block";                            
+                                          
                campo_nombre_ok = true;
                
                document.getElementById("parrafo").innerHTML += campo_nombre.value + " ";
@@ -88,10 +71,9 @@ function verificar(){
 
           
 
-if(campo_nombre_ok ){
-            document.getElementById("formulario");
-            
-            
+if(campo_nombre_ok){
+    document.getElementById("formulario")
+                     
             }
 
 }
