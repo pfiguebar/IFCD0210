@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>INPUT TEXT- FORMULARIOS</title>
+
+</head>
+
+<body>
+   
+<form id="formulario" action="" method="POST" >
+    
+    <input id="nombre" name="nombre" type="text">
+        
+    <input id="edad" name="edad" type="text">
+    
+    <input id="dni" name="dni" type="text">
+
+    <input type="button" value="enviar" id="enviar_formulario">
+
+</form> 
+
+
+ 
+
+<script>
+
+    // creamos un listener que cuando alguien le de boton id enviar_formulario ... carga funcion enviar_verificado
+    document.getElementById("enviar_formulario").addEventListener("click", enviar_verificado);
+
+    function enviar_verificado(){
+    // FLAG 1
+        //  ************************** 
+        // INPUT NOMBRE 
+        //  ************************** 
+        
+        // .value es el valor del input. 
+        // por tanto lo guarda en variable he creado nombre 
+        var campo_nombre = document.getElementById("nombre");
+        var valor_nombre = campo_nombre.value;  
+               
+        
+        //  **************************    
+        // requisitos VARIABLE NOMBRE
+
+        // si nombre esta vacio escribir un texto alerta y asignamos valor falso a valor_nombre_ok
+        if(valor_nombre == ""){ 
+            document.write(alert("campo vacio"))
+            valor_nombre_ok = false }
+    
+        // si longitud nombre es menor 5 caracter escribir un texto alerta y asignamos valor falso a valor_nombre_ok
+        else if(valor_nombre.length < 5){  
+            document.write(alert("campo menor 5"))
+            valor_nombre_ok = false  }
+
+        // en otro caso, asignar valor true
+        else{  
+            valor_nombre_ok = true  
+        }
+        
+        
+  
+        
+    
+    // FLAG 2
+        //  ************************** 
+        // INPUT EDAD
+        //  ************************** 
+        
+        // .value es el valor del input. 
+        // por tanto lo guarda en variable he creado edad 
+        // usamos parseInt para pasar valor texto a numero 
+        var campo_edad = parseInt(document.getElementById("edad").value);
+        
+        
+        //  ************************** 
+        // requisitos VARIABLE EDAD
+
+        // si edad es menor 18 o mayor 78  
+        if( campo_edad < 18 || campo_edad > 78){ 
+            document.write(alert("edad incorrecta"));
+            valor_edad_ok = false }
+
+        // en otro caso, asignar valor true
+        else{
+            valor_edad_ok = true
+        }
+
+        
+
+        
+
+    // FLAG 3
+        //  ************************** 
+        // INPUT DNI 
+        //  ************************** 
+
+        // .value es el valor del input. 
+        // por tanto lo guarda en variable he creado dni 
+        // usamos parseInt para pasar valor texto a numero 
+        var campo_dni = document.getElementById("dni").value;
+        var longitud_dni = campo_dni.length                   
+        
+        // ************************** 
+        // requisitos VARIABLE DNI 
+
+        // dni distinto 9 caracteres 
+        if(longitud_dni != 9){
+           document.write( alert("dni erroneo") )
+            valor_dni_ok = false }
+
+         else{
+            valor_dni_ok = true
+         }  
+        
+           
+ // Si todo está chachi, enviamos el formulario
+if(valor_nombre_ok == true && valor_edad_ok == true && valor_dni_ok == true){
+    // document.getElementById("formulario").submit();
+    console.log(valor_nombre_ok)
+    console.log(valor_edad_ok)
+    console.log(valor_dni_ok)
+    console.log("enviado")
+}
+
+}
+   
+    </script>
+
+
+</body>
+</html>
