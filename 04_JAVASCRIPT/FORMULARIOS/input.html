@@ -20,11 +20,14 @@
 <form id="formulario" action="" method="POST" >
     
     <input id="nombre" name="nombre" type="text">
-        
+    <span id="aviso_nombre" name="aviso_nombre">Su nombre</span>   
+    
     <input id="edad" name="edad" type="text">
+    <span id="aviso_edad" name="aviso_edad">Su edad</span>
     
     <input id="dni" name="dni" type="text">
-
+    <span id="aviso_dni" name="aviso_dni">Su dni</span>
+    
     <input type="button" value="enviar" id="enviar_formulario">
 
 </form> 
@@ -55,16 +58,24 @@
         // si nombre esta vacio escribir un texto alerta y asignamos valor falso a valor_nombre_ok
         if(valor_nombre == ""){ 
             document.write(alert("campo vacio"))
-            valor_nombre_ok = false }
+            valor_nombre_ok = false 
+            document.getElementById("nombre").className = "error";
+            document.getElementById("aviso_nombre").className = "error";
+        }
     
         // si longitud nombre es menor 5 caracter escribir un texto alerta y asignamos valor falso a valor_nombre_ok
         else if(valor_nombre.length < 5){  
             document.write(alert("campo menor 5"))
-            valor_nombre_ok = false  }
+            valor_nombre_ok = false 
+            document.getElementById("edad").className = "error";
+            document.getElementById("aviso_edad").className = "error";
+        }
 
         // en otro caso, asignar valor true
         else{  
             valor_nombre_ok = true  
+            document.getElementById("nombre").className = "";
+            document.getElementById("aviso_nombre").className = "";
         }
         
         
@@ -88,11 +99,16 @@
         // si edad es menor 18 o mayor 78  
         if( campo_edad < 18 || campo_edad > 78){ 
             document.write(alert("edad incorrecta"));
-            valor_edad_ok = false }
+            valor_edad_ok = false 
+            document.getElementById("dni").className = "error";
+            document.getElementById("aviso_dni").className = "error";
+        }
 
         // en otro caso, asignar valor true
         else{
             valor_edad_ok = true
+            document.getElementById("edad").className = "";
+            document.getElementById("aviso_edad").className = "";
         }
 
         
@@ -120,6 +136,8 @@
 
          else{
             valor_dni_ok = true
+             document.getElementById("dni").className = "";
+             document.getElementById("aviso_dni").className = "";
          }  
         
            
