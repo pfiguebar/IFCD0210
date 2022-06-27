@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+<script>
+// calcular media aritmetica 
+function media_aritmetica(list){
+
+    // La función .reduce() te será útil para tomar todos los elementos de una lista, 
+    // aplicar una función a cada uno de ellos y acumular el resultado en un valor de salida. 
+    // En este caso lo usamos para SUMAR todos los valores array
+    
+    
+    
+    var sumList = list.reduce(function (valuesAc = 0, newElement){
+    
+            return valuesAc + newElement;
+    } );
+
+    var calculo_media = sumList / list.length;
+
+    return calculo_media;
+}
+
+// llamar funcion
+// daton interior a la llamada puedes pedirlo via prompt, input,...
+// Para simplificar se escriben directamente
+// ejemplo 10 + 20 + 30 = 60 
+// 60 / 3 = 20 
+
+document.write(media_aritmetica([10, 20, 30]));
+</script>
+
+
+
+
+    
+</body>
+</html>
