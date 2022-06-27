@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+<form id="formulario" action="" method="POST">
+
+    NOMBRE:<input type="text" id="usuario">
+
+
+    CONTRASEÑA:<input type="text" id="clave">
+
+    <input type="button" id="enviar" value="login">
+</form>
+
+
+<script>
+// creamos listener
+document.getElementById("enviar").addEventListener("click", acceso);
+
+// definimos los valores de usuario y contraseñaç
+user = "admin";
+password = "supermaster";
+msg_error = "Pongase en contacto con administrador"
+msg_bienvenida = "Bienvenidos a nuestra pagina web"
+
+function acceso(){
+
+    //  1
+    var campo_usuario = document.getElementById("usuario");
+    var valor_usuario = campo_usuario.value;  
+
+    if(valor_usuario != user){
+        document.write(msg_error)
+        valor_usuario_ok = false;
+    }
+    else{
+        valor_usuario_ok = true;
+    }
+
+    //  2
+    var campo_clave = document.getElementById("clave");
+    var valor_clave = campo_clave.value;  
+
+    if(valor_clave != password){
+        document.write(msg_error)
+        valor_password_ok = false;
+    }
+    else{
+        valor_password_ok = true;
+    }
+
+    // Si todo está bien, enviamos el formulario
+    if(valor_usuario_ok == true && valor_password_ok == true){
+        document.write(msg_bienvenida)
+
+}
+}
+
+
+
+
+
+</script>
+    
+    
+</body>
+</html>

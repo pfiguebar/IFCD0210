@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        .div1, .div2{width: 100px; height: 100px; border: 1px solid black;}
+    </style>
+</head>
+<body>
+
+    <div class="div1" id="cuadro1"></div>
+<br><br><br>
+    <div class="div2" id="cuadro2"></div>
+
+  <script>
+    // creamos listener
+    // raton se encuentra encima o no
+    document.getElementById("cuadro1").addEventListener("mouseover", color1);
+    document.getElementById("cuadro1").addEventListener("mouseout", color2);
+
+    // pulsar dentro div. cuando sueltes raton
+    document.getElementById("cuadro2").addEventListener("mouseup", color3);
+    document.getElementById("cuadro2").addEventListener("mousedown", color4);
+
+function color1(){
+    document.getElementById("cuadro1").style.backgroundColor = "red";
+}
+
+function color2(){
+    document.getElementById("cuadro1").style.backgroundColor = "green";
+}
+
+function color3(){
+    document.getElementById("cuadro2").style.backgroundColor = "";
+}
+
+function color4(){
+    document.getElementById("cuadro2").style.backgroundColor = "yellow";
+}
+
+  </script>  
+
+    
+</body>
+</html>
