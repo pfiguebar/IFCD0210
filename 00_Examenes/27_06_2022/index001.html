@@ -7,6 +7,32 @@
     <title>Document</title>
 </head>
 <body>
+    
+    <!--  METODO 1 -->
+    
+    <script>
+        function calcular_media(mi_array){
+    
+	        suma = 0;
+	
+	for(contador = 0; contador < mi_array.length; contador++){
+	suma = suma + mi_array[contador];
+    
+    }
+	
+	media = suma/mi_array.length;
+	return media;
+	}
+	
+</script>
+
+<script>
+mi_array = [1,2,3,4,5,6,7,8,9,10]
+media = calcular_media(mi_array)
+document.write(media)
+</script>
+    
+    <!--  METODO 2 -->
 
 <script>
 // calcular media aritmetica 
@@ -31,10 +57,9 @@ function media_aritmetica(list){
 // llamar funcion
 // daton interior a la llamada puedes pedirlo via prompt, input,...
 // Para simplificar se escriben directamente
-// ejemplo 10 + 20 + 30 = 60 
-// 60 / 3 = 20 
 
-document.write(media_aritmetica([10, 20, 30]));
+
+document.write(media_aritmetica([1,2,3,4,5,6,7,8,9,10]));
 </script>
 
 
