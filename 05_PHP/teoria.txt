@@ -1,1 +1,31 @@
+********** COMENTARIOS **********
+<?php
 
+// esto es un comentario
+/* esto es un comentario */
+
+?>
+
+
+
+********** IMPRIMIR PANTALLA  **********
+<?php
+// metodo1
+echo "HOLA MUNDO";     
+echo "<h1>HOLA MUNDO</h1>";
+
+
+// metodo2
+print("HOLA MUNDO");   
+?>
+
+
+
+********** VARIABLES **********
+<?php
+// variables se escriben con signo $
+// variables de sistema llevan _ al principio y mayusculas  ej:  $_SERVER    (no se puede usar esta codificacion)
+
+$edad = "Juan";
+echo "HOLA".$nombre;   
+?>
