@@ -14,7 +14,7 @@
 // variables se escriben con signo $
 // variables de sistema llevan _ al principio y mayusculas  ej:  $_SERVER    (no se puede usar esta codificacion)
 
-$edad = "Juan";
+$nombre = "Juan";
    
 ?>
 
@@ -26,7 +26,7 @@ $edad = "Juan";
 // metodo1
 echo "HOLA MUNDO";     
 echo "<h1>HOLA MUNDO</h1>";
-echo "HOLA".$nombre;
+echo "HOLA".$nombre;      // esto imprime en pantalla  HOLA Juan
 
 
 // metodo2
