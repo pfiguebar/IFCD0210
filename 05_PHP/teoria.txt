@@ -8,18 +8,6 @@
 
 
 
-********** IMPRIMIR PANTALLA  **********
-<?php
-// metodo1
-echo "HOLA MUNDO";     
-echo "<h1>HOLA MUNDO</h1>";
-
-
-// metodo2
-print("HOLA MUNDO");   
-?>
-
-
 
 ********** VARIABLES **********
 <?php
@@ -27,5 +15,20 @@ print("HOLA MUNDO");
 // variables de sistema llevan _ al principio y mayusculas  ej:  $_SERVER    (no se puede usar esta codificacion)
 
 $edad = "Juan";
-echo "HOLA".$nombre;   
+   
+?>
+
+
+
+
+********** IMPRIMIR PANTALLA  **********
+<?php
+// metodo1
+echo "HOLA MUNDO";     
+echo "<h1>HOLA MUNDO</h1>";
+echo "HOLA".$nombre;
+
+
+// metodo2
+print("HOLA MUNDO");   
 ?>
