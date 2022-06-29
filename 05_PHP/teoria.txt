@@ -14,8 +14,19 @@
 // variables se escriben con signo $
 // variables de sistema llevan _ al principio y mayusculas  ej:  $_SERVER    (no se puede usar esta codificacion)
 
+$saludo = "Hola";
 $nombre = "Juan";
-   
+
+$array = [0,1,2];   // es igual javascript, pero añadiendo $
+
+
+//posicion     0       1       2 
+$array_3 = [ [1,2] , [3,4] , [5,6] ]     // array con arrays dentro
+
+$array_3[1] = [3,4]
+
+$array_3[1][1] = 3
+  
 ?>
 
 
@@ -26,9 +37,19 @@ $nombre = "Juan";
 // metodo1
 echo "HOLA MUNDO";     
 echo "<h1>HOLA MUNDO</h1>";
-echo "HOLA".$nombre;      // esto imprime en pantalla  HOLA Juan
+echo "HOLA" . $nombre;      // esto imprime en pantalla  HOLA Juan. 
+                            // Usaremos por defecto este metodo
 
 
 // metodo2
-print("HOLA MUNDO");   
+print("HOLA MUNDO");     
+?>
+
+
+
+
+********** OPERACIONES CADENA  **********
+
+<?php
+echo $saludo . $nombre;      // esto imprime en pantalla  Hola Juan
 ?>
