@@ -31,6 +31,19 @@ $array_3[1][1] = 3
 
 
 
+********** CONSTANTES **********
+<?php
+// recordar que constantes son valores que nunca cambian
+// NO llevan signo $
+// por convenio, se escriben en mayusculas
+// se escribe define
+
+define ( "PI" , 3.14 );
+define ( "AUTOR" , "ANTONIO MACHADO" );
+
+?>
+
+
 
 ********** IMPRIMIR PANTALLA  **********
 <?php
