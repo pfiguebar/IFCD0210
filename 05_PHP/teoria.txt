@@ -35,8 +35,8 @@ $array_3[1][1] = 3
 <?php
 // recordar que constantes son valores que nunca cambian
 // NO llevan signo $
-// por convenio, se escriben en mayusculas
-// se escribe define
+// por convenio, se escriben en MAYUSCULAS
+// se usa    define
 
 define ( "PI" , 3.14 );
 define ( "AUTOR" , "ANTONIO MACHADO" );
@@ -58,11 +58,3 @@ echo "HOLA" . $nombre;      // esto imprime en pantalla  HOLA Juan.
 print("HOLA MUNDO");     
 ?>
 
-
-
-
-********** OPERACIONES CADENA  **********
-
-<?php
-echo $saludo . $nombre;      // esto imprime en pantalla  Hola Juan
-?>
