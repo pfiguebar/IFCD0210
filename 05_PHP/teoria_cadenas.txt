@@ -1,5 +1,5 @@
 OPERACIONES CADENA  
-www.web2020.es
+http://www.web2020.es/php-funciones-cadenas.html
 
 ********** LONGITUD CADENA  **********
 
@@ -51,3 +51,35 @@ $cadena = "es jueves";
 $mi_array = count_chars($cadena, 1);
 
 echo $mi_array     // imprime e(3 veces)  s(2 veces)  j(1 vez)  u(1 vez) .....
+?>
+
+
+
+*****  substr.count($variable, $cadena)  *****
+<?php
+$cadena1 = "Pedro Juan Antonio Marco";
+$cadena2 = "Antonio";
+
+$contar = substr.count($cadena1, $cadena2);
+echo $contar      // ha encontrado 1 vez la palabra Antonio en cadena anterior  --> por tanto da valor 1
+?>
+
+
+
+*****  strpos($variable, "cadena")  *****
+<?php
+            0123456789     (posicion)
+$cadena1 = "Hoy es Lunes";
+
+$posicion = strpos($cadena1, "es");    
+echo $posicion      // indica en que posicion esta la cadena estas buscando "es"   --> en este caso 4   
+?>
+
+
+*****  explode("", $cadena1)  *****   (split javascript)
+<?php
+$cadena1 = "Hoy es Lunes";
+$romper = explode("", $cadena1);
+
+echo $romper     // esto descompone cadena separando por espacios   --> y lo convierte array  $romper = ["Hoy","es","Lunes"]
+?>
