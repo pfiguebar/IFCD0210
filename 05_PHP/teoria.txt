@@ -58,3 +58,13 @@ echo "HOLA" . $nombre;      // esto imprime en pantalla  HOLA Juan.
 print("HOLA MUNDO");     
 ?>
 
+
+***** var dump ******
+Muestra el contenido de una variable
+
+<?php
+$cadena = "hola"
+var dump($cadena);      // esto imprime letra por letra
+?>
+
+
