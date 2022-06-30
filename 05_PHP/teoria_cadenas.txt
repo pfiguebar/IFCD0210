@@ -1,0 +1,53 @@
+OPERACIONES CADENA  
+www.web2020.es
+
+********** LONGITUD CADENA  **********
+
+
+*****  strlen(variable)  *****
+<?php
+$cad = "cadena";  
+$numero = strlen($cad);                            // devuelve la longitud de la cadena  --> en este caso 6
+$agua = "litros"
+
+echo "La longitud de la cadena es:"  . $numero  .$agua    // concatenados - esto imprime en pantalla -->  La longitud de la cadena es: 6 litros
+echo "La longitud de la cadena es: $numero $agua"        // al ir dentro " ..... imprime texto interpretado --> La longitud de la cadena es: 6 litros
+
+echo 'La longitud de la cadena es: $numero'             // al ir dentro ' ..... imprime texto literal --> La longitud de la cadena es: $numero
+?>
+
+
+
+*****  substr(variable, valor_inicial, cuantos_cojo_incluido)  *****
+<?php
+$cad = "cadena";  
+$substrin001 = substr($cad, 2);       // en este caso imprime posicion 2 hasta final --> dena
+$substrin002 = substr($cad, 2, 2);    // en este caso imprime desde posicion 2 ... cojo 2 caracteres mas --> de
+?>
+ 
+ 
+ 
+*****  str_replace("cadena_buscar" , "cadena_remplazo" , $variable , $numero_veces)  *****
+<?php
+$cad = "Este es el garaje donde se guardaba el coche";  
+echo str_replace("garaje" , "aparcamiento", $cad);      //  en este caso imprime Este es el aparcamiento donde se guardaba el coche ---> no cambia cadena original $cad
+
+
+$texto_cambiado = str_replace("garaje" , "aparcamiento", $cad); 
+echo $texto_cambiado        // en este caso imprime nueva variable -->   Este es el aparcamiento donde se guardaba el coche 
+
+
+$texto_cambiado_1 = str_replace("es" , "", $cad , $reemplazo);        
+echo $texto_cambiado_1                 // en este caso le indicamos busque cadena es dentro de la frase y me indique numero veces ha encontrado esa cadena -->  2   Este  ...   es 
+
+?>
+
+
+
+
+*****  count_chars(variable, 1)  *****
+<?php
+$cadena = "es jueves";
+$mi_array = count_chars($cadena, 1);
+
+echo $mi_array     // imprime e(3 veces)  s(2 veces)  j(1 vez)  u(1 vez) .....
