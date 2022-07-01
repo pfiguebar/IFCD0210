@@ -1,0 +1,25 @@
+<form id="formulario" action="" method="POST">  
+  
+  <input type="text" id="nombre_id" name="nombre_name" value="nombre_value">
+  
+  <input type="submit" value="enviar">
+  
+</form>
+
+
+<?php
+
+if($_POST){
+print_r($_POST):
+echo "el valor del nombre es" .$_POST["nombre_name"];
+}
+
+
+// En php cuando se envia un formulario se crea un array llamado $_POST
+// Dentro de ese array se crean key con los valores que tenga name
+// imaginemos usuario ha escrito en casilla input que su nombre es JUAN
+
+// Ejemplo imprime 
+// el valor del nombre es JUAN
+
+?>
