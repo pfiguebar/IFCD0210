@@ -1,0 +1,90 @@
+******** FUNCIONES CON ARRAY ********
+http://web2020.es/php-matrices-funciones.html
+
+
+
+****    Generar valores numéricos en sucesión aritmética   ****
+*******  range($inicio, $final, $paso)   ********
+
+<?php
+// crea un array que empieza en 1 ... va sumando 3 a este valor ..... hasta que llegues a valor 10
+$valores = range(1, 10, 3);   
+
+//   print "<pre>"; 
+//   print_r($valores); 
+//   print "</pre>";
+
+//   Imprime esto
+//   Array
+//    (
+//      [0] => 1
+//      [1] => 4
+//      [2] => 7
+//      [3] => 10
+//    )
+
+?>
+
+
+
+
+
+****  Mezclar matrices ****
+*******   array_merge($matriz_1, $matriz_2, ...)  ********
+
+<?php
+$uno = [1, 2, 4];
+$dos = [1, 3, 9];
+
+//  crea un array union de los dos anteriores
+$final = array_merge($uno, $dos);
+
+//   print "<pre>"; 
+//   print_r($final); 
+//   print "</pre>";
+
+//  Si son numericos, array final tendra los valores del inicial y añade los valores que no existen 
+//  Imprime esto
+//  Array
+//    (
+//      [0] => 1
+//      [1] => 2
+//      [2] => 4
+//      [3] => 1
+//      [4] => 3
+//      [5] => 9
+//    )
+
+
+?>
+
+
+
+
+
+
+****  Contar elementos de una matriz   ****
+******* count($matriz) *******
+
+<?php
+$nombres[1] = "Ana";
+$nombres[10] = "Bernardo";
+$nombres[25] = "Carmen";
+
+$elementos = count($nombres);
+
+\\   print "<p>La matriz tiene $elementos elementos.</p>";
+\\   print "<pre>";
+\\   print_r($nombres); 
+\\   print "</pre>";
+
+
+\\   Array
+\\      (
+\\        [1] => Ana
+\\        [10] => Bernardo
+\\        [25] => Carmen
+\\      )
+
+?>
+
