@@ -63,28 +63,31 @@ $final = array_merge($uno, $dos);
 
 
 
-****  Contar elementos de una matriz   ****
-******* count($matriz) *******
+****  Contar cuántas veces aparece cada valor en una matriz   ****
+******* array_count_values($matriz) *******
 
 <?php
-$nombres[1] = "Ana";
-$nombres[10] = "Bernardo";
-$nombres[25] = "Carmen";
+$nombres = ["Ana", "Bernardo", "Bernardo", "Ana", "Carmen", "Ana"];
 
-$elementos = count($nombres);
+$cuenta = array_count_values($nombres);
 
-\\   print "<p>La matriz tiene $elementos elementos.</p>";
-\\   print "<pre>";
-\\   print_r($nombres); 
-\\   print "</pre>";
+//    print "<pre>"; 
+//    print_r($cuenta); 
+//    print "</pre>";
 
 
-\\   Array
-\\      (
-\\        [1] => Ana
-\\        [10] => Bernardo
-\\        [25] => Carmen
-\\      )
+//    Resultado seria el siguiente. Array con 3 elementos
+
+//    Array
+//      (
+//        [Ana] => 3
+//        [Bernardo] => 2
+//        [Carmen] => 1
+//      )
+
 
 ?>
+
+
+
 
