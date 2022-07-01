@@ -28,15 +28,21 @@ echo $nombres[0];
 
 
 
+
+
 *** array asociativos 1 dimension ** 
 <?php
                       key        value         key     value           key         value
 $array_asociativo = ["Nombre" => Paco,        "Edad" => 18,         "email" => yo@hotmail.com];
 
 // cuando se solicita valor edad (key) ... este esta asociado a su value 
-$array_asociativo ["edad"] = 18
+echo $array_asociativo ["edad"] 
+
+// este imprime en pantalla      18
 
 ?>
+
+
 
 
 
@@ -44,17 +50,36 @@ $array_asociativo ["edad"] = 18
 <?php
 
 
-$array_asociativo_alumnos = 
+// EJEMPLO 1 
+$array_principal-numerico_secundario-asociativo_alumnos = 
   [
   ["Nombre" => Paco, "Edad" => 18],
   ["Nombre" => Manolo, "Edad" => 31],
   ["Nombre" => Maria, "Edad" => 28]       // ultimo elemento no lleva coma
   ];
 
-//  si queremos conocer nombre Paco por ejemplo
-echo $array_asociativo_alumnos [0]["Nombre"]
+//  si queremos conocer nombre Paco, por ejemplo
+echo $array_principal-numerico_secundario-asociativo_alumnos [0]["Nombre"];
 
 // esto imprime en pantalla:     Paco
+
+
+
+
+// EJEMPLO 2
+$array_principal-asociativo_secundario-asociativo_alumnos =
+[
+"pepe" => ["peso" => 65, "edad" = 43, "altura" => 1.6],
+"juan" => ["peso" => 85, "edad" = 43, "altura" => 1.6],
+"maria" => ["peso" => 55, "edad" = 43, "altura" => 1.6],
+"ana" => ["peso" => 55, "edad" = 43, "altura" => 1.6]
+];
+
+//  si queremos conocer edad Maria, por ejemplo
+echo $array_principal-asociativo_secundario-asociativo_alumnos ["maria]["edad"];
+
+// esto imprime en pantalla:     43
+
 ?>
 
 
