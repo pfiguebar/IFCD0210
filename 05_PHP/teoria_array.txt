@@ -4,7 +4,9 @@ http://web2020.es/php-matrices.html
 
 *** se declaran y acceden igual javascript  ** 
 <?php
+
 $nombres = ["Ana", "Bernardo", "Carmen"];
+
 echo $nombres[0];
 
 //   print_r se suele utilizar a modo console.log javascript. Solo usar durante programacion
@@ -18,7 +20,41 @@ echo $nombres[0];
 //  Array 
 //  (
 //      [0] => Ana
-//      [1] => Bernardo";
-//
+//      [1] => Bernardo
+//      [1] => Carmen
+//  )
 
 ?>
+
+
+
+*** array asociativos 1 dimension ** 
+<?php
+                      key        value         key     value           key         value
+$array_asociativo = ["Nombre" => Paco,        "Edad" => 18,         "email" => yo@hotmail.com];
+
+// cuando se solicita valor edad (key) ... este esta asociado a su value 
+$array_asociativo ["edad"] = 18
+
+?>
+
+
+
+*** array asociativos varias dimension ** 
+<?php
+
+
+$array_asociativo_alumnos = 
+  [
+  ["Nombre" => Paco, "Edad" => 18],
+  ["Nombre" => Manolo, "Edad" => 31],
+  ["Nombre" => Maria, "Edad" => 28]       // ultimo elemento no lleva coma
+  ];
+
+//  si queremos conocer nombre Paco por ejemplo
+echo $array_asociativo_alumnos [0]["Nombre"]
+
+// esto imprime en pantalla:     Paco
+?>
+
+
