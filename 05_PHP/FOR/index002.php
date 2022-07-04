@@ -13,6 +13,9 @@
 
 for ($contador = 1; $contador < 6; $contador ++){
 echo "<h$contador> hola mundo </h$contador><br>";
+    
+//  tambien se puede escribir concatenados
+//  echo "<h" .$contador. "> hola mundo </h" .$contador. "><br>";
 
 }
 ?>
