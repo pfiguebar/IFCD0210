@@ -40,9 +40,7 @@ $array_asociativo_doble = [
         // ahora necesitamos guardar los datos interiores nombre, apellidos,...
         foreach ($clave_array_array_asociativo_doble as $key_interior => $valores_interior){
         echo "$key_interior : $valores_interior <br>";
-            
-            // imaginemos queremos imprimir solo correo electronico personas
-            // echo "$valores_interior[4];
+                      
         }
     
     }
