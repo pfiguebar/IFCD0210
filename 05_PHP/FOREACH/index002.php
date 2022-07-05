@@ -32,7 +32,43 @@ foreach ($array_asociativo_numerico as $indice => $dia){
 
 ?>
 
-
+<?php
+    
+$array_asociativo_doble = [
+    "persona001" => ["nombre" => "juan",
+                     "apellidos" => "garcia",
+                     "edad" => 50,
+                     "email" => "a@gmail.com"
+                     ],
+    "persona002" => ["nombre" => "antonio",
+                     "apellidos" => "garcia",
+                     "edad" => 51,
+                     "email" => "b@gmail.com"
+                     ],
+    "persona003" => ["nombre" => "maria",
+                     "apellidos" => "garcia",
+                     "edad" => 52,
+                     "email" => "c@gmail.com"
+                     ],
+    "persona004" => ["nombre" => "eva",
+                     "apellidos" => "garcia",
+                     "edad" => 53,
+                     "email" => "d@gmail.com"
+                     ]
+    ];
+    
+    // Este codigo recorre array principal $array_asociativo_doble ..y toma valores key y lo guarda en un valor 
+    // Con esto nos da persona001, persona002, ....
+    foreach ($array_asociativo_doble as $key_array_array_asociativo_doble => $clave_array_array_asociativo_doble){
+    
+        // ahora necesitamos guardar los datos interiores nombre, apellidos,...
+        foreach ($clave_array_array_asociativo_doble as $key_interior => $valores_interior){
+        echo $key_interior $valores_interior <br>;
+        }
+    
+    }
+    
+?>
 
     
 </body>
