@@ -8,7 +8,10 @@
 </head>
 <body>
 
-<!-- crear una funcion que tome como parametros agenda e imprima tareas por dias -->
+<!-- 
+crear una funcion que tome como parametros 
+valores array asociativo e imprima tareas por dias 
+-->
 
 <?php
 
