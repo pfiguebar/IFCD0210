@@ -75,7 +75,7 @@ function calculo_media_2($numeros2){
 // llamo a la funcion 
 $numeros2 = [1,2,3,4,5,6,7,8,9,10];
 echo calculo_media_2($numeros2);
-?>
+?> 
 
 </body>
 </html>
