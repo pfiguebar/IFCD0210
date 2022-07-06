@@ -43,9 +43,7 @@ function tabla_multiplicar($numero){
               
     }
 }
-?>
 
-<?php
 // llamamos funcion dandole valor tabla 5
 tabla_multiplicar(5);
 ?>
