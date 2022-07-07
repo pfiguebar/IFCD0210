@@ -1,0 +1,36 @@
+VARIABLES DE SESION      $_SESSION
+
+https://www.php.net/manual/es/reserved.variables.session.php
+
+Permanecen solo cuando usuario esta en la pagina web. 
+Una vez se marcha esa web desaparecen.
+NO confundir con COOKIES
+
+
+ANTES CODIGO <html> hay que definir session
+
+*********************************
+****  Aqui variable session  ****
+
+<?php
+    
+    // Siempre que utilicemos sesiones deberemos iniciar con session_start.
+        
+        session_start();    
+   
+    // codigo anterior no guarda nada. 
+    // Para ello le indicamos que cosas quiere guardar en variable $_SESSION
+    // $_SESSION es un array asociativo 
+   
+   $_SESSION['usuario'] = "Manolo";
+  
+    //        ...
+   
+   $_SESSION['password'] = "A";
+?>
+
+*********************************
+****  Aqui html              ****
+
+<html>
+...
