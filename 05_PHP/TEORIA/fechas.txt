@@ -1,0 +1,10 @@
+AMPLIADO ---> https://www.php.net/manual/es/function.date.php
+
+<?php
+// $today = Date("d m y");   esto da fecha tipo 01 / 10 /2022
+// $yesterday = Date("D");   esto da fecha solo dia modo texto "Monday" 
+// echo $today;
+
+$dia = Date ("D");
+
+?>
