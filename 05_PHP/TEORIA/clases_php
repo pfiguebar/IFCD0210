@@ -1,3 +1,5 @@
+https://code.tutsplus.com/es/tutorials/basics-of-object-oriented-programming-in-php--cms-31910
+
 CLASES = PLANTILLAS
 Cuando creamos cosas con esas plantillas, tenemos un OBJETO
 
@@ -7,7 +9,7 @@ Cuando creo un empleado con esa plantilla resultado es OBJETO
 En php se definen las clases de 3 FORMAS que siguen esta estructura codigo:
 
 <?php
-// NOMBRE CLASE 
+// NOMBRE CLASE (por convenio se suele poner primera letra en mayuscula)
 
 {
 
@@ -20,7 +22,7 @@ En php se definen las clases de 3 FORMAS que siguen esta estructura codigo:
 }
 
 // SECCION 3 - OBJETOS 
-
+instanciar es crear un objeto
 ?>
 
 
@@ -47,7 +49,8 @@ public $nombre;
 // SECCION 2 - FUNCIONES Y/O METODOS  *********************************************
 // ($this se usa para indicar es clase)
 // "dame valor variable nombre. Aqui variable ya no lleva $ al ir detras $this"
-public function DameNombre(){ return $this->nombre; }
+public function DameNombre(){ 
+echo "Su nombre es $this->nombre y esta en clase colegio 4A"; }
 // ********************************************************************************
 
 
@@ -60,6 +63,8 @@ $alumno = new Alumno;
 
 // asignar el valor directamente
 $alumno->nombre = "Antonio";
+// asignar el valor via referencia funcion 
+$alumno->
 // ********************************************************************************
 
 
