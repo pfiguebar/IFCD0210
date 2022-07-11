@@ -1,0 +1,146 @@
+CLASES = PLANTILLAS
+Cuando creamos cosas con esas plantillas, tenemos un OBJETO
+
+EJ: Creo una clase (plantilla) donde defino aspectos de empleados empresa (nombre, edad, direccion,...)
+Cuando creo un empleado con esa plantilla resultado es OBJETO
+
+En php se definen las clases de 3 FORMAS que siguen esta estructura codigo:
+
+<?php
+// NOMBRE CLASE 
+
+{
+
+// SECCION 1 - VARIABLES Y/O ATRIBUTOS 
+// SECCION 2 - FUNCIONES Y/O METODOS
+
+}
+
+// SECCION 3 - OBJETOS 
+
+?>
+
+
+
+**************************************************************************************************************
+**************************************************************************************************************
+*****************************************   METODO 1   ********************************************************
+**************************************************************************************************************
+**************************************************************************************************************
+
+<?php
+// NOMBRE CLASE 
+// le damos un nombre a la clase
+class Alumno 
+
+
+{
+
+// SECCION 1 - VARIABLES Y/O ATRIBUTOS  ******************************************
+public $nombre;
+// ********************************************************************************
+
+
+// SECCION 2 - FUNCIONES Y/O METODOS  *********************************************
+// ($this se usa para indicar es clase)
+// "dame valor variable nombre. Aqui variable ya no lleva $ al ir detras $this"
+public function DameNombre(){ return $this->nombre; }
+// ********************************************************************************
+
+
+}
+
+
+// SECCION 3 - OBJETOS  ***********************************************************
+// creamos un nuevo alumno se dispara instantaneamente (new)
+$alumno = new Alumno;
+
+// asignar el valor directamente
+$alumno->nombre = "Antonio";
+// ********************************************************************************
+
+
+?>
+
+
+
+**************************************************************************************************************
+**************************************************************************************************************
+*****************************************   METODO 2   ********************************************************
+**************************************************************************************************************
+**************************************************************************************************************
+
+<?php
+class Alumno 
+
+
+{
+
+// SECCION 1 - VARIABLES Y/O ATRIBUTOS  ******************************************
+public $nombre;
+// ********************************************************************************
+
+
+// SECCION 2 - FUNCIONES Y/O METODOS  *********************************************
+// "a la variable nombre metele el valor $nombre_alumno" 
+public function setNombre($nombre_alumno){ $this->nombre = $nombre_alumno; }
+// ********************************************************************************
+
+
+}
+
+
+// SECCION 3 - OBJETOS  ***********************************************************
+// creamos un nuevo alumno se dispara instantaneamente (new)
+$alumno = new Alumno;
+
+// funcion creada antes en clase. En este caso "llamamos" a la funcion cuando queremos. Es algo asi como javascript
+$alumno->setNombre("Antonio");
+// ********************************************************************************
+
+
+?>
+
+
+
+**************************************************************************************************************
+**************************************************************************************************************
+*****************************************   METODO 3   ********************************************************
+**************************************************************************************************************
+**************************************************************************************************************
+
+<?php
+class Alumno 
+
+{
+
+// SECCION 1 - VARIABLES Y/O ATRIBUTOS  ******************************************
+public $nombre;
+public $apellidos;
+public $curso;
+public $dni;
+public $email;
+// ********************************************************************************
+
+
+// SECCION 2 - FUNCIONES Y/O METODOS  *********************************************
+public function _construct($nombre, $dni){
+$this->nombre = $nombre_alumno;
+$this->dni = $dni_alumno;
+}
+// ********************************************************************************
+
+
+}
+
+
+// SECCION 3 - OBJETOS  ***********************************************************
+// creamos un nuevo alumno se dispara instantaneamente (new)
+$alumno = new Alumno;
+
+// metodo3 es via constructores
+$alumno = new Alumno("Antonio","77777777L");
+
+?>
+
+*****************************************************************************************************************
