@@ -12,6 +12,9 @@ En php se definen las clases de 3 FORMAS que siguen esta estructura codigo:
 {
 
 // SECCION 1 - VARIABLES Y/O ATRIBUTOS 
+// PUBLIC esas variables son accesibles directamente
+// PRIVATE, no me dejan usarlo para nada. Necesitamos funciones dentro la propia clase = metodo 3 constructor
+
 // SECCION 2 - FUNCIONES Y/O METODOS
 
 }
@@ -118,12 +121,13 @@ class Alumno
 public $nombre;
 public $apellidos;
 public $curso;
-public $dni;
+private $dni;
 public $email;
 // ********************************************************************************
 
 
 // SECCION 2 - FUNCIONES Y/O METODOS  *********************************************
+// CONSTRUCTOR se llama automaticamente el solo.
 public function _construct($nombre, $dni){
 $this->nombre = $nombre_alumno;
 $this->dni = $dni_alumno;
@@ -135,10 +139,7 @@ $this->dni = $dni_alumno;
 
 
 // SECCION 3 - OBJETOS  ***********************************************************
-// creamos un nuevo alumno se dispara instantaneamente (new)
 $alumno = new Alumno;
-
-// metodo3 es via constructores
 $alumno = new Alumno("Antonio","77777777L");
 
 ?>
