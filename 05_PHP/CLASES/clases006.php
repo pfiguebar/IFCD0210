@@ -30,7 +30,7 @@ $mi_pisito = new Inmueble (10,10);
 echo $mi_pisito->calculo_precio();
 
 ?>
-
+ 
     
 </body>
 </html>
