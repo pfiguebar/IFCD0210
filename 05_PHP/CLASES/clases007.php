@@ -16,20 +16,36 @@ class Persona{
 
 public $nombre;
 
-public function __construct($nombre){   $this->nombre = $nombre; }  // se dispara automaticamente. Damos valores iniciales
-public function setNombre($nombre){     $this->nombre = $nombre; }  // hay que llamarlo. SET (poner) tal valor
-public function getNombre(){     return $this->nombre;    }  // hay que llamarlo. GET (obtener) tal valor
+// CONSTRUCTOR  // se dispara automaticamente. Damos valores iniciales
+public function __construct($nombre)
+{ 
+    $this->nombre = $nombre; 
+}  
+
+// SETTER  // hay que llamarlo. SET (poner) tal valor
+public function setNombre($nombre)
+{     
+    $this->nombre = $nombre; 
+}  
+
+// GETTER    // hay que llamarlo. GET (obtener) tal valor
+public function getNombre()
+{  
+    return $this->nombre;  
+}  
 
 }
+    
+    
 
-$persona1 = new Persona("Juan");   // definimos directamente variable nombre
-// print_r($persona1);     // ejemplo para ver resultado linea anterior
+//  variables __construct   // definimos directamente variable nombre
+$persona1 = new Persona("Juan");   
 
-$persona1->setNombre("Maria");  // Sin crear nuevas personas, Variable Juan cambiala por Maria 
-// print_r($persona1);     // ejemplo para ver resultado linea anterior
+// variables SETTER  // Sin crear nuevas personas, Variable Juan cambiala por Maria 
+$persona1->setNombre("Maria");  
 
-echo $persona1->getNombre();  // Sin crear nuevas personas, Dame valor exista esa variable 
-// echo      // ejemplo para ver resultado linea anterior. Eliminar echo si no se desea imprimir pantalla
+// variables SETTER    // Sin crear nuevas personas, Dame valor exista esa variable (echo = imprime) 
+echo $persona1->getNombre();  
 
 ?>
     
