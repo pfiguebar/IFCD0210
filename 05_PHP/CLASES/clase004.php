@@ -37,7 +37,7 @@ $texto1->cabecera = "curso programacion";
 $texto1->fondo = "orange";
 $texto1->poner_texto(); 
 
-
+ 
 
 ?>
     
