@@ -42,7 +42,7 @@
     $empleado1->Sueldo();
     
 
-    ?>
+    ?> 
 
 </body>
 </html>
