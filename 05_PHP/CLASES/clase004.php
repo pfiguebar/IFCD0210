@@ -20,14 +20,13 @@ public $cabecera;
 public $fondo;
 
 
-public function poner_texto(){
+public function poner_texto()
+{
 echo "
 <div style='background-color: $this->fondo '> 
 <h1> $this->cabecera </h1>
 </div>
 ";    
-
-    
 }
 
 }
