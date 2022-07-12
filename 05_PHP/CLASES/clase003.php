@@ -32,7 +32,7 @@ $person->setName('Bob Smith');
 echo $person->getName(); // prints 'Bob Smith'
 ?>
 
-
+ 
 
 </body>
 </html>
