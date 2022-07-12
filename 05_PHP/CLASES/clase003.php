@@ -15,15 +15,22 @@ class Alumnos
 {
   private $name;
   
+  // SETTER  
   public function setName($name) { $this->name = $name;   }
+  
+  // GETTER  
   public function getName() {   return $this->name;   }
   
 }
- 
+
+// variables _construct
 $person = new Alumnos();
 
+// variables SETTER    
 $person->setName('Bob Smith');
-echo $person->getName(); // prints 'Bob Smith'
+
+// variables GETTER    
+echo $person->getName();
 ?>
 
  
