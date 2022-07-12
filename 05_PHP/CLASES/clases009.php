@@ -45,6 +45,6 @@
     // LLamar funcion ladrar
     echo $perro1->ladrar();
 
-    ?>
+    ?> 
 </body>
 </html>
