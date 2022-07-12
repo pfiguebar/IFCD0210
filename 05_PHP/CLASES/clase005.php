@@ -24,32 +24,33 @@ public $centro;
 
 
 
-public function poner_texto_derecha(){
+public function poner_texto_derecha()
+{
 echo "
 <div style='background-color: $this->fondo ; text-align: $this->derecha'> 
 <h1> $this->cabecera </h1>
 </div>
 ";    
-   
+  
 }
 
 
-public function poner_texto_izquierda(){
+public function poner_texto_izquierda()
+{
 echo "
 <div style='background-color: $this->fondo ; text-align: $this->izquierda'> 
 <h1> $this->cabecera </h1>
 </div>
 ";    
-        
 }
 
-public function poner_texto_centro(){
+public function poner_texto_centro()
+{
 echo "
 <div style='background-color: $this->fondo ; text-align: $this->centro'> 
 <h1> $this->cabecera </h1>
 </div>
 ";    
-
 }
 
 }
