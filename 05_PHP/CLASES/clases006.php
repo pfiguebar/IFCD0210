@@ -16,17 +16,26 @@ class Inmueble {
 public $metros_cuadrado;
 public $precio_unitario;
 
-public function __construct ( $metros_cuadrado , $precio_unitario ){
+// CONSTRUCTOR    
+public function __construct($metros_cuadrado, $precio_unitario)
+{
     $this->metros_cuadrado = $metros_cuadrado;
     $this->precio_unitario = $precio_unitario;
 }
 
-public function calculo_precio(){ return $this->metros_cuadrado  *  $this->precio_unitario; }
-
+// GETTER    
+public function calculo_precio()
+{ 
+    return $this->metros_cuadrado  *  $this->precio_unitario; 
+}
+    
+    
 }
 
+// variables __construct    
 $mi_pisito = new Inmueble (10,10);
 
+// variables GETTER     
 echo $mi_pisito->calculo_precio();
 
 ?>
