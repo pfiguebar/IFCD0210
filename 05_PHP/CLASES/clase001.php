@@ -28,7 +28,7 @@ $trabajador1->sueldo = "20000";
 
 
 ?>
-
+ 
 
 </body>
 </html>
