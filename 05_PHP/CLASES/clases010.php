@@ -64,6 +64,6 @@ $empresa1->setEmail("hola@plasticosmaruchi.es");
 
 // LLamar funcion imprimir
 $empresa1->DameInfo();
-?>
+?> 
 </body>
 </html>
