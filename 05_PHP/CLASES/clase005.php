@@ -64,7 +64,7 @@ $texto1->centro = "center";
 $texto1->poner_texto_derecha(); 
 $texto1->poner_texto_izquierda(); 
 $texto1->poner_texto_centro(); 
-
+ 
 
 
 ?>
