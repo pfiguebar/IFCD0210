@@ -13,7 +13,10 @@ que tenga 1 metodo que pinte h1 con cabecera y color fondo
 </head>
 <body>
 
+    
+    
 <?php
+// M E T O D O     1    
 class Titulo{
 
 public $cabecera;
@@ -39,6 +42,39 @@ $texto1->poner_texto();
  
 
 ?>
+    
+<?php
+// M E T O D O     2      
+    
+class Titulo{
+
+public $cabecera;
+public $fondo;
+
+
+public function poner_texto()
+{
+?>
+
+<div style="background-color: <?php echo $this->fondo ?>">
+<h1><?php echo $this->cabecera ?></h1>
+</div>
+
+<?php    
+
+
+}
+
+}
+
+$texto1 = new Titulo;
+$texto1->cabecera = "curso programacion";
+$texto1->fondo = "orange";
+$texto1->poner_texto(); 
+
+ 
+
+?>    
     
 </body>
 </html>
