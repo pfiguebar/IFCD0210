@@ -20,14 +20,6 @@ class Articulo{
         $this->precio = $precio;
     }
 
-    // SETTER
-    public function setNombre($nombre){  $this->nombre = $nombre;     }
-    public function setPrecio($precio){  $this->precio = $precio;     }
-    
-    // GETTER 
-    public function getNombre(){ return $this->nombre;}
-    public function getPrecio(){ return $this->precio;}
-    
 
     // DAME INFO
     public function pintaArticulo(){
@@ -53,7 +45,7 @@ class Articulo{
                 $this->precio_rebajado = $precio_rebajado;
             }
 
-            // DAME INFO
+            // DAME INFO  (metodo 1)
             public function pintaArticuloRebajado(){
                 echo "
                 <div>
@@ -68,17 +60,11 @@ class Articulo{
 
 
 
-
-
 // Las 2 variables __construct clase PADRE
 $articulo1 = new Articulo("Bicicleta", "1500"); 
 
 // Las 3 variables __construct clase HIJO
 $articulo_rebajado1 = new Articulo_Rebajado ("Bicicleta", "1500", "1200");
-
-// variables SETTER
-// $articulo1->setNombre("");  
-// $articulo1->setPrecio("");
 
 // LLamar funcion imprimir
 $articulo1->pintaArticulo();
