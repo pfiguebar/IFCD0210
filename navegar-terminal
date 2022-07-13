@@ -10,15 +10,64 @@ md                     (crear un archivo/carpeta..)             idem windows
 
 NO EXISTE              (editar archivo)                         nano + nombrearchivo
 
-rm                     (eliminar archivo)                       idem windows
+rm -r nombrearchivo    (eliminar archivo  (-r es recursivo))    idem windows
 
 
 
 
 ORDENES GITHUB    (git -- help)  
+https://docs.gitlab.com/ee/gitlab-basics/start-using-git.html
 
-1) git status        (primera orden le damos para ver como esta la cosa)
+**************************  LOGIN GITHUB   *************************
 
-2) 
+git config --global user.name "your_username"
+git config --global user.email "your_email_address@example.com"
+
+verificar los datos --> git config --global --list
+
+********************************************************************
+                                |
+                                |
+                                V
+
+**************************  CARGAR GITHUB   *************************
+
+Lo primero es indicarle VISUAL CODE... carpeta estamos trabajando va 
+ser carpeta proyecto. Para ello navego con CMD/BASH  .. hasta la ruta
+y ejecuto  --->    git init
+
+********************************************************************
+                                |
+                                |
+                                V
+                                
+******************  DESCARGAR PROYECTO GITHUB   ********************  
+
+PRIMERA VEZ 
+git remote clone  https://github.com/pfiguerbar/prueba-git.git  
+
+(url https://github.com/  PERSONA / CARPETA .git)
 
 
+Ver contenido de la carpeta remota  --> git remote -v
+
+********************************************************************
+                                |
+                                |
+                                V                             
+
+***********************  COMPROBAR GITHUB   *************************
+
+git status        (primera orden le damos para ver como esta la cosa)
+git chekout       (mirar si carpeta Github hay cambios --> "tu rama esta 1 paso por detras"
+
+********************************************************************
+                                |
+                                |
+                                V
+
+***********************  COMPROBAR GITHUB   *************************
+
+git pull          (me traigo contenido exista en carpeta Github)
+
+********************************************************************
