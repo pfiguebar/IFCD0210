@@ -5,6 +5,7 @@
 si existe variable session... redireccionar a url
 si no existe variable ..... redireccionar a menu login para meter datos 
 -->
+
 <!DOCTYPE html>
 <html lang="es">
 <head>
@@ -19,16 +20,42 @@ si no existe variable ..... redireccionar a menu login para meter datos
     <ul>
         <li>LOGIN <br>
         
-        <!-- isset = si existe (variable session usuario)... haz esto (imprime esa variable)--> 
+        <!-- 
+            isset = si existe (variable session usuario)... haz esto: 
+                a) imprime bienvenido usuario 
+                b) imprime boton Logout  
+        --> 
         <?php if(isset($_SESSION["usuario"])) 
         {
-            echo $_SESSION["usuario"] ;
+            echo "Bienvenido: ";
+            echo $_SESSION["usuario"];
             
+            echo "<br>";
+            
+            ?>
+
+            <!-- link logout lo que hace es cargar php destruir sesion -->
+            <a href="
+
+                <?php 
+                session_destroy();
+                ?>
+                       
+            ">LOGOUT</a>
+
+
+            <?php
+
         }
         ?>
 
         <!-- fin isset -->
         </li>
+
+        
+        
+
+
     </ul>
 </nav>    
 
