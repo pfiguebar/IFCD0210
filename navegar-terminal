@@ -1,0 +1,19 @@
+WINDOWS (CMD)                                                   LINUX  (BASH)
+
+clear                  (limpiar pantalla)                       idem windows
+
+cd  + nombrecarpeta    (carga directorio)                       idem windows
+
+dir                    (listar archivos ruta estoy)             ls
+
+md                     (crear un archivo/carpeta..)             idem windows
+
+NO EXISTE              (editar archivo)                         nano + nombrearchivo
+
+rm                     (eliminar archivo)                       idem windows
+
+
+
+
+ORDENES GITHUB
+
