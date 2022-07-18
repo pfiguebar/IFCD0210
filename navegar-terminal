@@ -59,7 +59,7 @@ Ver contenido de la carpeta remota  --> git remote -v
 ***********************  COMPROBAR GITHUB   *************************
 
 git status        (primera orden le damos para ver como esta la cosa)
-git chekout       (mirar si carpeta Github hay cambios --> "tu rama esta 1 paso por detras"
+git checkout      (mirar si carpeta Github hay cambios --> "tu rama esta 1 paso por detras"
 
 ********************************************************************
                                 |
