@@ -24,7 +24,7 @@ git config --global user.name "your_username"
 git config --global user.email "your_email_address@example.com"
 
 verificar los datos --> git config --global --list
-
+editar datos ---------> git config --global --edit
 ********************************************************************
                                 |
                                 |
