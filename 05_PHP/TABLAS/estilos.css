@@ -1,0 +1,4 @@
+table { border-collapse: collapse; width: 100%;		}   
+th, td  { border: 1px dashed blue; } 
+td:nth-child(3), td:nth-child(4) { text-align: right; }
+input{width:98%; border: 0px;}
