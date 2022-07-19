@@ -1,1 +1,2 @@
-Teoria 
+https://www.php.net/manual/en/features.file-upload.post-method.php
+
