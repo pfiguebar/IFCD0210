@@ -37,7 +37,7 @@ public function resumen()
     echo "Articulo: " .$this->nombre. "<br>"; 
     // podemos llamar a una funcion dentro otra funcion con este metodo 
     // $this->nombrefuncion()
-    echo "Precio: " .$this->pvp() . "<br>";   
+    echo "Precio: " .$this->pvp() . " euros <br>";   
 }
 
 
@@ -60,7 +60,7 @@ public function resumen()
                         public function resumen()
                             {
                                 parent::resumen();  
-                                echo "Duracion: " .$this->duracion. "<br>"; 
+                                echo "Duracion: " .$this->duracion. " minutos <br>"; 
                             }
                 
         }
@@ -82,7 +82,7 @@ public function resumen()
                         public function resumen()
                             {  
                                 parent::resumen();  // le indicamos escriba contendio resumen clase PADRE
-                                echo "Numero paginas: " .$this->paginas. "<br>"; 
+                                echo "Numero: " .$this->paginas. " paginas <br>"; 
                             }
              
             
@@ -122,21 +122,21 @@ public function resumen()
 
     // aqui imprimo clase hija CD
     echo "<br>";
-    echo "CLASE HIJA CD";
+    echo "CLASE HIJA(CD) DE CLASE PRINCIPAL";
     echo "<br>";
     $cd1 = new CD("Maluma", "10", "5");
     $cd1->resumen();
 
     // aqui imprimo clase hija Libro
     echo "<br>";
-    echo "CLASE HIJA LIBRO";
+    echo "CLASE HIJA(LIBRO) DE CLASE PRINCIPAL";
     echo "<br>";
     $Libro1 = new Libro("Maluma", "10", "1000");
     $Libro1->resumen();
 
         // aqui imprimo clase hija LibroAntiguo
         echo "<br>";
-        echo "CLASE HIJA DE CLASE LIBRO";
+        echo "CLASE HIJA(LIBRO ANTIGUO) DE CLASE LIBRO";
         echo "<br>";
         $LibroAntiguo1 = new LibroAntiguo("Maluma", "10", "1000", "1980");
         $LibroAntiguo1->resumen();
