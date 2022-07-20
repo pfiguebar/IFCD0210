@@ -1,7 +1,13 @@
-public function _toString(){
+<?php
+class Animal
+{
+    public $raza;
 
-return "Articulo: $this->nombre"
+    public function __construct($raza){ $this->raza = $raza; }
+    public function __toString(){ return $this->raza; }
 }
 
+$raza1 = new Animal('Perro');
+echo $raza1;
 
-echo $libro
+?>
