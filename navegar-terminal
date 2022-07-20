@@ -74,4 +74,34 @@ git pull          (me traigo contenido exista en carpeta Github)
 
 
 
-https://desarrolloweb.com/articulos/trabajar-ramas-git.html
+
+
+
+                                |
+                                |
+                                V
+
+***********************  CREAR RAMAS GITHUB   *************************
+
+git branch --list        (listar ramas tengo en proyecto)
+
+git branch NOMBRERAMA    (crear una rama dentro del proyecto)
+
+git checkout NOMBRERAMA  (cambiar a rama indicada)
+
+git push -u origin NOMBRERAMA (subir rama a repositorio remoto Github)
+********************************************************************
+
+
+
+                                |
+                                |
+                                V
+
+***********************  FUSIONAR RAMAS GITHUB   *************************
+
+git checkout master       (Tienes que asegurarte de estar en la rama Master/Main. Solo se puede fusionar desde esta rama)
+
+git checkout NOMBRERAMA   (le indicamos fusione esta rama a Main)
+********************************************************************
+
