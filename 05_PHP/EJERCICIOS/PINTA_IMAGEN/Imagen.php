@@ -31,19 +31,21 @@ public function PintaImagen()
 
 public function PintarTodasImagen()
 {
-<?php
-foreach (glob("img/*.jpg") as $filename) { 
-    echo "<img src='$filename'><br> "; 
+    foreach (glob("./$this->ruta/*.jpg") as $filename){ 
+    echo "<img style='$this->css' src='$filename'><br> "; 
+    }
 }
-?>
-    
-{
-    
+
 }
+
+    
+
  
 // variables __construct   // definimos directamente variable precio
-$imagen1 = new Imagen("img", "001.jpg", "border: 1px solid black");   
+$imagen1 = new Imagen("img", "001.jpg", "width: 140px; border: 1px solid black");   
 $imagen1->PintaImagen();  
  
 
+
+$imagen1->PintarTodasImagen(); 
 ?>
