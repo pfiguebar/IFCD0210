@@ -28,6 +28,17 @@ public function PintaImagen()
     echo "<img src='./$this->ruta/$this->nombre' style='$this->css' />";
 }
 
+
+public function PintarTodasImagen()
+{
+<?php
+foreach (glob("img/*.jpg") as $filename) { 
+    echo "<img src='$filename'><br> "; 
+}
+?>
+    
+{
+    
 }
  
 // variables __construct   // definimos directamente variable precio
