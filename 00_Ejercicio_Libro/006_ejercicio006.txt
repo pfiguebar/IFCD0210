@@ -1,0 +1,35 @@
+TEMA 6: EJERCICIOS DE REPASO Y AUTOEVALUACION
+
+1. De las siguientes afirmaciones, indique cual es verdadera o falsa
+
+a) F  El primer modelo definido del ciclo de vida del software fue el modelo iterativo
+b) F  El modelo de cascada es el mas recomendado para grandes desarrollos
+c) F  El model de desarrollo rapido de aplicaciones permite un desarrollo rapido del software sin pagar un precio mayor
+d) v  El modelo basado en componente permite la reutilizacion del software
+
+5. Los requisitos del sistema...
+b) .. describen de manera completa la funcionalidad del software
+
+6. El modelo de interfaz...
+a) Define la forma en que el usuario interactua con el sistema
+
+8. De las siguientes afirmaciones, indique cual es verdadera o falsa
+a) V  Los diagramas de implementacion pertenecen a UML
+b) F  Los diagramas de actividad definen la transicion entre los posibles estados del sistema, incluido el evento disparador
+c) V  Los diagramas de secuencia muestran la comunicacion de los objetos durante la ejecucion de una tarea
+d) V  El documento de diseño de software (SDD) recoge com esta estructurado el sistema para cumplir los requisitos
+
+9. La programacion estructurada..
+a) .. se fundamenta en el teorema del programa estructurado
+
+10. La planificacion de los proyectos...
+c) .. exige una serie de estimaciones
+
+11. De las siguientes afirmaciones, indique cual es verdadera o falsa
+a) V   La validacion es diferente a la verificacion
+b) V   Un metodo formal del verificacion utiliza tecnicas matematicas
+c) V   Un metodo automatizado de analisis implica un software especial
+d) F   Un bucle infinito no es un error caracteristico
+
+12. Una prueba unitaria es
+c)  Una prueba aplicada a un modulo
