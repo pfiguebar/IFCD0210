@@ -1,0 +1,19 @@
+TEMA 7: EJERCICIOS DE REPASO Y AUTOEVALUACION
+
+1. De las siguientes afirmaciones, indique cual es verdadera o falsa
+a) F   El estado de un objeto es descrito por los metodos que implementa
+b) F   Se recomienda que los atributos de un objeto deben ser directamente accesibles desde el exterior
+c) V   La abstraccion consiste en quedarse con las caracteristicas esenciales que definen un objeto
+d) F   La manera en que se comunican dos objetos se denomina sobrecarga
+
+6. En caso definirse un constructor...
+a) ... se crea uno por defecto
+
+10. Una clase abstracta..
+b)  .. no se puede instanciar
+
+11. De las siguientes afirmaciones, indique cual es verdadera o falsa
+a) F  El polimorfismo permite definir objetos/metodos de diferentes clases con el mismo nombre
+
+12. La sobrecarga..
+b) ... se puede aplicar a contructores
