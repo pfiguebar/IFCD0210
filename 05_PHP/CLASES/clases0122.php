@@ -24,7 +24,7 @@ public function __construct($nombre,$precio)
     $this->precio = $precio; 
 }  
 
-
+ 
 // FUNCIONES    
 public function pvp()
 {  
