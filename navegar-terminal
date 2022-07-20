@@ -59,7 +59,7 @@ Ver contenido de la carpeta remota  --> git remote -v
 ***********************  COMPROBAR GITHUB   *************************
 
 git status        (primera orden le damos para ver como esta la cosa)
-git checkout      (mirar si carpeta Github hay cambios --> "tu rama esta 1 paso por detras"
+git checkout      (mirar si hay cambios Github --> "tu rama esta 1 paso por detras"
 
 ********************************************************************
                                 |
@@ -85,11 +85,15 @@ git pull          (me traigo contenido exista en carpeta Github)
 
 git branch --list        (listar ramas tengo en proyecto)
 
-git branch NOMBRERAMA    (crear una rama dentro del proyecto)
+git branch NOMBRERAMA           (crear una rama dentro del proyecto)
+git push -u origin NOMBRERAMA   (subir rama he creado a repositorio remoto Github)
 
-git checkout NOMBRERAMA  (cambiar a rama indicada)
 
-git push -u origin NOMBRERAMA (subir rama a repositorio remoto Github)
+
+
+***********************  NAVEGAR ENTRE RAMAS GITHUB   *************************
+git switch NOMBRERAMA    (cambiar a rama indicada)
+
 ********************************************************************
 
 
@@ -100,8 +104,10 @@ git push -u origin NOMBRERAMA (subir rama a repositorio remoto Github)
 
 ***********************  FUSIONAR RAMAS GITHUB   *************************
 
-git checkout master       (Tienes que asegurarte de estar en la rama Master/Main. Solo se puede fusionar desde esta rama)
+git checkout main       (Tienes que asegurarte de estar en la rama Master/Main. Solo se puede fusionar desde esta rama)
 
 git checkout NOMBRERAMA   (le indicamos fusione esta rama a Main)
+
+git merge   (verificar su uso)
 ********************************************************************
 
