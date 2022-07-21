@@ -1,0 +1,23 @@
+
+    .menu ul
+    {
+        list-style: none;
+        display: flex;
+        width: 50%;
+        margin: 50px auto;
+        justify-content: space-between;
+    }
+
+    .menu li
+    {
+        padding: 10px 25px;
+        border: 1px solid #333;
+        border-radius: 5px;
+        font-size: 25px;
+    }
+
+    .menu li a
+    {
+        text-decoration: none;
+        color: #333;
+    }
