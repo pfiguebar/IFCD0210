@@ -1,0 +1,16 @@
+TEMA 9: EJERCICIOS DE REPASO Y AUTOEVALUACION
+
+1) Javascript es un lenguaje que se ejecuta en..
+a).. cliente
+
+9) Una aplicacion web puede acceder...
+c) Las respuestas a y b son correctas
+
+10) Los parametros basicos para conectar a una base de datos son
+c) servidor, base datos, usuario y contraseña
+
+13) Relaciones los siguientes elementos
+d)
+a)
+b)
+c)
