@@ -1,0 +1,36 @@
+TEMA 7: EJERCICIOS DE REPASO Y AUTOEVALUACION
+
+1) Una aplicacion web...
+c) Todas las respuestas anteriores son correctas 
+
+2) A que capa pertenece protocolo HTTP?
+d) Ninguna de las respuestas es correcta
+
+5) Como se accede al servidor local
+c) http://localhost
+
+6) Quien renderiza la respuesta a un servidor para que sea mostrada de manera legible?
+b) El cliente que lo solicito
+
+8) UDP y TCP son protocolos de la capa transporte..
+a) no orientado a conexion y orientado a conexion, respectivamente
+
+9) Apache es, a parte de un servidor, una base d datos
+a) F   Apache es solo un servidor
+
+10) Internet Information Server...
+d) Las respuestas b y c son correctas (servidor windows que depende windows)
+
+11) PHPMyAdmin..
+b) .. es un gestor de bases de datos
+
+12) Servidor FTP...
+c) ... permite que un cliente FTP conecte con el para gestionar archivos
+
+13) Los 3 entornos basicos son:
+d) Desarrollo, Preproduccion y produccion
+
+14) Los logs..
+d) Todas las respuestas anteriores son correctas
+
+
