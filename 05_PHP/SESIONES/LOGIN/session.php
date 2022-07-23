@@ -19,7 +19,7 @@ if($usuario == "user" && $password == "1234"){
         header ("Location: ./index.php");
 
 }
-else{ 
+else{  
     echo "hay un error en su datos acceso";
 }
     
