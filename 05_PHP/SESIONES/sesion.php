@@ -12,9 +12,8 @@ $_SESSION['usuario'] = "Manolo";
     <title>Sesiones</title>
 </head>
 <body>
-    <p>HOLA</p>
-    <?php echo $_SESSION['usuario'] ?>
-   
-    
-    </body>
+
+<p>Hola   <?php echo $_SESSION['usuario'] ?>     </p>
+
+</body>
 </html>
