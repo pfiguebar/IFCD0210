@@ -1,12 +1,6 @@
 <?php session_start(); ?>
 <!-- dado que vamos a trabajar con sesiones lo primero es iniciarlas -->
 
-<!-- con isset se podria indicar 
-si existe variable session... redireccionar a url
-si no existe variable ..... redireccionar a menu login para meter datos 
--->
-
-
 <!DOCTYPE html>
 <html lang="es">
 <head>
