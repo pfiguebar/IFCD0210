@@ -9,7 +9,7 @@
 </head>
 <body>
 
-<?php include ('./formulario.php') ?>
+<?php include ('formulario.php') ?>
 
 </body>
 </html>
