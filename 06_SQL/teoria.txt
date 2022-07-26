@@ -69,7 +69,7 @@ ID_producto (clave privaria TABLA_1)
 ID_factura  (clave privaria TABLA_2)
 ***************************************************************************
 
-
+Software ---> https://www.mysql.com/products/workbench/
 
 
 
