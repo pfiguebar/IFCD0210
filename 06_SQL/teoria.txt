@@ -16,15 +16,60 @@ Atributo unico, es similar a una clave primaria que puede no estar rellenada. Ej
 
 CLAVE FORANEAS   --> Es una clave primaria de otra tabla 
 
+***************************************************************************
+EJEMPLO 1  (un alumno tiene solo 1 curso) 
 TABLA_1                                                                   TABLA_2
 Alumno                                               1:1                  Curso
 ID_alumno   *(clave primaria esta tabla)          ------->                ID_curso  * (clave primaria esta tabla)
 Nombre                                               N:1                  Nombre          
 Dni                                               <-------                Codigo
 Tlf                                     
-                                             Relacion N:1
+                                        Relacion     N:1
 
-ID_Curso (clave foranea)    <--   En la tabla N hay que poner clave foranea
+En la tabla N hay que poner clave foranea:
+ID_Curso (clave foranea)    
+
+
+
+
+EJEMPLO 2 (un producto puede tener varias imagenes)
+TABLA_1                                                                   TABLA_2
+Producto                                              1:N                 Imagen
+ID_producto   *(clave primaria esta tabla)          ------->              ID_imagen  * (clave primaria esta tabla)
+Nombre                                                1:1                 Url          
+Descripcion                                         <-------         
+Precio                                     
+                                          Relacion    1:N
+
+                                                                         En la tabla N hay que poner clave foranea:
+                                                                         ID_producto   (clave foranea)
+
+
+
+EJEMPLO 3 (Relacion 1:1)
+En caso ser relacion 1:1     ----> Tabla N la pone libremente programador.... y pone Clave foranea donde quieras
+
+
+
+
+EJEMPLO 4 (Relacion Muchos (M) a Muchos (N)
+Necesitamos una tabla auxiliar que contiene las claves primarias de ambas tablas y otra id nueva que hace de clase primaria
+TABLA_1                                                                   TABLA_2
+Producto                                              1:N                 Factura
+ID_producto   *(clave primaria esta tabla)          ------->              ID_factura  * (clave primaria esta tabla)
+Nombre                                                M:N                 Fecha          
+Descripcion                                         <-------              Importe
+Precio                                                                    DNI
+                                            relacion   M:N
+
+TABLA_3
+ProductoFactura
+ID_ProductoFactura
+ID_producto (clave privaria TABLA_1)
+ID_factura  (clave privaria TABLA_2)
+***************************************************************************
+
+
 
 
 
