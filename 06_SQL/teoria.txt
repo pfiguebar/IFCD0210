@@ -1,13 +1,1 @@
-MODELO RELACIONAL (bases de datos que tienen entidades relacionadas)
 
-REGISTRO 
-Ejemplo.   ( NOMBRE , APELLIDOS, DNI )
-
-
-CAMPO    
-En este caso cada campo es NOMBRE, APELLIDOS,...
-
-
-
-DDL --> Es la parte de SQL encargada de generar extructura datos (tablas, variables...)
-DML --> Es la parte de SQL encargada de los datos
