@@ -14,6 +14,21 @@ Ej: Dni de una persona, es un valor unico y que no cambia en su vida.
 
 Atributo unico, es similar a una clave primaria que puede no estar rellenada. Ej: Id Facebook de un usuario
 
+CLAVE FORANEAS   --> Es una clave primaria de otra tabla 
+
+TABLA_1                                                                   TABLA_2
+Alumno                                               1:1                  Curso
+ID_alumno   *(clave primaria esta tabla)          ------->                ID_curso  * (clave primaria esta tabla)
+Nombre                                               N:1                  Nombre          
+Dni                                               <-------                Codigo
+Tlf                                     
+                                             Relacion N:1
+
+ID_Curso (clave foranea)    <--   En la tabla N hay que poner clave foranea
+
+
+
+
 VISTA: Es una consulta a la tabla base datos. Vistas son datos temporales
 
 
