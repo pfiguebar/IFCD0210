@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="UTF-8"?><project name="EJERCICIO_001" company="EUROFORMAC " webLink="http://" view-date="2022-07-18" view-index="0" gantt-divider-location="331" resource-divider-location="300" version="3.2.3244" locale="es_ES">
+    <description>
+        <![CDATA[EJERCICIO EXAMEN]]>
+    </description>
+    <view zooming-state="default:6" id="gantt-chart">
+        <field id="tpd3" name="Nombre" width="160" order="0"/>
+        <field id="tpd4" name="Fecha de inicio" width="99" order="1"/>
+        <field id="tpd5" name="Fecha de fin" width="71" order="2"/>
+        <option id="filter.completedTasks" value="false"/>
+    </view>
+    <view id="resource-table">
+        <field id="0" name="Nombre" width="210" order="0"/>
+        <field id="1" name="Función" width="86" order="1"/>
+    </view>
+    <!-- -->
+    <calendars base-id="es">
+        <day-types>
+            <day-type id="0"/>
+            <day-type id="1"/>
+            <default-week id="1" name="default" sun="1" mon="0" tue="0" wed="0" thu="0" fri="0" sat="1"/>
+            <only-show-weekends value="false"/>
+            <overriden-day-types/>
+            <days/>
+        </day-types>
+        <date year="" month="1" date="1" type="HOLIDAY">
+            <![CDATA[New Year's Day]]>
+        </date>
+        <date year="" month="1" date="6" type="HOLIDAY">
+            <![CDATA[Epiphany]]>
+        </date>
+        <date year="" month="5" date="1" type="HOLIDAY">
+            <![CDATA[Labour Day]]>
+        </date>
+        <date year="" month="8" date="15" type="HOLIDAY">
+            <![CDATA[Assumption Day]]>
+        </date>
+        <date year="" month="10" date="12" type="HOLIDAY">
+            <![CDATA[Hispanic Day]]>
+        </date>
+        <date year="" month="11" date="1" type="HOLIDAY">
+            <![CDATA[All Saints Day]]>
+        </date>
+        <date year="" month="12" date="6" type="HOLIDAY">
+            <![CDATA[Constitution Day]]>
+        </date>
+        <date year="" month="12" date="8" type="HOLIDAY">
+            <![CDATA[Immaculate Conception Day]]>
+        </date>
+        <date year="" month="12" date="25" type="HOLIDAY">
+            <![CDATA[Christmas Day]]>
+        </date>
+        <date year="2016" month="3" date="24" type="HOLIDAY">
+            <![CDATA[Maundy Thursday]]>
+        </date>
+        <date year="2016" month="3" date="25" type="HOLIDAY">
+            <![CDATA[Good Friday]]>
+        </date>
+        <date year="2017" month="1" date="2" type="HOLIDAY">
+            <![CDATA[New Year's Holiday]]>
+        </date>
+        <date year="2017" month="4" date="13" type="HOLIDAY">
+            <![CDATA[Maundy Thursday]]>
+        </date>
+        <date year="2017" month="4" date="14" type="HOLIDAY">
+            <![CDATA[Good Friday]]>
+        </date>
+        <date year="2018" month="3" date="29" type="HOLIDAY">
+            <![CDATA[Maundy Thursday]]>
+        </date>
+        <date year="2018" month="3" date="30" type="HOLIDAY">
+            <![CDATA[Good Friday]]>
+        </date>
+        <date year="2019" month="4" date="18" type="HOLIDAY">
+            <![CDATA[Maundy Thursday]]>
+        </date>
+        <date year="2019" month="4" date="19" type="HOLIDAY">
+            <![CDATA[Good Friday]]>
+        </date>
+        <date year="2020" month="4" date="9" type="HOLIDAY">
+            <![CDATA[Maundy Thursday]]>
+        </date>
+        <date year="2020" month="4" date="10" type="HOLIDAY">
+            <![CDATA[Good Friday]]>
+        </date>
+        <date year="2020" month="11" date="2" type="HOLIDAY">
+            <![CDATA[All Saints Day (in lieu)]]>
+        </date>
+        <date year="2020" month="12" date="7" type="HOLIDAY">
+            <![CDATA[Constitution Day (in lieu)]]>
+        </date>
+        <date year="2021" month="4" date="1" type="HOLIDAY">
+            <![CDATA[Maundy Thursday]]>
+        </date>
+        <date year="2021" month="4" date="2" type="HOLIDAY">
+            <![CDATA[Good Friday]]>
+        </date>
+        <date year="2022" month="4" date="14" type="HOLIDAY">
+            <![CDATA[Maundy Thursday]]>
+        </date>
+        <date year="2022" month="4" date="15" type="HOLIDAY">
+            <![CDATA[Good Friday]]>
+        </date>
+    </calendars>
+    <tasks empty-milestones="true">
+        <taskproperties>
+            <taskproperty id="tpd0" name="type" type="default" valuetype="icon"/>
+            <taskproperty id="tpd1" name="priority" type="default" valuetype="icon"/>
+            <taskproperty id="tpd2" name="info" type="default" valuetype="icon"/>
+            <taskproperty id="tpd3" name="name" type="default" valuetype="text"/>
+            <taskproperty id="tpd4" name="begindate" type="default" valuetype="date"/>
+            <taskproperty id="tpd5" name="enddate" type="default" valuetype="date"/>
+            <taskproperty id="tpd6" name="duration" type="default" valuetype="int"/>
+            <taskproperty id="tpd7" name="completion" type="default" valuetype="int"/>
+            <taskproperty id="tpd8" name="coordinator" type="default" valuetype="text"/>
+            <taskproperty id="tpd9" name="predecessorsr" type="default" valuetype="text"/>
+        </taskproperties>
+        <task id="0" name="A - Realización de entrevista" color="#8cb6ce" meeting="false" start="2022-07-25" duration="6" complete="0" thirdDate="2022-07-25" thirdDate-constraint="0" expand="true">
+            <depend id="1" type="2" difference="0" hardness="Strong"/>
+            <depend id="6" type="2" difference="0" hardness="Strong"/>
+            <depend id="9" type="2" difference="0" hardness="Strong"/>
+        </task>
+        <task id="1" name="B - Administración de cuestionarios" color="#8cb6ce" meeting="false" start="2022-08-02" duration="10" complete="0" thirdDate="2022-07-25" thirdDate-constraint="0" expand="true">
+            <depend id="3" type="2" difference="0" hardness="Strong"/>
+            <depend id="4" type="2" difference="0" hardness="Strong"/>
+            <depend id="9" type="2" difference="0" hardness="Strong"/>
+        </task>
+        <task id="2" name="C - Lectura de reportes de la compañía" color="#8cb6ce" meeting="false" start="2022-07-25" duration="4" complete="0" thirdDate="2022-07-25" thirdDate-constraint="0" expand="true">
+            <depend id="3" type="2" difference="0" hardness="Strong"/>
+            <depend id="4" type="2" difference="0" hardness="Strong"/>
+            <depend id="9" type="2" difference="0" hardness="Strong"/>
+        </task>
+        <task id="3" name="D - Análisis del flujo de datos" color="#8cb6ce" meeting="false" start="2022-08-17" duration="10" complete="0" thirdDate="2022-07-25" thirdDate-constraint="0" expand="true">
+            <depend id="6" type="2" difference="0" hardness="Strong"/>
+            <depend id="9" type="2" difference="0" hardness="Strong"/>
+        </task>
+        <task id="4" name="E - Presentación del prototipo" color="#8cb6ce" meeting="false" start="2022-08-17" duration="5" complete="0" thirdDate="2022-07-25" thirdDate-constraint="0" expand="true">
+            <depend id="5" type="2" difference="0" hardness="Strong"/>
+            <depend id="6" type="2" difference="0" hardness="Strong"/>
+            <depend id="9" type="2" difference="0" hardness="Strong"/>
+        </task>
+        <task id="5" name="F - Observación de las reacciones ante el prototipo" color="#8cb6ce" meeting="false" start="2022-08-24" duration="8" complete="0" thirdDate="2022-07-25" thirdDate-constraint="0" expand="true">
+            <depend id="9" type="2" difference="0" hardness="Strong"/>
+        </task>
+        <task id="6" name="G - Realización del análisis beneficio / costo" color="#8cb6ce" meeting="false" start="2022-08-31" duration="3" complete="0" thirdDate="2022-07-25" thirdDate-constraint="0" expand="true">
+            <depend id="7" type="2" difference="0" hardness="Strong"/>
+            <depend id="9" type="2" difference="0" hardness="Strong"/>
+        </task>
+        <task id="7" name="H - Preparación de la propuesta" color="#8cb6ce" meeting="false" start="2022-09-05" duration="3" complete="0" thirdDate="2022-07-25" thirdDate-constraint="0" expand="true">
+            <depend id="8" type="2" difference="0" hardness="Strong"/>
+            <depend id="9" type="2" difference="0" hardness="Strong"/>
+        </task>
+        <task id="8" name="I - Presentación de la propuesta" color="#8cb6ce" meeting="false" start="2022-09-08" duration="6" complete="0" thirdDate="2022-07-25" thirdDate-constraint="0" expand="true">
+            <depend id="9" type="2" difference="0" hardness="Strong"/>
+        </task>
+        <task id="9" name="FIN (tarea no incluida ejercicio)" color="#8cb6ce" meeting="false" start="2022-09-16" duration="1" complete="0" thirdDate="2022-07-25" thirdDate-constraint="0" expand="true"/>
+    </tasks>
+    <resources/>
+    <allocations/>
+    <vacations/>
+    <previous/>
+    <roles roleset-name="Default"/>
+</project>
