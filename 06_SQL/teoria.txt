@@ -1,1 +1,36 @@
+BASE DATOS
+DDL --> Es la parte de SQL encargada de generar extructura datos (tablas, variables...)
+DML --> Es la parte de SQL encargada de los datos
 
+|
+v
+
+TABLA 
+Registro unico puede estar formado por varias claves = dni+tlf+nombre = superclave
+Clave candidata, es una superclave "minima" = si a ejemplo anterior le quitamos nombre y sigue siendo superclave.. en este caso tendriamos una clave candidata
+Clave primaria es de todas las claves candidatas hemos obtenido en estudio... la que yo elija es "mi clave primaria"
+Todas la tablas deben tener un registro unico con clave primaria 
+Ej: Dni de una persona, es un valor unico y que no cambia en su vida.
+
+Atributo unico, es similar a una clave primaria que puede no estar rellenada. Ej: Id Facebook de un usuario
+
+VISTA: Es una consulta a la tabla base datos. Vistas son datos temporales
+
+
+|
+v
+
+REGISTRO 
+Ejemplo.   ( CAMPO1, CAMPO2, CAMPO3,... )
+
+|
+v
+
+CAMPO    
+En este caso CAMPO1 podria ser NOMBRE, CAMPO2 podria ser APELLIDOS,...
+Campo NULO = Se desconoce su contenido al no estar aun definido. Pero esto no impide todo funcione correctamente.
+
+
+
+https://helisulbaransistemas.blogspot.com/p/modelado.html
+https://www.w3schools.com/sql/ 
