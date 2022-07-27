@@ -9,3 +9,18 @@ Cada alumno está matriculado en uno o varios módulos.
 De cada alumno se desea guardar el nº de expediente, nombre, apellidos y fecha de nacimiento. 
 Los profesores pueden impartir varios módulos, pero un módulo sólo puede ser impartido por un profesor.
 Cada curso tiene un grupo de alumnos, uno de los cuales es el delegado del grupo”.
+
+
+PROFESORES                            1:M              MODULOS
+dni_p   * (clave primaria)          --------->         codigo_m   * (clave primaria)  
+nombre_p                       Relacion  1:M           nombre_m
+direccion_p                         <--------          dni_p        (clave foranea)   
+telefono_p                              1:1   
+
+
+
+MODULOS                             1:M               ALUMNOS                                                   MODULO_ALUMNO
+codigo_m  * (clave primaria)      -------->           nexpediente_a   * (clave primaria)      AUXILIAR          id_modulo_alumno
+nombre_m                        Relacion M:N          nombre_a                              ------------>       codigo_m    (clave primaria tabla MODULOS)
+dni_p                             <--------           apellidos_a                                               nexpediente_a (clave primaria tabla ALUMNOS)
+                                    M:N               fecha_nacimiento_a
