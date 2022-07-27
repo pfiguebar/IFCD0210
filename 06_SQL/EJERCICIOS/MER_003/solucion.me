@@ -8,6 +8,6 @@ telefono_p                              1:1
 
 MODULOS                             1:M               ALUMNOS                                                   MODULO_ALUMNO
 codigo_m  * (clave primaria)      -------->           nexpediente_a   * (clave primaria)      AUXILIAR          id_modulo_alumno
-nombre_m                        Relacion M:N          nombre_a                              ------------>       codigo_m    (clave primaria tabla MODULOS)
-dni_p                             <--------           apellidos_a                                               nexpediente_a (clave primaria tabla ALUMNOS)
+nombre_m                        Relacion M:N          nombre_a                              ------------>       codigo_m    (clave foranea, tabla MODULOS)
+dni_p                             <--------           apellidos_a                                               nexpediente_a (clave foranea, tabla ALUMNOS)
                                     M:N               fecha_nacimiento_a
