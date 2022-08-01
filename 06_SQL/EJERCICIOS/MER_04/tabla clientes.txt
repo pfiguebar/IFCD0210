@@ -1,0 +1,8 @@
+CREATE TABLE clientes
+(
+id_cliente INT AUTO_INCREMENT PRIMARY KEY,
+nombre_cliente VARCHAR(255) NOT NULL DEFAULT "",
+email_cliente VARCHAR(255) NOT NULL DEFAULT "",
+telefono_cliente VARCHAR(255) NOT NULL DEFAULT ""
+)
+ENGINE=InnoDB;
