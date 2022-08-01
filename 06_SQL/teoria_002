@@ -26,3 +26,23 @@ fecha_alta TIMESTAMP DEFAULT CURRENT_TIMESTAM
 
 
 ************************************  PAGINA 174  Modificar tabla  ***************************************************
+Añadir un campo descripcion despues de precio. 
+ALTER TABLE producto ADD COLUMN descripcion VARCHAR(100) NOT NULL DEFAULT "" AFTER precio;
+
+Modificar columna existente titulo, tabla producto
+ALTER TABLE producto MODIFY COLUMN titulo VARCHAR(50) NOT NULL DEFAULT "";
+
+Eliminar columna precio de la tabla producto
+ALTER TABLE productos DROP COLUMN precio;
+
+Renombrar nombre de la columna titulo --> nombre
+ALTER TABLE productos CHANGE titulo nombre VARCHAR(100) NOT NULL DEFAULT "";
+
+Eliminar tabla productos
+DROP TABLE productos;
+
+cambiar nombre tabla
+ALTER TABLE conductores RENAME dirvers;
+
+cambiar nombre campo
+ALTER TABLE pieza CHANGE precio precioneto DECIMAL (10,2) NOT NULL DEFAULT 0;
