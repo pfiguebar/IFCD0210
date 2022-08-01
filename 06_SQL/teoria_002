@@ -46,3 +46,8 @@ ALTER TABLE conductores RENAME dirvers;
 
 cambiar nombre campo
 ALTER TABLE pieza CHANGE precio precioneto DECIMAL (10,2) NOT NULL DEFAULT 0;
+
+
+Cuando queremos que primary key la formen 2 columnas (vamos a usar como ejemplo curso y fecha_alta) se utiliza
+CONSTRAIN producto_pk PRIMARY KEY (titulo, precio);
+NOTA: Campos primary key no pueden ser NOT NULL. En este caso no podriamos elegir titulo y precio
