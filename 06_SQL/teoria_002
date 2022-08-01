@@ -5,3 +5,20 @@ Eliminar base datos --> DROP DATABASE ________;
 Cambiar nombre base datos, en terminal no existe orden. En PhpMyadmin si
 
 Usar base datos ----->  USE _________;
+
+************************************  PAGINA 171  Crear tabla  ***************************************************
+
+INT = Campo tipo entero
+PRIMARY KEY = Campo primario  --> Se le puede asignar AUTO_INCREMENT
+VARCHAR = Longitud cadena texto. Se pone entre parentesis
+NOT NULL = Campo no nulo. Se le indica siempre un valor por defecto --> DEFAULT valor
+ENUM = Valores validos  --> Curso solo vale valor 1, 2 o 3. Otro valor no te permite
+
+CREATE TABLE producto                                 // CREATE TABLE nombre de la tabla
+(
+id INT AUTO_INCREMENT PRIMARY KEY                                       
+titulo VARCHAR(100) NOT NULL DEFAULT "",
+precio DECIMAL (12,2) NOT NULL DEFAULT 0,
+curso ENUM ("1","2","3"),
+fecha_alta TIMESTAMP DEFAULT CURRENT_TIMESTAM
+) ENGINE = innoDB; 
