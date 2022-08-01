@@ -1,0 +1,8 @@
+CREATE TABLE producto_cliente
+(
+id_producto_cliente INT AUTO_INCREMENT PRIMARY KEY,
+CONSTRAIN id_producto_fk FOREIGN KEY(id_producto) REFERENCES producto(id_producto),
+CONSTRAIN id_cliente_fk FOREIGN KEY(id_cliente) REFERENCES cliente(id_cliente)
+)
+ENGINE=InnDB;
+
