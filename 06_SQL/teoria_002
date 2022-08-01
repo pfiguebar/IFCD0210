@@ -4,3 +4,4 @@ Eliminar base datos --> DROP DATABASE ________;
 
 Cambiar nombre base datos, en terminal no existe orden. En PhpMyadmin si
 
+Usar base datos ----->  USE _________;
