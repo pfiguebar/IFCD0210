@@ -21,4 +21,4 @@ titulo VARCHAR(100) NOT NULL DEFAULT "",
 precio DECIMAL (12,2) NOT NULL DEFAULT 0,
 curso ENUM ("1","2","3"),
 fecha_alta TIMESTAMP DEFAULT CURRENT_TIMESTAM
-) ENGINE = innoDB; 
+) ENGINE = innoDB;                                    // Se cierra siempre con ENGINE = innoDB;
