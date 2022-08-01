@@ -1,5 +1,12 @@
 BASE DATOS TIENDA 
 
-TABLA 1
-id_productos
+TABLA PRODUCTOS                               1:M            TABLA CLIENTES                                   TABLA AUXILIAR PRODUCTO_CLIENTE
+id_producto     * clave primaria        --------------->     id_cliente    * clave primaria                   id_auxiliar
+nombre_producto                     Relacion   M:N           nombre_cliente                  -------->        id_producto   (fk tabla producto)
+                                        <---------------     email_cliente                                    id_cliente    (fk tabla cliente)
+                                               M:1           telefono_cliente
+                            
+                            
+  
+
 
