@@ -9,21 +9,38 @@ Usar base datos ----->  USE _________;
 ************************************  PAGINA 171  Crear tabla  ***************************************************
 
 INT = Campo tipo entero
-PRIMARY KEY = Campo primario  --> Se le puede asignar AUTO_INCREMENT
+UNSIGNED = Campo entero, donde se permite eliminar signo + o - de dicho valor
+UNIQUE = campo unico (es casi una clave primaria, pero puede ser NULO)
+PRIMARY KEY = Campo primario  --> Se le puede asignar AUTO_INCREMENT. Obligatorio NOT NULL
 VARCHAR = Longitud cadena texto. Se pone entre parentesis
 NOT NULL = Campo no nulo. Se le indica siempre un valor por defecto --> DEFAULT valor
 ENUM = Valores validos  --> Curso solo vale valor 1, 2 o 3. Otro valor no te permite
+INDEX es un campo se utiliza para indexar datos y agiliar base datos --> No hay ninguna regla es prueba y error 
 
+TABLA 1
 CREATE TABLE producto                                 // CREATE TABLE nombre de la tabla
 (
 id INT AUTO_INCREMENT PRIMARY KEY                                       
 titulo VARCHAR(100) NOT NULL DEFAULT "",
+dni UNIQUE VARCHAR(10) NOT NULL DEFAULT "",
 precio DECIMAL (12,2) NOT NULL DEFAULT 0,
 curso ENUM ("1","2","3"),
-fecha_alta TIMESTAMP DEFAULT CURRENT_TIMESTAM
+fecha_alta TIMESTAMP DEFAULT CURRENT_TIMESTAM,
+INDEX precio_index(precio)
 ) ENGINE = innoDB;                                    // Se cierra siempre con ENGINE = innoDB;
 
+TABLA 2
+CREATE TABLE producto_imagen
+(
+id INT UNSIGNED PRIMARY KEY;
+producto_id INT UNSIGNED,
+ruta_imagen VARCHAR(255) NOT NULL,
 
+CONSTRAIN producto_pk FOREIGN KEY (producto_id) REFERENCES producto(id);     // DEFINIR FOREIGN KEY (tabla 1)
+  
+MODIFICAR FOREIGN KEY   (pag. 187)
+ALTER TABLE product DROP FOREIGN KEY(nombre foreign key quiero eliminar ej: ucto_pk)   // primero eliminamos
+ALTER TABLE product ADD CONSTRAIN producto_pk FOREIGN KEY (producto_id) REFERENCES producto(id);   // despues creamos
 
 ************************************  PAGINA 174  Modificar tabla  ***************************************************
 Añadir un campo descripcion despues de precio. 
@@ -48,6 +65,16 @@ cambiar nombre campo
 ALTER TABLE pieza CHANGE precio precioneto DECIMAL (10,2) NOT NULL DEFAULT 0;
 
 
+CLAVE PRIMARIA
 Cuando queremos que primary key la formen 2 columnas (vamos a usar como ejemplo curso y fecha_alta) se utiliza
 CONSTRAIN producto_pk PRIMARY KEY (titulo, precio);
 NOTA: Campos primary key no pueden ser NOT NULL. En este caso no podriamos elegir titulo y precio
+
+MODIFICAR CLAVE PRIMARIA = Primero la eliminamos y luego la creamos   (preguntar paco, no entiendo bien) 
+ALTER TABLE producto MODIFY COLUMN id INT PRIMARY KEY;                            // primero hay que eliminar caracteristica auto increment
+ALTER TABLE producto DROP PRIMARY KEY;                                             // Clave primaria eliminar
+ALTER TABLE producto ADD CONSTRAIN producto_pk PRIMARY KEY (titulo, precio);       // añado clave primaria segun gustos programador
+ALTER TABLE producto MODIFY COLUMN product_pk AUTO INCREMENT;                     // añado auto increment
+
+
+
