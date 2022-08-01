@@ -22,3 +22,7 @@ precio DECIMAL (12,2) NOT NULL DEFAULT 0,
 curso ENUM ("1","2","3"),
 fecha_alta TIMESTAMP DEFAULT CURRENT_TIMESTAM
 ) ENGINE = innoDB;                                    // Se cierra siempre con ENGINE = innoDB;
+
+
+
+************************************  PAGINA 174  Modificar tabla  ***************************************************
