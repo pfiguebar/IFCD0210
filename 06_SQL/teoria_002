@@ -1,0 +1,6 @@
+Crear bases datos   --> CREATE DATABASE ______;
+
+Eliminar base datos --> DROP DATABASE ________;
+
+Cambiar nombre base datos, en terminal no existe orden. En PhpMyadmin si
+
