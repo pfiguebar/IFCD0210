@@ -1,0 +1,2 @@
+INSERTAR DATOS
+INSERT INTO producto (id, titulo, precio) VALUES (1, "tabla de planchar", 12.99);
