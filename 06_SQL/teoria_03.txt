@@ -122,9 +122,13 @@ SELECT LOWER(nombres) FROM alumnos;
 
 
 
-18) Sub string
+18) Funcion Substring (permite seleccionar un numero de caracteres)
 Mostrar los primeros 50 caracteres del campo descripcion que pertenece a la tabla noticias
 SELECT SUBSTRING(descripcion, 0, 50) FROM noticias;
+
+
+19) Funcion TRIM (quita los espacios finales e iniciales de una cadena)
+
  
  
 
