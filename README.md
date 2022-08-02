@@ -19,4 +19,5 @@ sn$CJqhc3t
 
 
  Mas información  www.web2020.es 
+ operadores logicos --> https://developer.mozilla.org/es/docs/Web/JavaScript/Guide/Expressions_and_Operators
  
