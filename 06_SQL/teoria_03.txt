@@ -114,6 +114,17 @@ SELECT * FROM productos LIMIT 5, 10;
     
     En caso querer un alias (nombre_apellidos)
     SELECT CONCAT("nombre","","apellidos") AS nombre_apellidos FROM alumnos;
+    
+17) Mayusculas y minusculas
+Seleccionar nombres de la tabla alumnos y mostrar aquellos tengan primera letra A
+SELECT UPPER(nombres) FROM alumnos;
+SELECT LOWER(nombres) FROM alumnos;
+
+
+
+18) Sub string
+Mostrar los primeros 50 caracteres del campo descripcion que pertenece a la tabla noticias
+SELECT SUBSTRING(descripcion, 0, 50) FROM noticias;
  
  
 
