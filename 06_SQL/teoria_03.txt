@@ -129,6 +129,19 @@ SELECT SUBSTRING(descripcion, 0, 50) FROM noticias;
 
 19) Funcion TRIM (quita los espacios finales e iniciales de una cadena)
 
+
+20) Funcion LENGTH
+    20.1) Indicarme logitud campo nombre 
+    SELECT LENGTH(nombre) FROM alumnos;   // nos devuelve longitud nombre
+    20.2) Indicarme nombre alumnos cuya longitud sea superior a 5
+    SELECT nombre FROM alumnos WHERE LENGTH(nombre) > 5;
+    
+ 21) Funcion REPLACE
+    21.1) Reemplazar en campo nombre todas las a por una @, tabla alumnos
+    SELECT REPLACE("a", "@"),nombre FROM alumnos;
+    
+    
+
  
  
 
