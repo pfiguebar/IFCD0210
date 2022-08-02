@@ -49,5 +49,18 @@ Queremos conocer los valores de ENUM
 SELECT DISTINCT estado FROM empresas  // Con DISTINCT ..nos devuelve 2 valores "contactado" y "no contactado"
                                       // Sin DISTINCT ..nos da todos valores de la columna estado.. desde id=1 hasta id=infinito
                                       
-1)
+1) Uso de alias
+Ejemplo: programador no puso bien nombre columna (lo llamo categoria_producto). Realmente era categoria tienda. Para ello se puede usar un alias (AS)
+Alias solo vive en la consulta. No genera una nueva variable en ningun sitio
+SELECT categoria_producto AS categoria_tienda WHERE categoria = "tornillo";
+
+2) Hacer un paginador
+Ejemplo: de todos los datos de una tabla productos, quiero mostrar solo primeros 5 resultados de una lista de 100 
+SELECT * FORM productos LIMIT 5;
+
+Ejemplo: de todos los datos de una tabla producto, quiero mostrar los resultados (no son los id)  desde la posicion 5 a la 10
+SELECT * FROM productos LIMIT 5, 10;
+
+
+
 
