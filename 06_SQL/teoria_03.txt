@@ -1,24 +1,42 @@
 INSERTAR DATOS
 INSERT INTO producto (id, titulo, precio) VALUES (1, "tabla de planchar", 12.99);
 
+***************************************************************************************************************
 
 ACTUALIZAR DATOS
-1) metodo a  --> actualizar campos indicando su id
+metodo generico  --> actualizar campos indicando su id
 UPDATE producto SET titulo='maquina lavar', precio=120 WHERE id=77;
 
-2) metodo b  --> actualizar todos los campos de una tabla, con una formula 
-UPDATE producto SET precio=precio*1.10;
+EJEMPLOS  
+    0) Actualizar todos los campos de una tabla, aplicando formula 
+    UPDATE producto SET precio=precio*1.10;
   
-    2.1) Actualizar todos los productos cuyo precio sea superior a 100 euros
+    1) Actualizar todos los productos cuyo precio sea superior a 100 euros
     UPDATE producto SET precio=precio*0.8 WHERE precio>100;
     
-    2.2) Actualizar todos los productos categoria tornillos y tuercas
-    Ejemplo tabla   id, nombre, precio, categoria
-                     1, "wurt", "1", "tornillos"
-                     2, "bosc", "2", "tuercas"
-                     3, "fail", "3", "arandelas"
+    2) Actualizar todos los productos categoria tornillos y tuercas
+    Ejemplo tabla A  id, nombre, precio, categoria               
+                     1, "wurt", "1", "tornillos"                                 
+                     2, "bosc", "2", "tuercas"                                   
+                     3, "fail", "3", "arandelas"                                 
     UPDATE productos SET precio=precio*0.8 WHERE (categoria="tornillos" OR categoria="tuercas");
     Aqui solo le modifica precios a registro 1 y 2. No se lo aplica a 3
+    
+    3) Poner activo = 0 a todos los alumnos cuyas faltas sean superior a 10
+    Ejemplo Tabla   id, dni, numero_alumno, numero_faltas, activo(campo boleano)
+        UPDATE alumnos SET activo=0 WHERE numero_faltas>10;
+
+***************************************************************************************************************
 
 BORRAR DATOS
 DELELTE FROM producto WHERE id=77;
+
+EJEMPLOS
+0) Borrar todos los tornillos de la tabla productos
+DELETE FROM productos WHERE categoria="tornillos";
+
+***************************************************************************************************************
+
+SELECCCIONAR DATOS
+
+
