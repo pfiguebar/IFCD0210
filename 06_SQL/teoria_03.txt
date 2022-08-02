@@ -23,7 +23,7 @@ EJEMPLOS
     Aqui solo le modifica precios a registro 1 y 2. No se lo aplica a 3
     
     3) Poner activo = 0 a todos los alumnos cuyas faltas sean superior a 10
-    Ejemplo Tabla   id, dni, numero_alumno, numero_faltas, activo(campo boleano)
+    Ejemplo tabla ALUMNOS (id, dni, numero_alumno, numero_faltas, activo(campo boleano))
         UPDATE alumnos SET activo=0 WHERE numero_faltas>10;
 
 ***************************************************************************************************************
@@ -38,5 +38,16 @@ DELETE FROM productos WHERE categoria="tornillos";
 ***************************************************************************************************************
 
 SELECCCIONAR DATOS
+Lo primero es la palabra SELECT, a continuacion se listan las filas que se quiere que el SGBD devuelva. Despues hay que especificar donde se encuentran esos datos via FROM o JOINS. A continuacion en el WHERE se especifican las condiciones. Despues se utiliza la agrupacion GROUP BY que puede llevar condiciones extras con HAVING. Finalmente ORDER BY que ordena resultado segun se desea
 
+Ejemplo tabla ALUMNOS (id, nombre, apellidos, direccion, telefono)
+Seleccionar todos los campos nombre y apellidos de la tabla alumnos, que cumpla condicion nombre es igual a manolo
+SELECT nombre, apellidos FROM alumnos WHERE nombre="manolo" 
+
+0)tenemos la siguiente tabla EMPRESAS (id, nombre, direccion, estado (es celda enum "contactado", "no contactado")
+Queremos conocer los valores de ENUM
+SELECT DISTINCT estado FROM empresas  // Con DISTINCT ..nos devuelve 2 valores "contactado" y "no contactado"
+                                      // Sin DISTINCT ..nos da todos valores de la columna estado.. desde id=1 hasta id=infinito
+                                      
+1)
 
