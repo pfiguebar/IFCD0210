@@ -84,3 +84,38 @@ SELECT * FROM productos LIMIT 5, 10;
  
  9) buscar valores de campos igual a no nulos (NOT NULL): Ejemplo aquellos campos cuyo dni esta rellenado 
  SELECT * FROM alumnos WHERE dni IS NOT NULL;
+ 
+ 10) Seleccionar nombres alumnos de la tabla alumnos, cuya letra empiezan por A
+ SELECT nombre FROM alumnos WHERE nombre LIKE "A%";     (% es lo demas no me importa --> similar a *.* )
+ 
+ 11) Seleccion nombre alumnos de la tabla alumnos, cuya ultima letra sea S
+ SELECT nombre FROM alumnos WHERE nombre LIKE "%S"; 
+ 
+ 12) Seleccionar nombres alumnos de la tabla alumnos, que contengan X en alguna parte
+ SELECT nombre FROM alumnos WHERE nombre LIKE "%X%"; 
+ 
+ 13) Seleccionar nombre alumnos de la tabla alumnos, que contengan A en la 3a posicion
+ SELECT nombre FROM alumnos WHERE nombre LIKE "__A%";    (_ es un caracter se usa para contar)
+ 
+ 14) Mirar si valores campo email estan correctos (sabemos que tiene una arroba y un punto)
+ SELECT email FROM alumnos WHERE email LIKE "%@%.%";
+ 
+ 15) Por defecto SQL ordena por ID y orden ascendente.
+    Tenemos una tabla empresas (id, nomnbre, edad, direccion, telefono)
+    15.1) Ordenar por orden descendente
+    SELECT nombre,edad FROM empresas ORDER BY nombre DESC;
+    
+    15.2) Ordenar nombre descendente y edad ascendente
+    SELECT nombre,edad FROM empresas ORDER BY nombre DESC, edad ASC;   (ordena nombre descendente y en caso empate ... edad ascendente)
+    
+ 16) Transformar datos 
+    Nuestra tabla alumnos (id, nombre, apellidos, direccion, telefono);
+    SELECT CONCAT("nombre","","apellidos") FROM alumnos;    // aqui alias = CONCAT("nombre","","apellidos")
+    
+    En caso querer un alias (nombre_apellidos)
+    SELECT CONCAT("nombre","","apellidos") AS nombre_apellidos FROM alumnos;
+ 
+ 
+
+
+ 
