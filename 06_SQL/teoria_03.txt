@@ -61,6 +61,26 @@ SELECT * FORM productos LIMIT 5;
 Ejemplo: de todos los datos de una tabla producto, quiero mostrar los resultados (no son los id)  desde la posicion 5 a la 10
 SELECT * FROM productos LIMIT 5, 10;
 
+3) nombre de productos de la tabla productos, cuyo precio este entre 1000 y 1500 euros 
+  3.1) FORMA 1 ESCRIBIR --> SELECT nombre_producto FROM productos WHERE precio_producto >= 1000 AND precio_producto =< 1500;
+  3.2) FORMA 2 ESCRIBIR --> SELECT nombre_producto FROM productos WHERE precio_producto BETWEEN 1000 AND 1500;   (ambos incluidos)
+  
+ 4) nombre alumnos de la tabla alumnos, cuya edad esta entre 30 y 40 años
+ SELECT nombre_alumnos FROM alumnos WHERE edad BETWEEN 30 AND 40;
+ 
+ 5) nombre alumnos de la tabla alumnos, cuya edad no esta entre 30 y 40
+ SELECT nombre_alumnos FROM alumnos WHERE edad NOT BETWEEN 30 AND 40;
+ 
+ 6) nombre de alumnos de la tabla alumnos, cuya localidad sea Antequera o Torremolinos
+    6.1) FORMA 1 ESCRIBIR --> SELECT nombre_alumnos FROM alumnos WHERE (localidad = "Antequera" OR localidad = "Torremolinos");
+    6.2) FORMA 2 ESCRIBIR --> SELECT nombre_alumnos FROM alumnos WHERE localidad IN("Antequera", "Torremolinos");
 
-
-
+ 7) nombre de alumnos de la tabla alumnos, cuya localidad NO sea Antequera o Torremolinos
+     7.1) FORMA 1 ESCRIBIR --> SELECT nombre_alumnos FROM alumnos WHERE (localidad != "Antequera" AND localidad != "Torremolinos");
+     7.2) FORMA 2 ESCRIBIR --> SELECT nombre_alumnos FROM alumnos WHERE localidad NOT IN("Antequera", "Torremolinos");
+     
+ 8) buscar valores de campos igual a nulos (NULL): Ejemplo aquellos campos cuyo dni no esta rellenado aun
+ SELECT * FROM alumnos WHERE dni IS NULL;
+ 
+ 9) buscar valores de campos igual a no nulos (NOT NULL): Ejemplo aquellos campos cuyo dni esta rellenado 
+ SELECT * FROM alumnos WHERE dni IS NOT NULL;
