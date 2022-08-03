@@ -1,0 +1,13 @@
+Ejercicio pagina 227
+Cortacesped   202,50  
+Sierra        159,99
+Motosierra    252,40
+
+a) Consulta que devuelva el producto cuyo precio se acerque mas a 210
+SELECT * FROM productos ORDER BY ABS(productos-210) ASC LIMIT 1
+
+b)Consulta que devuelva los productos con su precio redondeado a la cifra entera mas cercana
+SELECT Producto, ROUND(Precio) FROM productos;
+
+c) Consulta que devuelve los productos cuyo precio sea divisible entre dos
+SELECT * FROM productos WHERE MOD(Precio, 2) = 0;
